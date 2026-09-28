@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Yard",
+      "hasCanvas": false,
+      "bodyTextLen": 958,
+      "bodyTextHash": "a839a0255b19d29a6e37f9e657d56a2faa6e0b359516a217fb2c4469343e1dd9",
+      "bodyTextPrefix": "CHROME · HOME SCREEN Yard Pull a full 3D game, drive it, then fo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Yard",
+      "hasCanvas": false,
+      "bodyTextLen": 958,
+      "bodyTextHash": "a839a0255b19d29a6e37f9e657d56a2faa6e0b359516a217fb2c4469343e1dd9",
+      "bodyTextPrefix": "CHROME · HOME SCREEN Yard Pull a full 3D game, drive it, then fo",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
