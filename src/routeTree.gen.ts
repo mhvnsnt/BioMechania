@@ -17,7 +17,6 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
-
 const MechaRoute = MechaRouteImport.update({
   id: '/mecha',
   path: '/mecha',

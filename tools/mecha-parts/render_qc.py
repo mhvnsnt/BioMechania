@@ -69,32 +69,28 @@ SOCK_LOCAL = {
  'socket_shoulder_l': (0.46,0,0.30), 'socket_shoulder_r': (-0.46,0,0.30),
  'socket_back': (0,-0.30,0.22),
 }
-WEAPON_LOCAL = Vector((0,0.05,-0.60))  # socket_weapon in arm local
+WEAPON_R_LOCAL = Vector((-0.40,0.05,-0.60))  # socket_weapon_r in arm-part local
+PAIR_MID = {  # socket-pair midpoints, torso-local (viewer mounts pair GLBs once here)
+ 'arm': (0,0,0.26),
+ 'leg': (0,0,0.02),
+ 'shoulder': (0,0,0.30),
+}
 
 def assemble(spec):
     # spec: dict slot->pid ; returns all mesh objs
+    # Contract: pair-slot GLBs carry BOTH halves; mount once at pair midpoint.
     allm = []
     tobjs = import_part(spec['torso']); move_objs(tobjs, T); allm += tobjs
     sock_world = {k: T+Vector(v) for k,v in SOCK_LOCAL.items()}
-    arm_r_world = sock_world['socket_arm_r']
     for slot, pid in spec.items():
         if slot=='torso': continue
         objs = import_part(pid)
         if slot=='head': move_objs(objs, sock_world['socket_head'])
-        elif slot=='arm':
-            move_objs([o for o in objs], sock_world['socket_arm_l'])
-            objs2 = import_part(pid); move_objs(objs2, sock_world['socket_arm_r'])
-            objs += objs2
-        elif slot=='leg':
-            move_objs(objs, sock_world['socket_leg_l'])
-            objs2 = import_part(pid); move_objs(objs2, sock_world['socket_leg_r'])
-            objs += objs2
-        elif slot=='shoulder':
-            move_objs(objs, sock_world['socket_shoulder_l'])
-            objs2 = import_part(pid); move_objs(objs2, sock_world['socket_shoulder_r'])
-            objs += objs2
+        elif slot in PAIR_MID:
+            move_objs(objs, T+Vector(PAIR_MID[slot]))
         elif slot=='backpack': move_objs(objs, sock_world['socket_back'])
-        elif slot=='weapon': move_objs(objs, arm_r_world + WEAPON_LOCAL)
+        elif slot=='weapon':
+            move_objs(objs, T+Vector(PAIR_MID['arm'])+WEAPON_R_LOCAL)
         allm += objs
     return allm
 

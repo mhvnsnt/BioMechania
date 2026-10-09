@@ -94,7 +94,7 @@ function mockRegistry(): PartRegistry {
 /** Read the real shipped manifests off disk — cross-lane contract checks. */
 async function diskFetch(url: string): Promise<unknown> {
   const rel = url.replace(/^\/mecha\/parts\//, "");
-  const file = new URL(`../../../public/mecha/parts/${rel}`, import.meta.url);
+  const file = new URL(`../../public/mecha/parts/${rel}`, import.meta.url);
   return JSON.parse(await readFile(file, "utf8"));
 }
 
