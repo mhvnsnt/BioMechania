@@ -12,10 +12,10 @@ var install_page_default = "<!DOCTYPE html>\n<html lang=\"en\" class=\"device-de
 //#endregion
 //#region \0virtual:grok-og-identity
 var grokOgIdentity = { "site": {
-	"title": "Yard",
+	"title": "Stance Derby",
 	"type": "x:game",
 	"card": "custom",
-	"color": "101311",
+	"color": "07090d",
 	"image": "/og.jpg",
 	"banner": "/x-banner.jpg"
 } };

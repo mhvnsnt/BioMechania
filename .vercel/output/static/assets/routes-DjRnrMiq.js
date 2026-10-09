@@ -1,0 +1,1 @@
+import{t as e}from"./index-BcL7ne_8.js";var t=e();function n(){return(0,t.jsx)(`iframe`,{title:`Stance Derby`,src:`/derby/index.html`,className:`derby-frame`})}export{n as component};

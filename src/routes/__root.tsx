@@ -3,7 +3,7 @@ import { AuthProvider } from "@/lib/auth/provider";
 import { PreviewHostBridge } from "@/components/preview-host-bridge";
 import appCss from "../styles.css?url";
 
-const APP_NAME = "Yard";
+const APP_NAME = "Stance Derby";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -14,11 +14,10 @@ export const Route = createRootRoute({
         content: "width=device-width, initial-scale=1, viewport-fit=cover",
       },
       { title: APP_NAME },
-      { name: "theme-color", content: "#101311" },
+      { name: "theme-color", content: "#07090d" },
       {
         name: "description",
-        content:
-          "Pull a full 3D game, drive it in Chrome, and fork the handling into your own pack.",
+        content: "Combat derby. Drive, rise into a gun platform, or stand up and fight.",
       },
     ],
     links: [
@@ -34,12 +33,6 @@ export const Route = createRootRoute({
         <HeadContent />
       </head>
       <body>
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "window.__yardHeld=new Set();window.__controlsTest={setKeys:function(c){window.__yardHeld=new Set(c||[])},setSteer:function(v){window.__yardSteer=v},getYaw:function(){return window.__yardYaw||0},getSpeed:function(){return window.__yardSpeed||0}};document.addEventListener('click',function(e){var n=e.target&&e.target.closest&&e.target.closest('[data-yard-start]');if(!n)return;window.__yardQueued=n.getAttribute('data-yard-start');if(window.__yardBoot)window.__yardBoot();},true);",
-          }}
-        />
         <PreviewHostBridge />
         <AuthProvider>
           <Outlet />

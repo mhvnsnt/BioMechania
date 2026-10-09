@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { YardApp } from "@/components/yard-app";
+import { Derby } from "../derby/Derby";
 
 export const Route = createFileRoute("/")({
-  component: YardApp,
+  component: Derby,
 });

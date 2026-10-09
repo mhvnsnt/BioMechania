@@ -31,6 +31,188 @@
     overscroll-behavior: none;
   }
 
+  .derby-root {
+    position: fixed;
+    inset: 0;
+    background: var(--color-ink);
+    color: var(--color-bone);
+    overflow: hidden;
+    touch-action: none;
+  }
+
+  .derby-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .derby-hud {
+    position: absolute;
+    top: max(12px, env(safe-area-inset-top));
+    left: 16px;
+    right: 16px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .derby-readout,
+  .derby-hint,
+  .derby-lead,
+  .derby-kicker,
+  .derby-end p {
+    margin: 0;
+    white-space: pre-line;
+  }
+
+  .derby-readout {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+
+  .derby-hint {
+    margin-top: 6px;
+    color: var(--color-mist);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+  }
+
+  .derby-menu,
+  .derby-end {
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 24px 16px 168px;
+    background: color-mix(in srgb, var(--color-ink) 86%, transparent);
+    text-align: center;
+  }
+
+  .derby-kicker {
+    color: var(--color-sodium);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  .derby-menu h1 {
+    margin: 0;
+    font-size: clamp(2.4rem, 8vw, 4.5rem);
+    line-height: 0.9;
+    letter-spacing: -0.04em;
+  }
+
+  .derby-lead {
+    max-width: 36rem;
+    color: var(--color-mist);
+  }
+
+  .derby-classes,
+  .derby-actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .derby-classes {
+    width: min(100%, 440px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .derby-menu button,
+  .derby-end button,
+  .derby-actions button {
+    min-height: 48px;
+    border: 1px solid var(--color-line);
+    border-radius: var(--radius-yard);
+    background: var(--color-panel);
+    color: var(--color-bone);
+    font: inherit;
+    font-size: 0.95rem;
+  }
+
+  .derby-menu button.is-on,
+  .derby-start {
+    background: var(--color-sodium);
+    color: var(--color-sodium-ink);
+    border-color: var(--color-sodium);
+  }
+
+  .derby-start {
+    width: min(100%, 440px);
+    font-weight: 700;
+  }
+
+  .derby-dock {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 12px max(12px, env(safe-area-inset-bottom));
+    pointer-events: none;
+  }
+
+  .derby-stick,
+  .derby-actions {
+    pointer-events: auto;
+  }
+
+  .derby-stick {
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    border: 1px solid var(--color-line);
+    background:
+      radial-gradient(circle at 50% 50%, transparent 0 18px, var(--color-sodium) 19px 22px, transparent 23px),
+      color-mix(in srgb, var(--color-panel) 80%, transparent);
+  }
+
+  .derby-actions {
+    width: min(240px, calc(100% - 140px));
+  }
+
+  .derby-end p {
+    font-size: clamp(2rem, 7vw, 3.4rem);
+    color: var(--color-sodium);
+    letter-spacing: -0.04em;
+  }
+
+  .derby-frame {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: var(--color-ink);
+  }
+
+  html.city-boot,
+  html.city-boot body {
+    overflow: hidden;
+    height: 100%;
+    background: #05060a;
+  }
+
+  .city-loader {
+    display: grid;
+    min-height: 100dvh;
+    place-items: center;
+    background: #05060a;
+    color: #c9d2ea;
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
   button:not(:disabled),
   [role="button"]:not(:disabled) {
     cursor: pointer;

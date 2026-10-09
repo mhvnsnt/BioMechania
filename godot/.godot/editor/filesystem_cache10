@@ -1,0 +1,7 @@
+9cad1ddce9e5a63143ba340c9520626b
+::res://::1790567872
+export_presets.cfg::TextFile::-1::1790567648::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::8300239454281713731::1790567645::1790567872::1::::<><><>0<>0<>2aa2a6899998f63dd319537ea7c64f82<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main.gd::GDScript::5164228524471930634::1790568106::0::1::::<>Node3D<><>0<>0<><>::
+main.tscn::PackedScene::-1::1790567646::0::1::::<><><>0<>0<><>::res://main.gd
+rig.gd::GDScript::6965825629259640445::1790567711::0::1::::Rig<>CharacterBody3D<><>0<>0<><>::
