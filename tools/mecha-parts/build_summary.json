@@ -1,0 +1,380 @@
+{
+ "aero-sail": {
+  "slot": "backpack",
+  "modes": [
+   "racer"
+  ],
+  "tris": 110,
+  "stats": {
+   "armor": 2,
+   "speed": 9,
+   "power": 3,
+   "weight": 3
+  }
+ },
+ "aero-wedge": {
+  "slot": "torso",
+  "modes": [
+   "racer"
+  ],
+  "tris": 236,
+  "stats": {
+   "armor": 3,
+   "speed": 10,
+   "power": 4,
+   "weight": 3
+  }
+ },
+ "bullbar-guard": {
+  "slot": "shoulder",
+  "modes": [
+   "combat"
+  ],
+  "tris": 432,
+  "stats": {
+   "armor": 8,
+   "speed": 3,
+   "power": 4,
+   "weight": 8
+  }
+ },
+ "cage-rig": {
+  "slot": "backpack",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 88,
+  "stats": {
+   "armor": 6,
+   "speed": 4,
+   "power": 3,
+   "weight": 6
+  }
+ },
+ "cowl-shroud": {
+  "slot": "shoulder",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 458,
+  "stats": {
+   "armor": 5,
+   "speed": 5,
+   "power": 3,
+   "weight": 5
+  }
+ },
+ "crusher-tread": {
+  "slot": "leg",
+  "modes": [
+   "combat"
+  ],
+  "tris": 380,
+  "stats": {
+   "armor": 9,
+   "speed": 3,
+   "power": 6,
+   "weight": 9
+  }
+ },
+ "dart-probe": {
+  "slot": "head",
+  "modes": [
+   "racer"
+  ],
+  "tris": 340,
+  "stats": {
+   "armor": 2,
+   "speed": 10,
+   "power": 3,
+   "weight": 2
+  }
+ },
+ "derby-stomp": {
+  "slot": "leg",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 422,
+  "stats": {
+   "armor": 6,
+   "speed": 5,
+   "power": 7,
+   "weight": 6
+  }
+ },
+ "draft-fin": {
+  "slot": "shoulder",
+  "modes": [
+   "racer"
+  ],
+  "tris": 148,
+  "stats": {
+   "armor": 2,
+   "speed": 9,
+   "power": 1,
+   "weight": 2
+  }
+ },
+ "hound-vis": {
+  "slot": "head",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 878,
+  "stats": {
+   "armor": 4,
+   "speed": 7,
+   "power": 4,
+   "weight": 4
+  }
+ },
+ "pile-arm": {
+  "slot": "arm",
+  "modes": [
+   "combat"
+  ],
+  "tris": 378,
+  "stats": {
+   "armor": 9,
+   "speed": 2,
+   "power": 8,
+   "weight": 9
+  }
+ },
+ "pile-spike": {
+  "slot": "weapon",
+  "modes": [
+   "combat"
+  ],
+  "tris": 228,
+  "stats": {
+   "armor": 3,
+   "speed": 4,
+   "power": 10,
+   "weight": 7
+  }
+ },
+ "pit-mono": {
+  "slot": "torso",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 562,
+  "stats": {
+   "armor": 4,
+   "speed": 8,
+   "power": 5,
+   "weight": 4
+  }
+ },
+ "quickjack-arm": {
+  "slot": "arm",
+  "modes": [
+   "racer"
+  ],
+  "tris": 242,
+  "stats": {
+   "armor": 3,
+   "speed": 10,
+   "power": 4,
+   "weight": 3
+  }
+ },
+ "ram-lance": {
+  "slot": "weapon",
+  "modes": [
+   "racer"
+  ],
+  "tris": 114,
+  "stats": {
+   "armor": 1,
+   "speed": 9,
+   "power": 6,
+   "weight": 4
+  }
+ },
+ "ribcage-core": {
+  "slot": "torso",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 904,
+  "stats": {
+   "armor": 5,
+   "speed": 6,
+   "power": 6,
+   "weight": 5
+  }
+ },
+ "ripper-chain": {
+  "slot": "weapon",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 308,
+  "stats": {
+   "armor": 1,
+   "speed": 7,
+   "power": 8,
+   "weight": 5
+  }
+ },
+ "rivet-guard": {
+  "slot": "shoulder",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 542,
+  "stats": {
+   "armor": 6,
+   "speed": 4,
+   "power": 3,
+   "weight": 6
+  }
+ },
+ "scrap-crown": {
+  "slot": "head",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 548,
+  "stats": {
+   "armor": 6,
+   "speed": 5,
+   "power": 5,
+   "weight": 6
+  }
+ },
+ "scrap-sledge": {
+  "slot": "weapon",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 272,
+  "stats": {
+   "armor": 2,
+   "speed": 5,
+   "power": 9,
+   "weight": 7
+  }
+ },
+ "siege-maw": {
+  "slot": "head",
+  "modes": [
+   "combat"
+  ],
+  "tris": 530,
+  "stats": {
+   "armor": 9,
+   "speed": 2,
+   "power": 6,
+   "weight": 9
+  }
+ },
+ "siege-plate": {
+  "slot": "torso",
+  "modes": [
+   "combat"
+  ],
+  "tris": 804,
+  "stats": {
+   "armor": 10,
+   "speed": 2,
+   "power": 5,
+   "weight": 10
+  }
+ },
+ "sinew-arm": {
+  "slot": "arm",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 428,
+  "stats": {
+   "armor": 5,
+   "speed": 6,
+   "power": 7,
+   "weight": 5
+  }
+ },
+ "sinew-stilt": {
+  "slot": "leg",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 838,
+  "stats": {
+   "armor": 5,
+   "speed": 7,
+   "power": 5,
+   "weight": 5
+  }
+ },
+ "stack-pipes": {
+  "slot": "backpack",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 518,
+  "stats": {
+   "armor": 4,
+   "speed": 5,
+   "power": 6,
+   "weight": 5
+  }
+ },
+ "street-sprinter": {
+  "slot": "leg",
+  "modes": [
+   "racer"
+  ],
+  "tris": 172,
+  "stats": {
+   "armor": 3,
+   "speed": 10,
+   "power": 3,
+   "weight": 3
+  }
+ },
+ "war-rack": {
+  "slot": "backpack",
+  "modes": [
+   "combat"
+  ],
+  "tris": 282,
+  "stats": {
+   "armor": 7,
+   "speed": 3,
+   "power": 7,
+   "weight": 7
+  }
+ },
+ "wrecker-claw": {
+  "slot": "arm",
+  "modes": [
+   "racer",
+   "combat"
+  ],
+  "tris": 574,
+  "stats": {
+   "armor": 7,
+   "speed": 4,
+   "power": 8,
+   "weight": 7
+  }
+ }
+}

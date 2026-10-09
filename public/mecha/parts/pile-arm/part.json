@@ -1,0 +1,17 @@
+{
+ "id": "pile-arm",
+ "slot": "arms",
+ "name": "Pile Arm",
+ "description": "Armored heavy arm with a forearm ram plate. Combat mode.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 9,
+  "speed": 2,
+  "power": 8,
+  "weight": 9
+ },
+ "model": "pile-arm.glb",
+ "tris": 378
+}
