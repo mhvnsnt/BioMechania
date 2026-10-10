@@ -33,7 +33,7 @@ per build (proves Device 6 color delta).
 | Shot | File | Gates 1-6 | Notes |
 |---|---|---|---|
 | W-STOW-scrapblade | docs/renders/weapons/W-STOW-scrapblade.png | PASS | First render FAILED: pommel sphere floating 0.035u below grip (part-authoring defect in weapon-scrapblade.glb — pommel at local Y=-0.12 vs grip bottom -0.035). Diagnosed via headless assembly bbox dump; fixed at part level (pommel +0.04Y, now 0.005 overlap, verified by re-dump), matching the surge-stomp precedent. Original GLB backed up at /tmp/weapon-scrapblade-orig.glb. Re-rendered 2026-10-10 with fixed part; re-inspected (full frame + 4x zoom of mount): pommel now contacts grip, no floating gap. Gates 1-6 pass: blade folded in mount clamp, stow point visible; racer teal identity; no detached parts; full mech framed. |
-| W-WARM-scrapblade | docs/renders/weapons/W-WARM-scrapblade.png | PENDING | |
+| W-WARM-scrapblade | docs/renders/weapons/W-WARM-scrapblade.png | FAIL→re-render | Blade glow at emission strength 5.0 blew out to pure white — mount/housing detail and emitter origin unreadable (4x zoom of housing area shows total overexposure). Fix: warm glow 5.0→2.2, fire glow 6.0→2.8 in detail_shots.py (muzzle flash carries the heat). Queued for fixup pass after batch finishes (batch already passed shot 2; will not re-render within this pass). |
 | W-FIRE-scrapblade | docs/renders/weapons/W-FIRE-scrapblade.png | PENDING | |
 | W-STOW-siegeplow | docs/renders/weapons/W-STOW-siegeplow.png | PENDING | |
 | W-WARM-siegeplow | docs/renders/weapons/W-WARM-siegeplow.png | PENDING | |

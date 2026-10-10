@@ -129,7 +129,7 @@ def stage_weapon_stow(info, weapon):
 def stage_weapon_warm(info, weapon):
     """W-WARM: emitter glowing, housing open, barrel extending,
     whole-mech flinch."""
-    _glow_weapon_meshes(info, weapon, 5.0)
+    _glow_weapon_meshes(info, weapon, 2.2)  # 5.0 blew out housing detail; 2.2 glows with detail surviving
     # Housing open: rotate the weapon anchor slightly out of the mount.
     info["anchors"]["weapon"].rotation_euler = (math.radians(-14), 0, 0)
     # Barrel extending: nudge weapon meshes forward (+Y canonical).
@@ -144,7 +144,7 @@ def stage_weapon_warm(info, weapon):
 
 def stage_weapon_fire(info, weapon):
     """W-FIRE: deployed + firing pose, muzzle/emitter effect, recoil."""
-    _glow_weapon_meshes(info, weapon, 6.0)
+    _glow_weapon_meshes(info, weapon, 2.8)  # 6.0 blew out weapon detail; muzzle flash carries the heat
     info["anchors"]["weapon"].rotation_euler = (math.radians(-22), 0, 0)
     for o in info["slot_meshes"]["weapon"]:
         o.location.y += 0.10
