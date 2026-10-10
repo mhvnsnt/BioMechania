@@ -684,6 +684,11 @@ def b_leg_surge():  # BREACH exclusive (pair: one half, X-symmetric)
     box('foot', 0.20, 0.34, 0.10, 0, 0.06, -1.06, mat=iron, bev=0.012)
     box('toeglow', 0.16, 0.025, 0.04, 0, 0.225, -1.03, mat=glow)
     box('sole', 0.21, 0.36, 0.02, 0, 0.06, -1.11, mat=rub)
+    # ankle connectors: twin pistons bridging shin (-0.80) -> foot (-1.01).
+    # Fixes the floating-foot gap the render pipeline's QC caught
+    # (2026-10-09): the foot previously had nothing connecting it above.
+    piston(0.055, 0.0, -0.80, -1.01, 0.022, 0.032, steel, rust)
+    piston(-0.055, 0.0, -0.80, -1.01, 0.022, 0.032, steel, rust)
 
 def b_sh_fracturecrest():  # BREACH exclusive (pair: one half, X-symmetric)
     iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
