@@ -76,6 +76,14 @@ def render_transition_shot(args, parts_dir, build, shot):
     light_mode = LIGHT_MODE[shot] or (
         mode_from if shot == "T-25" else mode_to)
     lighting.setup_studio(light_mode)
+    if light_mode == "breach":
+        # Lane B: tame the breach under-glow for reveal/ignition beats. The
+        # shared rig's 220W point light sits inside the small breach mech's
+        # leg volume and blows the legs out to white (measured 2026-10-10).
+        # 110W keeps the hot-from-below read. Lane A mode heroes keep 220W.
+        ug = bpy.data.objects.get("breach_underglow")
+        if ug is not None:
+            ug.data.energy = 110.0
 
     if shot in TRANSITION_SHOTS:
         tinfo = TR.assemble_transition(build, mode_from, mode_to, parts_dir)
@@ -126,14 +134,6 @@ def render_transition_shot(args, parts_dir, build, shot):
         spec_breach = builds.BUILDS[build]["breach"]
         info = assemble.assemble_mech(spec_breach, parts_dir, undersuit=True)
         TR.grade_subset("breach", assemble.mech_meshes(info["mech_root"]))
-        # Lane B: tame the breach under-glow for the reveal beats. The
-        # shared studio rig's 220W point light sits inside the small breach
-        # mech's leg volume and blows the legs out to white (measured
-        # 2026-10-10). 110W keeps the "hot from below" read without nuking
-        # detail. Lane A mode heroes keep the full 220W.
-        ug = bpy.data.objects.get("breach_underglow")
-        if ug is not None:
-            ug.data.energy = 110.0
         # Restraints were worn in combat; show them jettisoned on the ground.
         r = TR.make_restraints(info)
         soul = soul_part.place_soul(info)
