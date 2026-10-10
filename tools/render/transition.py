@@ -520,13 +520,14 @@ def weapon_warmup(info):
     # Deploy: the weapon swings out, forward, and up, tilting like it's
     # being raised for a strike — a hero moment, not a subtle shift.
     # (A Z-spin alone is invisible on this Z-aligned weapon; the X-tilt
-    # sells the raise.)
+    # sells the raise. The core-maul sits buried inside the arm in its
+    # seated pose, so the deploy must travel far to clear the body.)
     anchor_pos = anchor.matrix_world.translation.copy()
     torso_pos = info["torso_anchor"].matrix_world.translation.copy()
     out = anchor_pos - torso_pos
     out.z = 0.0
     out = out.normalized() if out.length > 1e-6 else Vector((1, 0, 0))
-    dep.location = out * 0.50 + Vector((0, 0.35, 0.40))
+    dep.location = out * 1.0 + Vector((0, 0.50, 0.60))
     dep.rotation_euler = (math.radians(-20), 0, math.radians(-30))
     # Warmup glow on the weapon's materials.
     for mt in _obj_materials(wobjs):
