@@ -45,6 +45,10 @@ M-2 = side profile orthographic; M-3 = rear elevated (tools/render/cameras.py).
 ### scout / M-1 / breach (1920x1080/64sp) — PASS
 - Inspected ~10:10Z. "Restraints off, glow hot" reads unmistakably: full emissive orange breach glow, torso arched back, head up, arms spread in release.
 - Gates: 1 PASS (face-plate optics + chest sigil readable through glow), 2 PASS (breach emissive-hot kit overwhelmingly distinct from racer cyan / combat orange-red accents), 3 PASS (all 7 breach-exclusive parts present; core-maul confirmed via blender diagnostic: 14 meshes parented to arms anchor — attached, not floating), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted). Framing: full mech with margins.
+
+### scout / M-2 / breach (1280x720/64sp) — PASS
+- Inspected ~10:20Z. Clean side profile with fixed framing; breach glow reads strong.
+- Gates: 1 PASS (face-plate + sigil readable), 2 PASS (breach hot kit), 3 PASS (all parts; core-maul geometrically verified at the right hand via blender diagnostic — weapon (-0.4,0.05,-0.34) coincides with right fist; occluded by torso in this side view, which is expected. The vertical maul-like shape behind is the vent-surge backpack), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted).
 - v1 inspected 2026-10-10 ~07:42Z. Pose: coiled aero tuck reads well (torso pitched fwd, arms swept back, legs trailing). Gates: 1 PASS (face-plate optics + chest sigil readable), 2 PASS (racer cyan aero kit), 4 PASS (no clipping), 6 PASS (feet planted, soft shadows), 5 N/A.
 - **v1 FAIL gate 3 (assembly integrity): the scrapblade weapon floated detached from the hand** — weapon anchor is parented to the torso anchor in assemble.py, so the arms -25° sweep left the weapon behind (~0.5 m gap); pommel sphere also read as floating debris. Cyan dot above head is the antenna tip light — not a defect.
 - **Fix:** pose.py apply_pose() now re-parents the weapon anchor under the arms anchor (world-transform-preserving, lane-local; other lanes don't pose) — committed 4b274bd. Defective v1 retired (git rm); v2 rendered 08:17Z.
