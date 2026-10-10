@@ -1,7 +1,9 @@
 # BioMechania Mech Naming Slate
 
-**Status:** candidate slate for owner picks — NOT canon. Nothing here becomes a real
-mech name until the owner picks it personally.
+**Status (updated 2026-10-10):** the 13 LINE BRANDS and the 9 anchor character names
+are CANON — owner-approved 2026-10-10, merged PR #7. Every OTHER character name in this
+document remains a CANDIDATE for owner picks — nothing else becomes a real mech name
+until the owner picks it personally.
 
 **Naming law (owner 2026-10-09):** names work like MDickie games do it — based on the
 mech each design is inspired by, with a slight change to make it proprietary, all
@@ -27,14 +29,18 @@ transport failure at assembly) — flagged for second-pass verification before l
 
 ---
 
-## LINE 1 — Light recon — BRAND: ★ ANTSY
+## BROOD — Light recon  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Zoids beast-collective: the swarm-family. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 Bug-swarm recon umbrella; jittery nervous energy, reads instantly as small-fast-many.
 Check: searched exact + "Antsy robot/mech/Transformers"; only near-hit is Robot Wars
 antweight champion "Anty B" (different spelling, different weight class); no
 mech-franchise use, no live trademark found. Cleared.
 
-- **SKITTER** ★ anchor — bug-quick recon mover. (r1, cleared.)
+- **SKITTER** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — bug-quick recon mover. (r1, cleared.)
 - **PIPSQUEAK** — tiny loudmouth that picks fights above its weight class. Check: hits are the mouse game "Pipsqueak!" + a Warpips unit; neither a mech character. Cleared.
 - **SKEDADDLE** — bolt-at-first-contact runner. Check: no hits. Cleared.
 - **QUIVER** — trembling sensor-spike that reads the whole field. Check: only a 1997 Doom-clone shareware game "Quiver"; no mech character. Cleared.
@@ -59,13 +65,17 @@ dropped): CHITTER — search-clean but rhymes with SKITTER; owner-call alternate
 
 ---
 
-## LINE 2 — Heavy combat — BRAND: ★ HEFT
+## PUMMEL — Heavy combat  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Transformers trait-noun: the punch as a brand. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 Pure heavyweight umbrella; the weight is the point, one syllable like a dropped
 anvil. Check: searched exact + variants vs mech/franchise names and trademarks;
 clean. Cleared.
 
-- **POUNDCAKE** ★ anchor — hits like a truck, named like a snack. (r1, cleared.)
+- **POUNDCAKE** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — hits like a truck, named like a snack. (r1, cleared.)
 - **THUDMUFFIN** — soft-looking, lands like a safe falling off a truck. Check: only hit is a WoW player's Tauren toon; no franchise mech. Cleared.
 - **SLAB** — walks through walls, apologizes to no one. Check: clean. Cleared.
 - **ANVIL** — stands still, breaks whatever hits it. Check: only a 2023 shooter title "Anvil" + hobbyist mech models; no mech character. Cleared.
@@ -88,7 +98,11 @@ Backup brands (owner-call): THUD (clean), LUMBER (flagged: Helldivers 2 EXO-51
 
 ---
 
-## LINE 3 — Derby brawlers — BRAND: ★ BANGER
+## SCRAPKINGS — Derby brawlers  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Fan-custom grammar: junkyard royalty. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 UK "banger racing" IS demolition derby; the flavor is the word itself,
 umbrella-sized, instantly ownable. Check: searched exact + variants vs
@@ -121,7 +135,11 @@ slur risk), JALOPY (brand — existing driving game), PILEUP (brand — Steam ga
 
 ---
 
-## LINE 4 — Evangelion-inspired — BRAND: ★ VESPERS
+## REQUIEM — Evangelion-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+EVA sacred-word pattern: one big theological word. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The evening-prayer service; an umbrella word for a line of end-times biomechs that
 fight like a choir at dusk. Check: searched "VESPERS" mech franchise/mecha
@@ -129,7 +147,7 @@ trademark/robot — zero mech franchise, trademark, or character hits. Note: a 2
 indie game titled "Vesper" (singular) exists — different word form, no mech space.
 Cleared.
 
-- **VANGEL** ★ anchor — Evangelion with the E-V-A shaved off. (r1, cleared.)
+- **VANGEL** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — Evangelion with the E-V-A shaved off. (r1, cleared.)
 - **BURNINGBUSH** ★ batch pick — the unit that never stops smoldering; fights through its own pilot-light wreath. Check: only plants, a creative studio, heraldry. No mech/game use. Cleared.
 - **PALEHORSE** — gaunt long-strider; the fourth-rider frame of the line. Check: only usernames/player profiles; biblical/public domain. Cleared.
 - **MUSTARDSEED** — tiny-frame scout that hits absurdly above its weight class. Check: original compound, no franchise term nearby. Cleared.
@@ -152,13 +170,17 @@ final SHOFAR.
 
 ---
 
-## LINE 5 — Gundam-inspired — BRAND: ★ SORTIE
+## COLDIRON — Gundam-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Folklore cold iron + designation-ready. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 One mission, one launch; the umbrella for a line of mass-production military
 frames. Check: searched "SORTIE" mecha game franchise/trademark — no mech
 franchise, brand, or trademark hits; generic military word. Cleared.
 
-- **VERNIER** ★ anchor — vernier thrusters = the most Gundam-specific tech term. (r1, cleared.)
+- **VERNIER** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — vernier thrusters = the most Gundam-specific tech term. (r1, cleared.)
 - **SPENTBRASS** ★ batch pick — veteran frame built from salvaged casings; rattles when it walks. Check: common phrase, no mech/game character. Cleared.
 - **APSHELL** — armor-piercing spearhead; goes through, not around. Check: original compound. Cleared.
 - **BALLISTITE** — volatile propellant-core bruiser; burns smokeless, hits loud. Check: dictionary entries only ("formerly a trademark," 1890s, long genericized); no game/mech use. Cleared.
@@ -185,13 +207,17 @@ character + expired LEGO Ideas mech) → TRACKRAT (real USPTO record, cancelled 
 
 ---
 
-## LINE 6 — Zoids-inspired — BRAND: ★ BESTIARY
+## STAMPEDE — Zoids-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Zoids beast-collective: the herd as the brand. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The book of beasts; umbrella for the whole animal-mech catalog. Check: searched
 "BESTIARY" mech toy franchise/trademark — no mech/toy franchise or trademark hits.
 Cleared.
 
-- **ZOYD** ★ anchor — Zoids, MDickie-fied: one vowel changed. (r1, cleared.)
+- **ZOYD** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — Zoids, MDickie-fied: one vowel changed. (r1, cleared.)
 - **SHELLGAME** ★ batch pick — turtle-frame con artist; the armor is never where you think. Check: common phrase, no mech character. Cleared.
 - **BEAKPOINT** — raptor striker; the pun is the point. Check: only typos of "breakpoint" in unrelated industries; zero mech/franchise use. Cleared.
 - **SPURGEAR** — rooster-frame; spur meets gear, kicks like machinery. Check: original compound. Cleared.
@@ -214,7 +240,11 @@ Riders + MTG "Snarlfang Vermin") → FANGBARE (near-duplicate of FANGBACK) → G
 
 ---
 
-## LINE 7 — Beast-form Zoid-likes — BRAND: ★ PACKLAW
+## WILDHUNT — Beast-form  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+The mythological hunt-pack as the brand. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The law of the pack: eat or be eaten; umbrella for the feral line — deliberately
 less machine, more beast than the Zoids line. Check: searched "PACKLAW"
@@ -239,14 +269,18 @@ final OFFTHECHAIN. CARRION (2020 video game "Carrion") → final OFFAL.
 
 ---
 
-## LINE 8 — Transformers-inspired — BRAND: ★ SWITCHFRAME
+## MODESHIFT — Transformers-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+The transformation itself as the brand word. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The converter line; no unit holds one shape past the opening bell. Check: searched
 exact term + mech/trademark/Transformers — zero hits on any mech, franchise, or
 trademark; only an unrelated Chinese electronics listing using "switchframe" as a
 generic word. Cleared.
 
-- **FORMCHAIN** ★ anchor — the transformation sequence as a name. (r1, cleared.)
+- **FORMCHAIN** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — the transformation sequence as a name. (r1, cleared.)
 - **GEARGRIND** ★ batch pick — heavy converter that eats transmissions and brackets alike. Check: original compound; closest real term "gear grind" is a driving phrase, no character. Cleared.
 - **CLUTCHBURN** — burns its clutch every match and wins anyway. Check: original compound; no hits. Cleared.
 - **CRANKBORN** — born in the crankcase, raised on the redline. Check: original compound; no TF "Crank" character found. Cleared.
@@ -267,13 +301,17 @@ Dropped: GRIDLOCK (IDW Transformers character, War's End #1–4).
 
 ---
 
-## LINE 9 — Bionicle-inspired — BRAND: ★ TOTEMFORGE
+## EFFIGY — Bionicle-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Totem/statue vocabulary, real-word-safe. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The tribal-biomech line; carved, painted, and mean. Check: searched
 Totemforge/Tribeforge + mech/Bionicle/trademark — zero hits on anything.
 Cleared.
 
-- **MASKJACK** ★ anchor — Kanohi masks are THE Bionicle icon; jacking a mask = the game. (r1, cleared.)
+- **MASKJACK** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — Kanohi masks are THE Bionicle icon; jacking a mask = the game. (r1, cleared.)
 - **BONECARVER** ★ batch pick — war-painted carver; etches every win into its own armor. Check: original compound; no hits. Cleared.
 - **SPIRITDRILL** — drill-wielding shaman rig. Check: original compound; no hits. Cleared.
 - **TUSKSHRINE** — shrine-guarded tusk mech. Check: original compound; no hits (renamed off "fang" to stay clear of dropped SABERFANG). Cleared.
@@ -294,12 +332,16 @@ DRUMFIRE.
 
 ---
 
-## LINE 10 — Kamen Rider-inspired — BRAND: ★ KICKFORGE
+## CARAPACE — Kamen Rider-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Rider insect-armor theme word as the brand. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The rider line; every form change is forged mid-fight. Check: searched exact term +
 Kamen Rider/mech/trademark — zero hits. Cleared.
 
-- **HENSHIN** ★ anchor — the transformation call itself, as a mech line name. (r1, cleared.)
+- **HENSHIN** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — the transformation call itself, as a mech line name. (r1, cleared.)
 - **SCARFSPIN** ★ batch pick — scarf-streaming speedster; the scarf is a weapon. Check: original compound; no hits. Cleared.
 - **ANTENNA ACE** — fin-antennaed tactician. Check: original compound; no hits. Cleared.
 - **TANKSLAPPER** — violent wobble-style brawler. Check: confirmed generic motorcycle term (speed wobble), no character. Cleared.
@@ -316,12 +358,16 @@ Kamen Rider/mech/trademark — zero hits. Cleared.
 
 ---
 
-## LINE 11 — Power Rangers-inspired — BRAND: ★ COLORCORPS
+## PRISM — Power Rangers-inspired  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Color as the brand: the spectrum is the team. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The team line; color-coded, combiner-ready. Check: searched exact term + Power
 Rangers/team/trademark — zero hits. Cleared.
 
-- **RANGERDANGER** ★ anchor — it's morphin' time, but make it a warning label. (r1, cleared.)
+- **RANGERDANGER** ★ anchor — CANON CHARACTER NAME (owner-approved 2026-10-10) — it's morphin' time, but make it a warning label. (r1, cleared.)
 - **DOGPILE** ★ batch pick — wins by piling on; the whole team lands at once. Check: no mech character; only a MechCorps mission type, the Dogpile search engine, and the "Dogpile of Doom" trope. Cleared.
 - **ROLLCALL** — the combiner that calls the roll; nobody fights alone. Check: no mech/character named Rollcall; only "Robot Roll Call" LP-archive titles and an unreleased 2005 SCi game (renamed Urban Chaos). Cleared.
 - **COLORCODER** — decodes team combos mid-fight. Check: original compound; no hits. Cleared.
@@ -344,7 +390,11 @@ attraction + Voodoo "Stack Attack" + FIRST Robotics 2003 game) → final DOGPILE
 
 ---
 
-## LINE 12 — Aerial / skirmisher — BRAND: ★ JETWASH
+## CONTRAIL — Aerial / skirmisher  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+The sky-trail as the brand; flight family. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The sky line; you do not want to be behind them. Check: searched exact term +
 mech/trademark/game/character — zero hits. Cleared.
@@ -371,7 +421,11 @@ Crossout "Scrapfight" event) → final FLYBY.
 
 ---
 
-## LINE 13 — Support / repair rigs — BRAND: ★ PATCHGANG
+## PITLANE — Support / repair rigs  ★ CANON LINE BRAND (owner-approved 2026-10-10, PR #7)
+
+
+Trade-word brand: the crew territory. Characters below are CANDIDATES unless marked ★ anchor-canon.
+
 
 The pit-crew line; they patch you up or part you out. Check: searched exact term +
 mech/trademark/game — zero hits. Cleared.
@@ -475,28 +529,33 @@ dedicated web checks unavailable — second-pass verification recommended).
 
 ---
 
-## Owner shortlist — brands + anchors
+## Canon roster — brands + anchors (owner-approved 2026-10-10)
 
-| Line | Brand | Anchor character |
+| Line | Brand | Anchor character (canon) |
 |---|---|---|
-| Light recon | **ANTSY** | **SKITTER** |
-| Heavy combat | **HEFT** | **POUNDCAKE** |
-| Derby brawlers | **BANGER** | — (new line, no anchor) |
-| Evangelion-inspired | **VESPERS** | **VANGEL** |
-| Gundam-inspired | **SORTIE** | **VERNIER** |
-| Zoids-inspired | **BESTIARY** | **ZOYD** |
-| Beast-form | **PACKLAW** | — (new line, no anchor) |
-| Transformers-inspired | **SWITCHFRAME** | **FORMCHAIN** |
-| Bionicle-inspired | **MASKJACK** | **MASKJACK** |
-| Kamen Rider-inspired | **KICKFORGE** | **HENSHIN** |
-| Power Rangers-inspired | **COLORCORPS** | **RANGERDANGER** |
-| Aerial / skirmisher | **JETWASH** | — (new line, no anchor) |
-| Support / repair rigs | **PATCHGANG** | — (new line, no anchor) |
+| Light recon | **BROOD** | **SKITTER** ★ |
+| Heavy combat | **PUMMEL** | **POUNDCAKE** ★ |
+| Derby brawlers | **SCRAPKINGS** | — (no anchor) |
+| Evangelion-inspired | **REQUIEM** | **VANGEL** ★ |
+| Gundam-inspired | **COLDIRON** | **VERNIER** ★ |
+| Zoids-inspired | **STAMPEDE** | **ZOYD** ★ |
+| Beast-form | **WILDHUNT** | — (no anchor) |
+| Transformers-inspired | **MODESHIFT** | **FORMCHAIN** ★ |
+| Bionicle-inspired | **EFFIGY** | **MASKJACK** ★ |
+| Kamen Rider-inspired | **CARAPACE** | **HENSHIN** ★ |
+| Power Rangers-inspired | **PRISM** | **RANGERDANGER** ★ |
+| Aerial / skirmisher | **CONTRAIL** | — (no anchor) |
+| Support / repair rigs | **PITLANE** | — (no anchor) |
 
-**Totals: 13 brands + 184 character names = 197 names.** All collision-checked
-(except CLUTCHPOP + JACKKNIFE, flagged above for a second pass).
+**Roster so far: 13 canon brands + 9 canon anchors + 184 candidate characters.** All
+collision-checked (except CLUTCHPOP + JACKKNIFE, flagged in the drop list for a
+second pass). New character candidates are appended under each brand's section;
+they stay CANDIDATE until the owner picks them.
 
-_This document is a candidate slate only. Nothing is canon until the owner picks._
+v1 brand names (ANTSY, HEFT, BANGER, VESPERS, SORTIE, BESTIARY, PACKLAW,
+SWITCHFRAME, TOTEMFORGE, KICKFORGE, COLORCORPS, JETWASH, PATCHGANG) were rejected
+by the owner as line brands on 2026-10-09 and are retired from brand use — kept
+in the document history below only.
 
 ---
 
