@@ -32,11 +32,12 @@ import {
  * boxes in a per-slot color so the UI lane can develop against real
  * geometry without waiting on the parts lane.
  *
- * Transformation (racer <-> combat) is an animated ~0.85s sequence:
- * staggered emissive flash + scale pop per part (extremities first,
- * core last), a light pulse and a camera FOV punch. The old part set
- * swaps for the new one at flash peak while the model is washed out,
- * so it reads as a transformation — never a pop-in.
+ * Transformation (racer <-> combat) is a snappy ~0.40s sequence
+ * (WfC-2010 thumbstick-click standard): staggered emissive flash +
+ * scale pop per part (extremities first, core last), a light pulse and
+ * a camera FOV punch. The old part set swaps for the new one at flash
+ * peak while the model is washed out, so it reads as a transformation
+ * — never a pop-in.
  */
 
 export type ViewerBuild = MechBuild | MechModeBuild;
@@ -94,9 +95,9 @@ const STAGGER_ORDER: Slot[] = [
   "torso",
 ];
 
-const TRANSFORM_TOTAL = 0.85; // seconds, per the transform brief
-const TRANSFORM_SWAP_AT = 0.36; // old -> new visibility swap, at flash peak
-const STAGGER_STEP = 0.05; // per-slot delay
+const TRANSFORM_TOTAL = 0.4; // seconds — WfC-2010 snappy standard
+const TRANSFORM_SWAP_AT = 0.17; // old -> new visibility swap, at flash peak
+const STAGGER_STEP = 0.024; // per-slot delay
 const FLASH_PEAK = 2.6; // emissive intensity at full flash
 const POP_SCALE = 0.09; // scale-pop amplitude
 
@@ -377,9 +378,10 @@ export class MechViewer {
   }
 
   /**
-   * Animated transformation to another mode (~0.85s). Parts flash and
-   * pop in a staggered sequence; the old set swaps for the new one at
-   * flash peak while washed out, so it never reads as a pop-in.
+   * Animated transformation to another mode (~0.40s, snappy not
+   * cinematic). Parts flash and pop in a staggered sequence; the old
+   * set swaps for the new one at flash peak while washed out, so it
+   * never reads as a pop-in.
    * With no argument, transforms to the other mode (toggle).
    * Calls chain: a transform started mid-transform waits its turn.
    */
@@ -538,7 +540,7 @@ export class MechViewer {
     if (!job.swapped) {
       // Charge: staggered flash-up + pop on the outgoing parts.
       for (const u of job.oldUnits) {
-        const lt = clamp01((t - u.delay) / 0.32);
+        const lt = clamp01((t - u.delay) / 0.15);
         const e = easeOutCubic(lt);
         const intensity = FLASH_PEAK * e;
         const s = 1 + POP_SCALE * e;
@@ -549,7 +551,7 @@ export class MechViewer {
       // Resolve: staggered flash decay + spring settle on the new parts.
       const nt = t - TRANSFORM_SWAP_AT;
       for (const u of job.newUnits) {
-        const lt = clamp01((nt - u.delay * 0.6) / 0.45);
+        const lt = clamp01((nt - u.delay * 0.6) / 0.21);
         const d = easeOutCubic(lt);
         const intensity = FLASH_PEAK * (1 - d);
         const s = 1 + POP_SCALE * (1 - easeOutBack(lt));
