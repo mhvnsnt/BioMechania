@@ -763,6 +763,14 @@ PARTS = [
  ('ripper-chain','weapon','Ripper Chain','Motor-driven chain bar with hazard teeth.',['racer','combat','breach'],{'armor':1,'speed':7,'power':8,'weight':5},'b_wp_ripper'),
  ('ram-lance','weapon','Ram Lance','Streamlined boost lance with an aero ram head. Racer mode.',['racer','breach'],{'armor':1,'speed':9,'power':6,'weight':4},'b_wp_ramlance'),
  ('pile-spike','weapon','Pile Spike','Piston-driven spike driver. Combat mode.',['combat','breach'],{'armor':3,'speed':4,'power':10,'weight':7},'b_wp_pilespike'),
+ # --- BREACH batch: rage-gated third form, all breach-exclusive ---
+ ('fracture-helm','head','Fracture Helm','Cracked helm split open to vent a breach-glow core, split brow and vent horns. Breach mode.',['breach'],{'armor':8,'speed':3,'power':7,'weight':8},'b_head_fracture'),
+ ('burst-coil','torso','Burst Coil','Siege torso whose chest plating burst open around a glowing coil core. Breach mode.',['breach'],{'armor':9,'speed':3,'power':8,'weight':9},'b_torso_burstcoil'),
+ ('rupture-maul','arm','Rupture Maul','Overbuilt arm with cracked gauntlet plates, a split delt and overdrive pistons. Breach mode.',['breach'],{'armor':8,'speed':3,'power':10,'weight':9},'b_arm_rupture'),
+ ('surge-stomp','leg','Surge Stomp','Heavy leg with cracked greaves, glowing seams and twin drive pistons. Breach mode.',['breach'],{'armor':9,'speed':3,'power':8,'weight':9},'b_leg_surge'),
+ ('fracture-crest','shoulder','Fracture Crest','Jagged crest split by a glowing fault line. Breach mode.',['breach'],{'armor':7,'speed':3,'power':5,'weight':7},'b_sh_fracturecrest'),
+ ('vent-surge','backpack','Vent Surge','Overloaded triple vent stack with cracked shrouds venting breach-glow. Breach mode.',['breach'],{'armor':6,'speed':4,'power':9,'weight':8},'b_pk_ventsurge'),
+ ('core-maul','weapon','Core Maul','Siege maul with a cracked head venting a molten core. Breach mode.',['breach'],{'armor':2,'speed':4,'power':10,'weight':8},'b_wp_coremaul'),
 ]
 
 def main():

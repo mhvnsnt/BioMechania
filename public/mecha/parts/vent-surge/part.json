@@ -1,0 +1,17 @@
+{
+ "id": "vent-surge",
+ "slot": "backpack",
+ "name": "Vent Surge",
+ "description": "Overloaded triple vent stack with cracked shrouds venting breach-glow. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 6,
+  "speed": 4,
+  "power": 9,
+  "weight": 8
+ },
+ "model": "vent-surge.glb",
+ "tris": 920
+}
