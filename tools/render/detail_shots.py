@@ -38,10 +38,19 @@ WEAPON_BUILD_MODE = {
 }
 
 # Warm emitter glow per weapon (sodium edge / drum feed / molten core).
-WEAPON_GLOW = {
-    "scrapblade": (0.75, 0.95, 1.0),   # sodium cutting edge: cold white-cyan
+WEAPON_GLOW = {    "scrapblade": (0.75, 0.95, 1.0),   # sodium cutting edge: cold white-cyan
     "siegeplow": (1.0, 0.45, 0.10),    # drum feed: hot orange
     "core-maul": (1.0, 0.28, 0.06),    # molten core vent: deep orange-red
+}
+
+# Meshes that carry the emitter glow (audited from part GLBs 2026-10-10).
+# Glowing the whole weapon washed every mesh into a flat monochrome
+# silhouette; the brief says EMITTER glowing, so only these meshes glow
+# and the housing keeps its authored detail.
+EMITTER_MESHES = {
+    "scrapblade": ("blade", "edge"),
+    "siegeplow": ("muzzle", "barrel", "drum"),
+    "core-maul": ("core.001",),
 }
 
 
@@ -90,11 +99,17 @@ def _emission_material(name, color, strength):
     return m
 
 
-def _glow_weapon_meshes(info, weapon, strength):
-    """Push the weapon's authored materials toward their emitter glow."""
+def _glow_weapon_meshes(info, weapon, strength, only=None):
+    """Push the weapon's emitter meshes toward their emitter glow.
+
+    only: iterable of mesh-name prefixes to glow (None = all weapon meshes).
+    Names match exactly or with a Blender .NNN duplicate suffix."""
     color = WEAPON_GLOW[weapon]
     seen = set()
     for o in info["slot_meshes"]["weapon"]:
+        if only is not None and not any(
+                o.name == p or o.name.startswith(p + ".") for p in only):
+            continue
         for ms in o.data.materials:
             if ms.name in seen:
                 continue
@@ -129,7 +144,7 @@ def stage_weapon_stow(info, weapon):
 def stage_weapon_warm(info, weapon):
     """W-WARM: emitter glowing, housing open, barrel extending,
     whole-mech flinch."""
-    _glow_weapon_meshes(info, weapon, 2.2)  # 5.0 blew out housing detail; 2.2 glows with detail surviving
+    _glow_weapon_meshes(info, weapon, 2.2, only=EMITTER_MESHES[weapon])
     # Housing open: rotate the weapon anchor slightly out of the mount.
     info["anchors"]["weapon"].rotation_euler = (math.radians(-14), 0, 0)
     # Barrel extending: nudge weapon meshes forward (+Y canonical).
@@ -144,7 +159,7 @@ def stage_weapon_warm(info, weapon):
 
 def stage_weapon_fire(info, weapon):
     """W-FIRE: deployed + firing pose, muzzle/emitter effect, recoil."""
-    _glow_weapon_meshes(info, weapon, 2.8)  # 6.0 blew out weapon detail; muzzle flash carries the heat
+    _glow_weapon_meshes(info, weapon, 2.8, only=EMITTER_MESHES[weapon])  # 6.0 blew out weapon detail; muzzle flash carries the heat
     info["anchors"]["weapon"].rotation_euler = (math.radians(-22), 0, 0)
     for o in info["slot_meshes"]["weapon"]:
         o.location.y += 0.10
