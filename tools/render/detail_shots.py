@@ -49,8 +49,16 @@ WEAPON_GLOW = {    "scrapblade": (0.75, 0.95, 1.0),   # sodium cutting edge: col
 # and the housing keeps its authored detail.
 EMITTER_MESHES = {
     "scrapblade": ("blade", "edge"),
-    "siegeplow": ("muzzle", "barrel", "drum"),
+    "siegeplow": ("muzzle",),
     "core-maul": ("core.001",),
+}
+# Secondary warm (subtle): parts adjacent to the emitter that should read
+# warm but keep their detail. (Barrel/drum at full strength merged into a
+# flat peach log with the muzzle — caught 2026-10-10.)
+EMITTER_MESHES_SOFT = {
+    "scrapblade": (),
+    "siegeplow": ("barrel", "drum"),
+    "core-maul": (),
 }
 
 
@@ -150,6 +158,7 @@ def stage_weapon_warm(info, weapon):
     """W-WARM: emitter glowing, housing open, barrel extending,
     whole-mech flinch."""
     _glow_weapon_meshes(info, weapon, 2.2, only=EMITTER_MESHES[weapon])
+    _glow_weapon_meshes(info, weapon, 0.9, only=EMITTER_MESHES_SOFT[weapon])
     # Housing open: rotate the weapon anchor slightly out of the mount.
     info["anchors"]["weapon"].rotation_euler = (math.radians(-14), 0, 0)
     # Barrel extending: nudge weapon meshes forward (+Y canonical).
@@ -165,6 +174,7 @@ def stage_weapon_warm(info, weapon):
 def stage_weapon_fire(info, weapon):
     """W-FIRE: deployed + firing pose, muzzle/emitter effect, recoil."""
     _glow_weapon_meshes(info, weapon, 2.8, only=EMITTER_MESHES[weapon])  # 6.0 blew out weapon detail; muzzle flash carries the heat
+    _glow_weapon_meshes(info, weapon, 1.0, only=EMITTER_MESHES_SOFT[weapon])
     info["anchors"]["weapon"].rotation_euler = (math.radians(-22), 0, 0)
     for o in info["slot_meshes"]["weapon"]:
         o.location.y += 0.10
