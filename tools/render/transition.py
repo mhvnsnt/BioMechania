@@ -527,8 +527,16 @@ def weapon_warmup(info):
     out = anchor_pos - torso_pos
     out.z = 0.0
     out = out.normalized() if out.length > 1e-6 else Vector((1, 0, 0))
-    dep.location = out * 1.0 + Vector((0, 0.50, 0.60))
+    dep.location = out * 1.0 + Vector((0, 0.50, 1.20))
     dep.rotation_euler = (math.radians(-20), 0, math.radians(-30))
+    bpy.context.view_layer.update()
+    # Safety: keep the deployed weapon above the ground plane (the mount
+    # sits low on the small breach mech; grounding can bury the deploy).
+    wmn2, wmx2 = assemble.mesh_bounds(
+        [o for o in wobjs if o.type == "MESH"])
+    if wmn2.z < 0.25:
+        dep.location.z += (0.25 - wmn2.z)
+        bpy.context.view_layer.update()
     # Warmup glow on the weapon's materials.
     for mt in _obj_materials(wobjs):
         bsdf = mt.node_tree.nodes.get("Principled BSDF") if mt.use_nodes else None
