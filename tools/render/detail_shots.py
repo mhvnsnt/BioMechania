@@ -159,6 +159,32 @@ def stage_weapon_warm(info, weapon):
     whole-mech flinch."""
     _glow_weapon_meshes(info, weapon, 2.2, only=EMITTER_MESHES[weapon])
     _glow_weapon_meshes(info, weapon, 0.9, only=EMITTER_MESHES_SOFT[weapon])
+    if weapon == "core-maul":
+        # The molten core is encased by the chunk armor; crack the chunks
+        # open so the glow reads (this IS the "housing open" beat for the
+        # maul — caught 2026-10-10, core glow was invisible).
+        core = None
+        for o in info["slot_meshes"]["weapon"]:
+            if o.type == "MESH" and (o.name == "core.001"
+                                     or o.name.startswith("core.001.")):
+                core = o
+                break
+        if core is not None:
+            cc = sum((core.matrix_world @ v.co for v in core.data.vertices),
+                     Vector()) / len(core.data.vertices)
+            for o in info["slot_meshes"]["weapon"]:
+                if o.type != "MESH" or not o.name.startswith("chunk"):
+                    continue
+                oc = sum((o.matrix_world @ v.co for v in o.data.vertices),
+                         Vector()) / len(o.data.vertices)
+                d = oc - cc
+                d.z = 0  # keep the head stacked; open radially in XY
+                if d.length < 1e-6:
+                    continue
+                d.normalize()
+                # Move in the object's parent space (approx: world dir is
+                # fine here since the anchor isn't rotated yet).
+                o.location += d * 0.045
     # Housing open: rotate the weapon anchor slightly out of the mount.
     info["anchors"]["weapon"].rotation_euler = (math.radians(-14), 0, 0)
     # Barrel extending: nudge weapon meshes forward (+Y canonical).

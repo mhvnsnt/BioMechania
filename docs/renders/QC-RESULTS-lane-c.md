@@ -39,7 +39,7 @@ per build (proves Device 6 color delta).
 | W-WARM-siegeplow | docs/renders/weapons/W-WARM-siegeplow.png | FAIL→re-render | Re-render (09:53) fixed the shared-material leak (housing keeps detail) but muzzle+barrel+drum ALL glowing at 2.2 merged into one flat peach log — no hot spot reads. Fix: strong glow limited to the muzzle tip only; barrel/drum get a subtle 0.9 warm. Queued for fixup pass. |
 | W-FIRE-siegeplow | docs/renders/weapons/W-FIRE-siegeplow.png | FAIL→re-render | Re-render crashed: to_track_quat('+Z','Y') raised ValueError (Blender wants 'Z' not '+Z') — 10-second silent fail, no PNG. Fixed to to_track_quat('Z','Y') and verified headless. Will re-render in this pass (batch continues past it). |
 | W-STOW-core-maul | docs/renders/weapons/W-STOW-core-maul.png | PENDING | |
-| W-WARM-core-maul | docs/renders/weapons/W-WARM-core-maul.png | PENDING | |
+| W-WARM-core-maul | docs/renders/weapons/W-WARM-core-maul.png | FAIL→re-render | The molten core (core.001) is fully encased by the chunk armor — the 2.2 glow was invisible from outside (4x zoom of maul head shows no orange). Fix: WARM now cracks the 6 chunk meshes radially open 0.045 (this IS the 'housing open' beat for the maul), revealing the glowing core. Queued for fixup pass. |
 | W-FIRE-core-maul | docs/renders/weapons/W-FIRE-core-maul.png | PENDING | |
 | C-SOUL (scout) | docs/renders/scout/C-SOUL.png | PENDING | contact sheet, 3 modes |
 | C-ZONE (scout) | docs/renders/scout/C-ZONE.png | PENDING | contact sheet, 3 modes |
