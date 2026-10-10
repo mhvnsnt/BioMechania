@@ -263,6 +263,18 @@ franchise, brand, or trademark hits; generic military word. Cleared.
 - **OVERSHOOT** — the frame that always goes too far — and lands it. Check: original. Cleared.
 - **MOBILEFRAME** (r1) — winks at "mobile suit" directly. Cleared with caution (closest to the inspiration line of the slate).
 - **BEAMJOCKEY** (r1) — beam weapons + the pilot's nickname. Cleared.
+- **COUNTERFIRE** (r2) — counter-battery marksman; shoots your shot out of the air. FLAG for owner: Warhammer 40K has a "Counterfire Defence System" (a Tau support system, not a character; different medium, no individual named Counterfire). Owner call.
+- **MORTARJACK** (r2) — walking indirect fire; the sky does the shooting. Check: no character hits. Cleared.
+- **IRONRATION** (r2) — the ration-frame; runs on fumes, fights on empty. Check: no character hits. Cleared.
+- **POWDERJACK** (r2) — the powder hand; every fight starts with a bang. Check: no character hits. Cleared (renamed off BRASSJACK, near-duplicate of COLDIRON batch pick SPENTBRASS).
+- **BELTFED** (r2) — never eats alone; the belt never ends. Check: no character hits. Cleared (renamed off DRUMMAG, near-duplicate of CONTRAIL's DRUMFIRE).
+- **CANISTER** (r2) — the tin frame; empty until the fight fills it. Check: no mech character; nearest is an obscure art-character "Canister the Robot" (different medium). Cleared.
+- **FIRELANE** (r2) — the kill-corridor; walk the lane, lose the match. Check: no mech character; only unrelated alias/property usage. Cleared.
+- **BREECH** (r2) — opens at the worst moment; the gun is never unloaded. Check: no character hits. Cleared.
+- **MUZZLEJACK** (r2) — eats from the muzzle; the last thing rivals see. Check: no character hits. Cleared.
+- **FRAGJACK** (r2) — the shrapnel spreader; shares the pain equally. Check: no character hits. Cleared.
+- **BUNKERJACK** (r2) — the concrete frame; dug in, not getting moved. Check: no character hits. Cleared.
+- **CASINGJACK** (r2) — the spent-shell scavenger; throws the whole war back. Check: no character hits. Cleared (renamed off SHELLJACK, near-duplicate of STAMPEDE batch pick SHELLGAME).
 
 Dropped: WINGNUT (TMNT character Wingnut) → final RIVETWING (Zoids line, weak hits
 only, flagged). SMOKESCREEN (official TF Autobot Smokescreen) → POPSMOKE (the late
@@ -270,7 +282,10 @@ rapper Pop Smoke dominates the name) → final SMOKEOUT. BACKBLAST (official TF
 Cybertron Mini-Con Backblast) → final OVERPRESSURE. TREADHEAD (TF fan-continuity
 character + expired LEGO Ideas mech) → TRACKRAT (real USPTO record, cancelled 2020
 — a USPTO hit is a USPTO hit) → final TRACKHOUND. CORDITE (CoD: Mobile SMG
-"Cordite") → final BALLISTITE.
+"Cordite") → final BALLISTITE. r2 drops: SUPPRESSOR (exact TF character + ARCHECORE
+figure), SHRAPNEL (established TF Insecticon Shrapnel), FLAK (established TF
+Autobot Flak), SHRAPNELJACK (rooted in TF's Shrapnel), TRENCHFOOT (TF: Earth Wars
+Autobot Trenchfoot), FOXHOLE (Siege Camp's MMO + relic-mech line; trademark).
 
 ---
 
@@ -300,6 +315,18 @@ Cleared.
 - **FANGBACK** (r1) — fangs on the back, bite in the chassis. Cleared.
 - **HOWLER** (r1) — wolf-pack animal zoid. Cleared.
 - **CHOMPION** (r1) — chomps its way to champion. Cleared.
+- **CLAWLOCK** (r2) — talon-grappler; hooks in, never lets go. Check: no character hits; distinct from TF's Chainclaw. Cleared.
+- **TALONLOCK** (r2) — the other talon-grappler; two hooks beat one. Check: no character hits. Cleared.
+- **DIVEBOMB** (r2) — dives beak-first; the beak always survives. Check: no character hits. Cleared (renamed off BEAKFIRST, near-duplicate of batch pick BEAKPOINT).
+- **PACKLASH** (r2) — the pack's lash; the whole herd turns with it. Check: no character hits. Cleared.
+- **HERDMENTALITY** (r2) — the mob frame; stampedes whatever it follows. Check: no character hits. Cleared.
+- **PRIDEHUNT** (r2) — the hunt-leader; the pride eats what it catches. Check: no character hits. Cleared.
+- **DREADMAW** (r2) — the dread maw; the roar ends fights. Check: no character hits. Cleared.
+- **MAMMOTHPLOW** (r2) — mammoth-frame; plows the whole arena. Check: no character hits. Cleared.
+- **RUTTED** (r2) — the rut-frame; breeding-season mean, all year. Check: no character hits. Cleared.
+- **TUSKRAIL** (r2) — the tusk-runner; gores on the way past. Check: no character hits. Cleared.
+- **MOONBARK** (r2) — the night caller; its bark empties the stands. Check: no character hits. Cleared (renamed off HOWLHOLLOW, near-duplicate of batch pick HOWLER).
+- **POUNCEJACK** (r2) — the pounce frame; lands on you before the bell. Check: no character hits. Cleared.
 
 Dropped: SNARLTOOTH (WoW NPC "Snarltooth") → SNARLFANG (Games Workshop Snarlfang
 Riders + MTG "Snarlfang Vermin") → FANGBARE (near-duplicate of FANGBACK) → GNASH
@@ -330,9 +357,21 @@ batch. Cleared.
 - **GAPE** — jaws locked open; the mouth is the whole game plan. Check: zero hits for the name at all. Cleared.
 - **DENRAID** — home-invasion frame; hits you where you sleep. Check: original. Cleared.
 - **PACKMOTHER** — the den's enforcer; hurt one of hers and find out. Check: original. Cleared.
+- **BLOODLINE** (r2) — the bloodline alpha; hunts like its ancestors taught it. Check: no mech character; TF's "Energon bloodline" is a toyline gimmick, not a character. Cleared.
+- **RABID** (r2) — the rabid frame; foam and fury. Check: no character hits. Cleared.
+- **FLESHWOUND** (r2) — the flesh-wound frame; bleeding is its warmup. Check: no character hits. Cleared.
+- **GOREHOUND** (r2) — the gore-hound; follows the scent of the win. Check: no character hits. Cleared.
+- **SNARLPIT** (r2) — the snarl-pit; every fight ends at the bottom. FLAG for owner: shares root with TF Dinobot Snarl (different name, distinct compound). Owner call.
+- **TERRITORY** (r2) — the territorial; the whole ring is its den. Check: no character hits. Cleared.
+- **SKINTEETH** (r2) — the skin-teeth frame; grins with all of them. Check: no character hits. Cleared.
+- **EATFIRST** (r2) — eats first, fights after; never skips a meal. Check: no character hits. Cleared.
+- **RUNTPICK** (r2) — the runt that picks giants. Check: no character hits. Cleared.
+- **ALPHATAKE** (r2) — takes the alpha's spot; the pack follows. Check: no character hits. Cleared.
+- **BLOODMOON** (r2) — the blood-moon hunter; hunts best when it's red. Check: no character hits. Cleared.
+- **BARETEETH** (r2) — bares teeth first; negotiations over. Check: no character hits. Cleared.
 
 Dropped: GONEFERAL (announced 2026 video game "Gone Feral," in Steam playtest) →
-final OFFTHECHAIN. CARRION (2020 video game "Carrion") → final OFFAL.
+final OFFTHECHAIN. CARRION (2020 video game "Carrion") → final OFFAL. No r2 drops — all 12 r2 candidates cleared.
 
 ---
 
@@ -363,8 +402,23 @@ generic word. Cleared.
 - **TRANSMORPH** (r1) — transforms and morphs; the MDickie formula applied directly. Cleared.
 - **SHIFTWORK** (r1) — shifts form like it's clocking in. Cleared.
 - **BELTDRIVE** (r1) — belts and pulleys moving the transformation along. Cleared.
+- **DOUBLECLUTCH** (r2) — the double-clutcher; shifts twice per fight. Check: no character hits. Cleared.
+- **HYBRIDJACK** (r2) — the hybrid-jacker; runs both modes at once. Check: no character hits. Cleared.
+- **HALFWAY** (r2) — never finishes a shift; doesn't need to. Check: no character hits. Cleared.
+- **TURNJACK** (r2) — the turn-jacker; hijacks the other mode. Check: no character hits. Cleared (replaces SWITCHBLADE — official TF Decepticon Switchblade, G1 + Prime; also renamed off TRANSJACK, near-duplicate of TRANSMORPH).
+- **SPLITSHIFT** (r2) — splits the shift; both halves hit. Check: no character hits. Cleared (renamed off HALFSHIFT, near-duplicate of HALFWAY).
+- **MODESLIP** (r2) — slips modes like gears; slides through guards. Check: no character hits. Cleared.
+- **SWAPJACK** (r2) — swaps mid-swing; the jack is the whole trick. Check: no character hits. Cleared.
+- **MIDSHIFT** (r2) — mid-shift fighter; punches during the change. Check: no character hits. Cleared.
+- **HALFBREED** (r2) — the half-breed frame; two modes, one grudge. Check: no character hits. Cleared.
+- **CROSSSHIFT** (r2) — cross-shifts on the move; never in neutral. Check: no character hits. Cleared (replaces HALFTRACK — official TF G1 Decepticon Micromaster Half-Track).
+- **PHASEJACK** (r2) — the phase-jacker; steals your other form. Check: no character hits. Cleared (renamed off MODEJACK, near-duplicate of MODESLIP).
+- **SPROCKETJACK** (r2) — the sprocket-jacker; your transmission is his trophy. Check: no character hits. Cleared (renamed off GEARJACK, near-duplicate of GEARGRIND).
 
-Dropped: GRIDLOCK (IDW Transformers character, War's End #1–4).
+Dropped: GRIDLOCK (IDW Transformers character, War's End #1–4). r2 drops:
+SWITCHBLADE (official TF Decepticon, G1 Marvel UK + Transformers: Prime) →
+final TURNJACK; HALFTRACK (official TF G1 Decepticon Micromaster Half-Track) →
+final CROSSSHIFT.
 
 ---
 
