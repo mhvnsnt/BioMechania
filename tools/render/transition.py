@@ -517,16 +517,17 @@ def weapon_warmup(info):
     assemble.parent_keep(dep, anchor)
     for o in wobjs:
         assemble.parent_keep(o, dep)
-    # Deploy: the weapon swings out and up, clear of the body — a hero
-    # moment, not a subtle shift. Outward = horizontal direction from torso
-    # center to the weapon anchor, plus forward and up.
+    # Deploy: the weapon swings out, forward, and up, tilting like it's
+    # being raised for a strike — a hero moment, not a subtle shift.
+    # (A Z-spin alone is invisible on this Z-aligned weapon; the X-tilt
+    # sells the raise.)
     anchor_pos = anchor.matrix_world.translation.copy()
     torso_pos = info["torso_anchor"].matrix_world.translation.copy()
     out = anchor_pos - torso_pos
     out.z = 0.0
     out = out.normalized() if out.length > 1e-6 else Vector((1, 0, 0))
-    dep.location = out * 0.60 + Vector((0, 0.25, 0.30))
-    dep.rotation_euler = (0, 0, math.radians(-45))
+    dep.location = out * 0.50 + Vector((0, 0.35, 0.40))
+    dep.rotation_euler = (math.radians(-20), 0, math.radians(-30))
     # Warmup glow on the weapon's materials.
     for mt in _obj_materials(wobjs):
         bsdf = mt.node_tree.nodes.get("Principled BSDF") if mt.use_nodes else None
