@@ -169,9 +169,14 @@ function collectAnimMaterials(root: THREE.Object3D): AnimMaterial[] {
   return out;
 }
 
+<<<<<<< HEAD
 /** Next mode in MODES order (wraps) — the N-mode transform cycle. Exported
  * so the UI lane's Transform button follows the same cycle as the viewer. */
 export function nextMode(mode: MechMode): MechMode {
+=======
+/** Next mode in MODES order (wraps) — the N-mode transform cycle. */
+function nextMode(mode: MechMode): MechMode {
+>>>>>>> d697473 (Mecha contract v2: N-mode schema + rage-gated breach mode)
   const i = MODES.indexOf(mode);
   return MODES[(i + 1) % MODES.length];
 }
