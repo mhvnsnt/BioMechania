@@ -63,3 +63,6 @@ per build (proves Device 6 color delta).
 | C-SOUL-scout-racer | docs/renders/contact/soul-scout-racer.png | PASS | Tight soul face-plate; twin optics + mouth grille; racer teal. Antenna_tip verified as authored part. |
 | C-SOUL-scout-combat | docs/renders/contact/soul-scout-combat.png | PASS | Soul face-plate constant vs racer (twin optics identical); combat orange accents on surroundings. Constancy proven. |
 | C-SOUL-scout-breach | docs/renders/contact/soul-scout-breach.png | PASS | Soul face-plate constant vs racer/combat; breach bulk around it. Constancy proven. |
+
+| C-ZONE-scout-racer | docs/renders/contact/zone-scout-racer.png | PASS | M-2 ortho side profile; racer teal color identity reads clearly. Framing slightly tight at head but fit for purpose. |
+| C-ZONE-scout-combat | docs/renders/contact/zone-scout-combat.png | PASS | M-2 ortho side profile; combat orange color identity reads clearly. |
