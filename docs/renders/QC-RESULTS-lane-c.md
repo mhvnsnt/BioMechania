@@ -45,7 +45,7 @@ per build (proves Device 6 color delta).
 | C-ZONE (scout) | docs/renders/scout/C-ZONE.png | PENDING | contact sheet, 3 modes |
 | C-SOUL (bruiser) | docs/renders/bruiser/C-SOUL.png | PENDING | contact sheet, 3 modes |
 | C-ZONE (bruiser) | docs/renders/bruiser/C-ZONE.png | PENDING | contact sheet, 3 modes |
-| T-FRONT (scout) | docs/renders/scout/T-FRONT-combat.png | PENDING | |
+| T-FRONT (scout) | docs/renders/scout/T-FRONT-combat.png | PASS | Clean front turnaround, neutral pose, full body framed with margins, combat mode identity, siegeplow mounted. Symmetric, no defects. |
 | T-SIDE (scout) | docs/renders/scout/T-SIDE-combat.png | PENDING | |
 | T-BACK (scout) | docs/renders/scout/T-BACK-combat.png | PENDING | |
 | T-FRONT (bruiser) | docs/renders/bruiser/T-FRONT-combat.png | PENDING | |
@@ -54,7 +54,7 @@ per build (proves Device 6 color delta).
 | D-CRACK (scout) | docs/renders/scout/D-CRACK-combat.png | PASS | Re-rendered with stronger cracks (0.07 displacement, 450 lamp): plate separations visible at torso/pelvis with warm under-glow leaking through (4x zoom confirms gaps + orange light). Reads as cracked plating. |
 | D-WRECK (scout) | docs/renders/scout/D-WRECK-combat.png | FAIL→re-render | Real defect: the destroyed arm (x>0) was hidden but the WEAPON mounted on it was not — siegeplow floated detached in mid-air (4x zoom of mount area). Fix: stage_damage_wreck now hides the "weapon" slot too. Queued for fixup pass. |
 | D-CRACK (bruiser) | docs/renders/bruiser/D-CRACK-combat.png | PENDING | |
-| D-WRECK (bruiser) | docs/renders/bruiser/D-WRECK-combat.png | PENDING | |
+| D-WRECK (bruiser) | docs/renders/bruiser/D-WRECK-combat.png | PASS | Head/shoulders/one arm hidden (destroyed); weapon hidden with the destroyed arm (no floating parts — fix verified); hot under-glow on legs; 4° list. Reads as 35%-hull wreck. |
 
 ## Proof sheet
 
