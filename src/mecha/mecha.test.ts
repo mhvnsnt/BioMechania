@@ -381,6 +381,7 @@ describe("stat aggregation", () => {
       modes: {
         racer: { ...DEFAULT_BUILD.modes.racer, torso: "x" },
         combat: DEFAULT_BUILD.modes.combat,
+        breach: DEFAULT_BUILD.modes.breach,
       },
       transform: DEFAULT_BUILD.transform,
     };
