@@ -19,9 +19,9 @@ SHOTS=(
   "W-STOW-siegeplow|docs/renders/weapons/W-STOW-siegeplow.png"
   "W-WARM-siegeplow|docs/renders/weapons/W-WARM-siegeplow.png"
   "W-FIRE-siegeplow|docs/renders/weapons/W-FIRE-siegeplow.png"
-  "W-STOW-coremaull|docs/renders/weapons/W-STOW-coremaull.png"
-  "W-WARM-coremaull|docs/renders/weapons/W-WARM-coremaull.png"
-  "W-FIRE-coremaull|docs/renders/weapons/W-FIRE-coremaull.png"
+  "W-STOW-core-maul|docs/renders/weapons/W-STOW-core-maul.png"
+  "W-WARM-core-maul|docs/renders/weapons/W-WARM-core-maul.png"
+  "W-FIRE-core-maul|docs/renders/weapons/W-FIRE-core-maul.png"
   # damage
   "D-CRACK-scout|docs/renders/scout/D-CRACK-combat.png"
   "D-WRECK-scout|docs/renders/scout/D-WRECK-combat.png"
