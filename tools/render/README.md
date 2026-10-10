@@ -145,3 +145,10 @@ name; the final rename pass applies his picks. Part ids are unchanged.
 4. `src/mecha/parts.ts` `DEFAULT_BUILD.breach` still points at the
    bruiser set (stale placeholder comment) — the pipeline uses the
    7 breach-exclusive parts per the task brief.
+5. **FIXED 2026-10-09 — surge-stomp floating feet**: the breach legs'
+   feet had a 0.21-unit gap to the shins with no connecting geometry
+   (caught in the M-1-breach smoke shot). Fixed in
+   `tools/mecha-parts/build_parts.py` (`b_leg_surge`: twin ankle
+   pistons shin→foot, same piston language as the knees) and the GLB
+   regenerated (`PART_ONLY=surge-stomp`). Per Device 10 this was filed
+   as a part defect, not a render defect.
