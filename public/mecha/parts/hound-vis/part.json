@@ -1,18 +1,19 @@
 {
- "id": "hound-vis",
- "slot": "head",
- "name": "Hound Visor",
- "description": "Bestial cowl with a wide hazard visor slit, riveted brow and exhaust nostrils.",
- "modes": [
-  "racer",
-  "combat"
- ],
- "stats": {
-  "armor": 4,
-  "speed": 7,
-  "power": 4,
-  "weight": 4
- },
- "model": "hound-vis.glb",
- "tris": 878
+  "id": "hound-vis",
+  "slot": "head",
+  "name": "Hound Visor",
+  "description": "Bestial cowl with a wide hazard visor slit, riveted brow and exhaust nostrils.",
+  "modes": [
+    "racer",
+    "combat",
+    "breach"
+  ],
+  "stats": {
+    "armor": 4,
+    "speed": 7,
+    "power": 4,
+    "weight": 4
+  },
+  "model": "hound-vis.glb",
+  "tris": 878
 }

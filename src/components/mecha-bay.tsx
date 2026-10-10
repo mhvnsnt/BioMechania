@@ -36,6 +36,12 @@ import {
   type StoredMech,
 } from "@/mecha/storage";
 
+const MODE_LABELS: Record<MechMode, string> = {
+  racer: "Racer",
+  combat: "Combat",
+  breach: "Breach",
+};
+
 const SLOT_LABELS: Record<Slot, string> = {
   head: "Head",
   torso: "Torso",
@@ -50,6 +56,7 @@ const TRIGGER_LABELS: Record<TransformTrigger, string> = {
   manual: "Manual — transform on command",
   meter_full: "Meter full — auto-transforms when the boost meter fills (meter is consumed)",
   damage_threshold: "Damage threshold — auto-transforms when hull drops to the threshold",
+  breach_rage: "Breach rage — auto-transforms to the Breach form when rage charge fills",
 };
 
 /** Bar scales: fixed so builds compare stably as parts change. */

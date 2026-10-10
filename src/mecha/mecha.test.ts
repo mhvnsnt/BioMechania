@@ -52,7 +52,7 @@ function mockPart(
   speed: number,
   power: number,
   weight: number,
-  modes: MechMode[] = ["racer", "combat"],
+  modes: MechMode[] = ["racer", "combat", "breach"],
 ): PartManifest {
   return {
     id,
@@ -82,7 +82,7 @@ function mockRegistry(): PartRegistry {
     ["legs-bruiser", "legs", 11, 8, 5, 10],
     ["shoulders-bruiser", "shoulders", 8, 1, 3, 6],
     ["backpack-bruiser", "backpack", 6, 4, 6, 8],
-    ["weapon-siegeplow", "weapon", 3, 0, 15, 9, ["combat"]],
+    ["weapon-siegeplow", "weapon", 3, 0, 15, 9, ["combat", "breach"]],
   ];
   const parts: Record<string, PartManifest> = {};
   for (const [id, slot, armor, speed, power, weight, modes] of defs) {
@@ -150,9 +150,9 @@ describe("part manifest schema", () => {
     model: "head-test.glb",
   };
 
-  it("accepts a valid manifest and defaults modes to both", () => {
+  it("accepts a valid manifest and defaults modes to all MODES", () => {
     const part = parsePartManifest(JSON.stringify(base));
-    assert.deepEqual(part.modes, ["racer", "combat"]);
+    assert.deepEqual(part.modes, ["racer", "combat", "breach"]);
   });
 
   it("accepts a mode-exclusive part", () => {
@@ -199,6 +199,8 @@ describe("build schema", () => {
       cost: { meter: 25 },
       cooldownSec: 8,
       damageThresholdPct: 35,
+      autoTargets: { meter_full: "combat", damage_threshold: "breach", breach_rage: "breach" },
+      breachRage: { chargePerDamage: 0.5, entryThreshold: 75, drainPerSec: 12, entryGated: true },
     });
   });
 
@@ -220,6 +222,47 @@ describe("build schema", () => {
         }),
       /trigger/,
     );
+  });
+
+  it("accepts the breach_rage trigger and breaches on it", () => {
+    const build = parseMechBuild({
+      modes: cloneBuild(DEFAULT_BUILD).modes,
+      transform: { trigger: "breach_rage" },
+    });
+    assert.equal(build.transform.trigger, "breach_rage");
+    assert.equal(build.transform.autoTargets.breach_rage, "breach");
+    assert.equal(build.transform.breachRage.entryGated, true);
+  });
+
+  it("requires a part set for every mode in MODES (N-mode, not hardcoded 2)", () => {
+    assert.equal(MODES.length, 3);
+    const build = cloneBuild(DEFAULT_BUILD);
+    // @ts-expect-error - intentionally breaking the shape
+    delete build.modes.breach;
+    assert.throws(() => parseMechBuild(build), /breach/);
+  });
+
+  it("rejects parts in breach that don't list it", () => {
+    const build = cloneBuild(DEFAULT_BUILD);
+    const racerOnly = {
+      ...mockPart("dart-probe", "head", 2, 10, 3, 2, ["racer", "breach"]),
+    };
+    build.modes.breach.head = "dart-probe";
+    const reg = mockRegistry();
+    reg.parts["dart-probe"] = racerOnly;
+    assert.ok(validateBuild(build, reg).ok);
+    const combatOnly = mockPart("siege-maw", "head", 9, 2, 6, 9, ["combat"]);
+    build.modes.breach.head = "siege-maw";
+    reg.parts["siege-maw"] = combatOnly;
+    const v = validateBuild(build, reg);
+    assert.equal(v.ok, false);
+    assert.ok(v.issues.some((i) => i.includes("[breach]") && i.includes("siege-maw")));
+  });
+
+  it("totals the starter breach mode", () => {
+    const lookup = (id: string) => mockRegistry().parts[id];
+    const s = aggregateModeStats(DEFAULT_BUILD.modes.breach, lookup);
+    assert.ok(s.armor > 0 && s.power > 0);
   });
 });
 

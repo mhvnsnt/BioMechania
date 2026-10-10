@@ -26,7 +26,7 @@ import {
  *  - torso is the hierarchy root; every part GLB's origin is its attach point.
  *  - weapon mounts on the right arm part's `socket_weapon_r`,
  *    falling back to the torso's `socket_arm_r`.
- *  - multi-mode builds: { modes: { racer, combat }, transform }.
+ *  - multi-mode builds: { modes: { racer, combat, breach, ... }, transform }.
  *
  * Missing parts (no part.json and no GLB) render as labeled placeholder
  * boxes in a per-slot color so the UI lane can develop against real
@@ -169,6 +169,12 @@ function collectAnimMaterials(root: THREE.Object3D): AnimMaterial[] {
   return out;
 }
 
+/** Next mode in MODES order (wraps) — the N-mode transform cycle. */
+function nextMode(mode: MechMode): MechMode {
+  const i = MODES.indexOf(mode);
+  return MODES[(i + 1) % MODES.length];
+}
+
 export class MechViewer {
   /** Fires after the assembled mode changes (setMode / playTransform). */
   onModeChange: ((mode: MechMode) => void) | null = null;
@@ -296,8 +302,8 @@ export class MechViewer {
 
   /**
    * Load and assemble a full mech. Accepts the multi-mode MechBuild
-   * ({ modes: { racer, combat }, transform }) or a single flat mode
-   * build (used for both modes). Preloads both modes so the first
+   * ({ modes: { racer, combat, breach, ... }, transform }) or a single flat
+   * mode build (used for every mode). Preloads every mode so the first
    * transform swaps instantly.
    */
   async setBuild(build: ViewerBuild): Promise<void> {
@@ -306,7 +312,10 @@ export class MechViewer {
     this.build = isMultiMode(build)
       ? structuredClone(build)
       : {
-          modes: { racer: { ...build }, combat: { ...build } },
+          modes: Object.fromEntries(MODES.map((m) => [m, { ...build }])) as Record<
+            MechMode,
+            MechModeBuild
+          >,
           transform: { ...DEFAULT_TRANSFORM },
         };
     this.activeTransform = null;
@@ -382,11 +391,11 @@ export class MechViewer {
    * cinematic). Parts flash and pop in a staggered sequence; the old
    * set swaps for the new one at flash peak while washed out, so it
    * never reads as a pop-in.
-   * With no argument, transforms to the other mode (toggle).
+   * With no argument, transforms to the next mode in MODES order (cycles).
    * Calls chain: a transform started mid-transform waits its turn.
    */
   playTransform(toMode?: MechMode): Promise<void> {
-    const target: MechMode = toMode ?? (this.mode === "racer" ? "combat" : "racer");
+    const target: MechMode = toMode ?? nextMode(this.mode);
     let resolve!: () => void;
     const done = new Promise<void>((res) => {
       resolve = res;
@@ -484,8 +493,10 @@ export class MechViewer {
 
     const oldUnits = this.buildAnimUnits(oldRoot);
     const newUnits = this.buildAnimUnits(newRoot);
-    // Flash color leans with the destination form: cyan for racer, magenta for combat.
-    const flash = new THREE.Color(toMode === "combat" ? "#ff7ad9" : "#8fe8ff");
+    // Flash color leans with the destination form: cyan for racer, magenta for combat, ember orange for breach.
+    const flash = new THREE.Color(
+      toMode === "combat" ? "#ff7ad9" : toMode === "breach" ? "#ff9046" : "#8fe8ff",
+    );
     for (const u of oldUnits) for (const m of u.mats) m.mat.emissive.copy(flash);
     for (const u of newUnits) for (const m of u.mats) m.mat.emissive.copy(flash);
 
@@ -931,8 +942,7 @@ export class MechViewer {
       "pointer-events:auto;padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;" +
       "letter-spacing:0.06em;color:#fff;background:#2a2f3a;border:1px solid #4a5468;cursor:pointer;";
     btn.addEventListener("click", () => {
-      const other: MechMode = this.mode === "racer" ? "combat" : "racer";
-      void this.playTransform(other);
+      void this.playTransform(nextMode(this.mode));
     });
     overlay.append(badge, btn);
     parent.appendChild(overlay);
@@ -942,24 +952,32 @@ export class MechViewer {
   }
 
   private updateOverlay() {
+    const modeStyle: Record<MechMode, { label: string; bg: string }> = {
+      racer: { label: "RACER", bg: "#8fe8ff" },
+      combat: { label: "COMBAT", bg: "#ff7ad9" },
+      breach: { label: "BREACH", bg: "#ff9046" },
+    };
+    const style = modeStyle[this.mode];
     if (this.modeBadge) {
-      const isRacer = this.mode === "racer";
-      this.modeBadge.textContent = isRacer ? "RACER" : "COMBAT";
-      this.modeBadge.style.background = isRacer ? "#8fe8ff" : "#ff7ad9";
+      this.modeBadge.textContent = style.label;
+      this.modeBadge.style.background = style.bg;
     }
     if (this.transformBtn) {
-      this.transformBtn.textContent = this.mode === "racer" ? "⚡ TO COMBAT" : "⚡ TO RACER";
+      this.transformBtn.textContent = `⚡ TO ${modeStyle[nextMode(this.mode)].label}`;
     }
   }
 
   private setTransformUi(busy: boolean) {
     if (this.transformBtn) {
+      const modeStyle: Record<MechMode, string> = {
+        racer: "RACER",
+        combat: "COMBAT",
+        breach: "BREACH",
+      };
       this.transformBtn.disabled = busy;
       this.transformBtn.textContent = busy
         ? "TRANSFORMING…"
-        : this.mode === "racer"
-          ? "⚡ TO COMBAT"
-          : "⚡ TO RACER";
+        : `⚡ TO ${modeStyle[nextMode(this.mode)]}`;
       this.transformBtn.style.opacity = busy ? "0.55" : "1";
       this.transformBtn.style.cursor = busy ? "wait" : "pointer";
     }

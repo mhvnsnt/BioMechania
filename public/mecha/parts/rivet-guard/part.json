@@ -1,18 +1,19 @@
 {
- "id": "rivet-guard",
- "slot": "shoulders",
- "name": "Rivet Guard",
- "description": "Riveted plate guard with a scrap skirt.",
- "modes": [
-  "racer",
-  "combat"
- ],
- "stats": {
-  "armor": 6,
-  "speed": 4,
-  "power": 3,
-  "weight": 6
- },
- "model": "rivet-guard.glb",
- "tris": 1084
+  "id": "rivet-guard",
+  "slot": "shoulders",
+  "name": "Rivet Guard",
+  "description": "Riveted plate guard with a scrap skirt.",
+  "modes": [
+    "racer",
+    "combat",
+    "breach"
+  ],
+  "stats": {
+    "armor": 6,
+    "speed": 4,
+    "power": 3,
+    "weight": 6
+  },
+  "model": "rivet-guard.glb",
+  "tris": 1084
 }
