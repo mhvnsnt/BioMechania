@@ -225,7 +225,7 @@ def stage_damage_crack(info):
         if d.length < 1e-6:
             d = Vector((0, 1, 0))
         d.normalize()
-        o.location += d * 0.045
+        o.location += d * 0.07  # 0.045 was unreadable at 1280x720; cracks must read
         cracked.append(o.name)
     bpy.context.view_layer.update()
 
@@ -234,7 +234,7 @@ def stage_damage_crack(info):
                              location=(0, 0.1, info["sock"]["socket_head"].z * 0.55))
     lamp = bpy.context.active_object
     lamp.name = "fx_crack_glow"
-    lamp.data.energy = 260
+    lamp.data.energy = 450  # 260 was too subtle; under-glow must be visible
     lamp.data.color = (1.0, 0.38, 0.10)
     return {"staged": f"cracked plates {cracked} + crack under-glow"}
 
@@ -244,7 +244,9 @@ def stage_damage_wreck(info, soul):
     (destroyed), hot under-glow, slight list. Maximum restraint release
     short of full breach."""
     hidden = []
-    for slot in ("head", "shoulders"):
+    # The weapon rode on the destroyed arm — hide it too, or it floats
+    # detached in mid-air (caught 2026-10-10 in D-WRECK-scout QC).
+    for slot in ("head", "shoulders", "weapon"):
         for o in info["slot_meshes"][slot]:
             o.hide_render = True
             o.hide_viewport = True
@@ -289,7 +291,11 @@ def assemble_common(build, mode, parts_dir):
 
 
 def render_weapon(shot, out):
-    weapon = shot.rsplit("-", 1)[1].lower()
+    # shot = W-<STATE>-<weapon>; weapon itself may contain hyphens (core-maul),
+    # so strip the W-<STATE>- prefix rather than splitting on the last hyphen.
+    # (rsplit("-",1) parsed "core-maul" as "maul" -> KeyError, crashing all 3
+    # core-maul shots; found 2026-10-10 during batch.)
+    weapon = "-".join(shot.split("-")[2:]).lower()
     state = shot.split("-")[1]
     build, mode, _pid = WEAPON_BUILD_MODE[weapon]
     info, _soul = assemble_common(build, mode, None)
