@@ -54,13 +54,28 @@ mech-franchise use, no live trademark found. Cleared.
 - **NIMBLEJACK** (r1) — nimble + jack; quick and scrappy. Cleared.
 - **DARTJACK** (r1) — darts in, jacks the objective, darts out. Cleared.
 - **ZIGJACK** (r1) — zigs when it should zag; evasive recon mover. Cleared.
+- **SKITTLISH** (r2) — skitters sideways at the smell of a fair fight. Check: no mech character. Cleared.
+- **BURROWJACK** (r2) — digs in, pops up where you aren't. Check: no mech character. Cleared.
+- **ANTENNAE** (r2) — two whiskers, sees everything, trusts nothing. Check: no mech character. Cleared.
+- **WHIPTAIL** (r2) — lashes its tail, hits, and is already gone. Check: only a Transformers Cybertronian name-adjacent word, no character; no live mech franchise use. Cleared.
+- **PESTERJACK** (r2) — latches on and doesn't let go. Check: no mech character. Cleared.
+- **CRAWLSPACE** (r2) — fits where bullets don't. Check: no mech character. Cleared.
+- **TICKTACK** (r2) — click-click, then it's past you. Check: light caution — unrelated robot/game usage + "General TickTack" exist; no mech-franchise character. Cleared with caution.
+- **WISPWING** (r2) — moth-light wings, moves like a held breath. Check: light caution — existing fantasy-game pet usage; no mech character. Cleared with caution.
+- **MOTHDUST** (r2) — scatters dust-scales that choke sensors. Check: caution — "Mothdust Changeling" is an existing Magic card; no mech character. Cleared with caution.
+- **SWARMJACK** (r2) — one jack, many stings. Check: no mech character. Cleared.
+- **COCOONJACK** (r2) — armored up tight, waits for its moment. Check: no mech character. Cleared.
+- **NESTJACK** (r2) — digs in where the brood needs it. Check: no mech character. Cleared.
 
 Dropped: SCUTTLE (fan Transformers OC + SCUTTLE open-source robot kit), WHIRR (one
 letter off TF Whirl), SCURRY (Fallout Tactics "scurry robot"), CRITTER
 (Critter-TEK BattleTech parody), CLATTER (Facepunch robot-battle game "Clatter"),
 FIDGET (Inspector Gadget robot), SCAMPER (G1 Transformers), MITE (BattleTech
 MTE-12C recon 'Mech — and also recon), SKIRMISH (War Robots VR: The Skirmish),
-SPYGLASS (G1 TF Reflector member), BLIP (BattleBots heavyweight). Held (not
+SPYGLASS (G1 TF Reflector member), BLIP (BattleBots heavyweight). r2 drops:
+FUZZBUZZ (active toy/character branding), SCUTTLEBUG (Super Mario enemy +
+combat robot), DANDER (too close to Combat-Mecha Dangar), CHIRRUP
+(existing robot-ecologist company/product). Held (not
 dropped): CHITTER — search-clean but rhymes with SKITTER; owner-call alternate.
 
 ---
@@ -89,10 +104,29 @@ clean. Cleared.
 - **SIEGEPIG** (r1) — stubborn, armored, smashes walls. Cleared.
 - **BEASTCHASSIS** (r1) — all frame, no finesse. Cleared.
 - **CRUSHBOAR** (r1) — charges and crushes; boar energy. Cleared.
+- **CRUSHCAKE** (r2) — dessert name, demolition appetite. Check: no exact mech/robot character collision. Cleared.
+- **THUMPJACK** (r2) — knocks twice, the wall comes down. Check: no exact collision found. Cleared.
+- **IRONPOUND** (r2) — sixteen ounces of bad news per swing. Check: no exact collision found. Cleared.
+- **POWERPRESS** (r2) — slow hydraulic hug you can't survive. Check: no exact character collision surfaced. Cleared.
+- **PILEON** (r2) — drives the point home. Hard. Check: no exact character collision surfaced. Cleared.
+- **MAULJACK** (r2) — takes a bite out of everything it grabs. Check: no exact hit — FLAG: "Mauler" occupied by BattleBots/BattleTech, RoboJack exists. Cleared with flag.
+- **POUNDDRIVER** (r2) — swings like the whole arena is a nail. Check: no exact hit — FLAG: close semantic collision with Transformers' Groundpounder. Cleared with flag.
+- **SLAMJACK** (r2) — body-slams the whole conversation. Check: only an AI-generated art prompt, no named character. Cleared.
+- **STOMPJACK** (r2) — the floor is a weapon. Check: no "Stompjack" character (Stompy, Robo Stomp are different). Cleared.
+- **CRUNCHJACK** (r2) — makes confetti out of car doors. Check: no character hits. Cleared.
+- **WALLJACK** (r2) — walks through them, names them, moves on. Check: no character hits. Cleared.
+- **THUDJACK** (r2) — the sound it makes when it lands on you. Check: no character hits. Cleared.
 
 Dropped: GRIT (brand — "Grit and Valor - 1949" mech game + Advance Wars CO),
 SLOGG (brand — one letter off TF Slog), TIMBER (half of BattleTech's "Timber
 Wolf"), CINDERBLOCK (Teen Titans Go! villain is literally named Cinderblock).
+r2 drops: SLAMWICH, SLEDGEPOP, CLOBBERJACK, DOZERJACK, BRAWLSTACK, MEATWALL,
+FLATJACK, BEDROCK, WRECKON, THRASHJACK, HEAVEJACK, MASHJACK (weak/generic or
+franchise-adjacent), PILEDRIVER (Transformers-adjacent via Rumble's piledrivers),
+GRINDJACK (exact TF/Adventure Time crossover fan-character), RAMJACK (direct
+"Ram-Jack" fighting-machine collision + long-running podcast), LIFTJACK
+(literal lift-jack products + Wheeljack adjacency), HEADJACK (occupied: Matrix
+term + headjack.ai product).
 Backup brands (owner-call): THUD (clean), LUMBER (flagged: Helldivers 2 EXO-51
 'Lumberer' exosuit is close).
 
@@ -124,6 +158,18 @@ mech/franchise names and trademarks; clean. Cleared.
 - **SPEEDBUMP** — small, slows down everything. Check: "Speedbump" is a third-party Trailbreaker alias + Speedbump Studios; no official franchise character. Cleared with note.
 - **SHAKEDOWN** — rattles you apart. Check: clean. Cleared.
 - **YIELD** — never does. Check: clean. Cleared.
+- **BUMPERTHUMP** (r2) — parks, then parks you into the wall. Check: no exact collision surfaced. Cleared.
+- **PRANG** (r2) — British smash, royal crash. Check: no exact mech/robot collision surfaced. Cleared.
+- **GUARDRAIL** (r2) — the last thing you hit before the barrier. Check: no exact fictional mech character; caution — generic software term. Cleared with caution.
+- **BACKSEAT** (r2) — nobody wants it, everybody fears it. Check: no exact robot character; weak — generic, used by Backseat Gaming. Cleared with caution.
+- **GRILLEGARD** (r2) — teeth-first traffic enforcer. Check: no exact collision surfaced. Cleared.
+- **FENDERWHACK** (r2) — whacks fenders like a drum kit. Check: no exact hit — caution: "Fender" is a prominent robot character in Robots (2005). Cleared with caution.
+- **PRANGJACK** (r2) — one prang, two prangs, red flag. Check: no character hits. Cleared.
+- **DENTJACK** (r2) — leaves a dent in your day. Check: no character hits. Cleared.
+- **CRASHJACK** (r2) — arrives crashing. Check: no character hits. Cleared.
+- **RUSTJACK** (r2) — rusted shut around your exhaust. Check: no character hits. Cleared.
+- **TAILPIPEJACK** (r2) — breathes fire, eats bumpers. Check: FLAG — GoBots (1985, Tonka) has a Guardian robot named "Tail Pipe" (Guardian Robot Race Car, ID 057); TAILPIPEJACK is an original compound but phonetically adjacent. Owner call.
+- **JUNKJACK** (r2) — the junkyard's favorite son. Check: FLAG — Xiaolin Showdown has "Junk-Bots" (Jack Spicer's junk robots), Real Steel's "JunkR"; JUNKJACK is a distinct compound. Owner call.
 
 Dropped: T-BONE (Robot Wars Series 5 "T-Bone"), HUBCAP (G1 TF Autobot), BACKFIRE
 (TF character, G1 Marvel + movieverse), OILSLICK (TF Animated Decepticon + Botbots
@@ -131,7 +177,13 @@ faction), CRUMPLEZONE (TF: Cybertron Decepticon), RUMBLESTRIP (cut on
 no-near-duplicates vs SPIKESTRIP + TF-adjacency), DONUT (Simpsons: Tapped Out
 "Donut Mech"), DIPSTICK (TF Targetmaster), CLUNKER (brand — "clanker" viral robot
 slur risk), JALOPY (brand — existing driving game), PILEUP (brand — Steam game
-"Pile Up!"). Backup brand: HOOPTIE (clean, owner-call).
+"Pile Up!"). r2 drops: CRASHBAR (exact Transformers Legacy Junkion),
+PANELBEATER (exact fan Autobot), DENTPUNCH (exact active TikTok identity),
+OVERSTEER (existing Cubelets robot + FRC robot), DEMOLITIONJACK (existing Paizo
+identity + too adjacent to Tekken's Jack line), TOTALED (title of Transformers
+#41, franchise-adjacent), RUSTCROWN (exact Beyond All Reason map title),
+DENTSMITH (existing auto-repair business + surname usage, weak).
+Backup brand: HOOPTIE (clean, owner-call).
 
 ---
 
@@ -163,10 +215,25 @@ Cleared.
 - **GOSPEL** (r1) — the bootleg-energy wink. Cleared.
 - **HALOBREAKER** (r1) — halo = angel imagery; breaker = what it does to angels. Cleared.
 - **APOCRYPHA** (r1) — non-canonical texts, non-canonical angel. Cleared.
+- **CANTICLE** (r2) — the frame that sings before it strikes. Check: no exact mech character — FLAG: heavily used in science fiction/fantasy and Warhammer terminology. Owner call.
+- **PSALTER** (r2) — prayer-book frame; every plate a verse. Check: no exact mech/robot character surfaced. Cleared.
+- **SELAH** (r2) — the pause in the hymn; stops the fight mid-bar. Check: no mech character — note: existing AI/fantasy chatbot usage in other domains. Cleared with caution.
+- **HOSANNA** (r2) — the loudest voice on the field. Check: no exact mech character; general religious + entertainment usage. Cleared with caution.
+- **DOXOLOGY** (r2) — the closing hymn; ends every bout. Check: no mech character. Cleared.
+- **BENEDICTION** (r2) — blesses the wreckage it leaves. Check: no mech character. Cleared.
+- **TABERNACLE** (r2) — portable sanctuary frame; repairs allies under cover. Check: no mech character (game-store name, RPG-char usage). Cleared with note.
+- **MANNA** (r2) — falls from the sky, feeds the front line. Check: no mech character (NetNavi fan character, biblical word). Cleared with note.
+- **EPHOD** (r2) — gem-plated oracle frame; jeweled command unit. Check: no mech character ("Ephod Quest" is a Christian game, different). Cleared.
+- **VESPERINE** (r2) — dusk-prayer skirmisher; evening bell striker. Check: FLAG — close to Mega Man's Vesper Woman (Robot Master, Archie Comics) + STEEL ASCENT's transforming robot VESPERA. Owner call.
+- **EULOGY** (r2) — speaks well of every mech it buries. Check: no robot/mech character (fanfic title only). Cleared.
+- **MISERERE** (r2) — the penitent frame; suffers so the line doesn't. Check: no mech character collision (Allegri's psalm setting). Cleared.
 
 Dropped: THORNMAIL (League of Legends armor item) → THORNCROWN (Wuthering Waves
 location + 1983 jewelry trademark) → final BRIERCROWN. JUBILEE (X-Men's Jubilee) →
-final SHOFAR.
+final SHOFAR. r2 drops: DIRGE (exact established Transformers character),
+KYRIE (occupied by "Kirie Thought Armor" + other mech/cyborg usages),
+ELEGY (3rd-party TF Dirge figures named "Elegy" — TF-adjacent),
+THRENODY (established Marvel X-Men character).
 
 ---
 
