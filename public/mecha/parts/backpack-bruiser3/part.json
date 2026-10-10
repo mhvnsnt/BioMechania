@@ -1,0 +1,17 @@
+{
+ "id": "backpack-bruiser3",
+ "slot": "backpack",
+ "name": "Pyre Stack",
+ "description": "Central vent stack with a glowing pyre core under cracked shroud chunks. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 12,
+  "speed": 5,
+  "power": 9,
+  "weight": 8
+ },
+ "model": "backpack-bruiser3.glb",
+ "tris": 470
+}

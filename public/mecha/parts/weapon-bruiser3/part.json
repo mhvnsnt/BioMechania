@@ -1,0 +1,17 @@
+{
+ "id": "weapon-bruiser3",
+ "slot": "weapon",
+ "name": "Brand Lance",
+ "description": "Spear with a glowing faceted brand head, vented collar and grooved shaft. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 2,
+  "speed": 5,
+  "power": 10,
+  "weight": 7
+ },
+ "model": "weapon-bruiser3.glb",
+ "tris": 196
+}

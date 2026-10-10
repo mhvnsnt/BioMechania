@@ -1,0 +1,17 @@
+{
+ "id": "head-bruiser2",
+ "slot": "head",
+ "name": "Bulwark Helm",
+ "description": "Heavy angular helm with an offset mono-eye sensor, cheek vents and a grooved crest fin. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 16,
+  "speed": 4,
+  "power": 7,
+  "weight": 9
+ },
+ "model": "head-bruiser2.glb",
+ "tris": 1102
+}

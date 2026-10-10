@@ -1,0 +1,17 @@
+{
+ "id": "shoulders-bruiser2",
+ "slot": "shoulders",
+ "name": "Slab Pauldron",
+ "description": "Asymmetric layered slab pauldrons with panel grooves and rivets. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 15,
+  "speed": 3,
+  "power": 5,
+  "weight": 8
+ },
+ "model": "shoulders-bruiser2.glb",
+ "tris": 940
+}

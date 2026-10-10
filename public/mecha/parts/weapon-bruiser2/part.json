@@ -1,0 +1,17 @@
+{
+ "id": "weapon-bruiser2",
+ "slot": "weapon",
+ "name": "Shear Jaws",
+ "description": "Hydraulic demolition shear with toothed pincer jaws. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 3,
+  "speed": 4,
+  "power": 10,
+  "weight": 8
+ },
+ "model": "weapon-bruiser2.glb",
+ "tris": 490
+}
