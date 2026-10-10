@@ -52,10 +52,12 @@ def frame_cam(cam, objs, azim_deg, elev_deg, dist_mul=2.4, zoff=0.0):
     cam.location = center + Vector((d*math.cos(el)*math.sin(az), d*math.cos(el)*math.cos(az), d*math.sin(el)))
     dv = center - cam.location
     cam.rotation_euler = dv.to_track_quat('-Z','Y').to_euler()
+    bpy.context.view_layer.update()
 
 def import_part(pid):
     before = set(bpy.context.scene.objects)
     bpy.ops.import_scene.gltf(filepath=os.path.join(PARTS, pid, pid+'.glb'))
+    bpy.context.view_layer.update()
     return [o for o in bpy.context.scene.objects if o not in before]
 
 def move_objs(objs, delta):
