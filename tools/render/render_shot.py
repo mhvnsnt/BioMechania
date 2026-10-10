@@ -28,7 +28,7 @@ import bpy
 _HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(_HERE))
 
-from render import assemble, builds, cameras, grade, lighting, soul_part  # noqa: E402
+from render import assemble, builds, cameras, grade, lighting, pose, soul_part  # noqa: E402
 
 
 def parse_args():
@@ -82,6 +82,7 @@ def main():
 
     spec = builds.BUILDS[args.build][args.mode]
     info = assemble.assemble_mech(spec, parts_dir, undersuit=True)
+    applied = pose.apply_pose(info, args.shot, args.mode)
     grade.grade_materials(args.mode)
     soul = soul_part.place_soul(info)
     dropped = assemble.ground_mech(info["mech_root"])
