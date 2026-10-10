@@ -209,7 +209,7 @@ def stage_weapon_fire(info, weapon):
         location=cone_center)
     cone = bpy.context.active_object
     cone.name = "fx_muzzle_cone"
-    cone.rotation_euler = fwd.to_track_quat("+Z", "Y").to_euler()
+    cone.rotation_euler = fwd.to_track_quat("Z", "Y").to_euler()
     cone.data.materials.append(fmat)
     # Side vector for spark offsets (perpendicular to fwd).
     side = fwd.cross(Vector((0, 0, 1)))
