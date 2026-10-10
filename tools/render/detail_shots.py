@@ -175,11 +175,14 @@ def stage_weapon_fire(info, weapon):
     # balloon and the orbs floated as eggs. Tighter + deeper color.
     fmat = _emission_material("fx_muzzle", (1.0, 0.45, 0.08), 9.0)
     bpy.ops.mesh.primitive_cone_add(
-        radius1=0.025, radius2=0.085, depth=0.26,
-        location=(muzzle.x, muzzle.y + 0.155, muzzle.z))
+        radius1=0.025, radius2=0.085, depth=0.30,
+        location=(muzzle.x, muzzle.y + 0.11, muzzle.z))
     cone = bpy.context.active_object
     cone.name = "fx_muzzle_cone"
-    cone.rotation_euler = (math.radians(90), 0, 0)  # point +Y
+    # -90 about X: wide end (radius2) flares toward +Y (forward). +90 was
+    # backwards (wide end at the muzzle). Base overlaps the muzzle point
+    # so the flash visibly touches the barrel — no floating gap.
+    cone.rotation_euler = (math.radians(-90), 0, 0)
     cone.data.materials.append(fmat)
     for i, off in enumerate(((0.04, 0.12), (-0.03, 0.18), (0.01, 0.24))):
         bpy.ops.mesh.primitive_uv_sphere_add(
