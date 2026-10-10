@@ -81,6 +81,12 @@ M-2 = side profile orthographic; M-3 = rear elevated (tools/render/cameras.py).
 
 ### bruiser / M-2 / breach (1280x720/64sp) — PASS (pixel-identical to scout/M-2/breach)
 - Inspected ~11:50Z. Pixel diff vs scout/M-2-breach.png: 0.0 — bit-identical. Visual confirmation: clean breach profile, all gates as scout version.
+
+### bruiser / M-3 / breach (1280x720/64sp) — PASS (pixel-identical to scout/M-3/breach)
+- Inspected ~11:56Z. Pixel diff vs scout/M-3-breach.png: 0.0 — bit-identical. Visual confirmation: rear breach power read, all gates as scout version.
+
+## Summary
+18/18 frames inspected with my own eyes. 12 unique renders (scout racer/combat/breach × M-1/M-2/M-3 + bruiser racer × M-1/M-2/M-3), all PASS. 6 duplicates by spec (bruiser combat/breach = scout combat/breach part sets), verified pixel-identical (mean abs diff 0.0) and visually confirmed. 2 defects found and fixed during production: (1) floating weapon in M-1 racer v1 → pose.py weapon re-parent fix; (2) M-2 ortho framing cut head/feet at 16:9 → aspect-aware ortho_scale fix. No names invented; scout/bruiser are internal labels only.
 - v1 inspected 2026-10-10 ~07:42Z. Pose: coiled aero tuck reads well (torso pitched fwd, arms swept back, legs trailing). Gates: 1 PASS (face-plate optics + chest sigil readable), 2 PASS (racer cyan aero kit), 4 PASS (no clipping), 6 PASS (feet planted, soft shadows), 5 N/A.
 - **v1 FAIL gate 3 (assembly integrity): the scrapblade weapon floated detached from the hand** — weapon anchor is parented to the torso anchor in assemble.py, so the arms -25° sweep left the weapon behind (~0.5 m gap); pommel sphere also read as floating debris. Cyan dot above head is the antenna tip light — not a defect.
 - **Fix:** pose.py apply_pose() now re-parents the weapon anchor under the arms anchor (world-transform-preserving, lane-local; other lanes don't pose) — committed 4b274bd. Defective v1 retired (git rm); v2 rendered 08:17Z.
