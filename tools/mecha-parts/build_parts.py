@@ -739,6 +739,9 @@ def b_leg_pylon():
     # knee shroud with vent
     box('kneeshroud', 0.20, 0.08, 0.14, 0, 0.10, -0.44, mat=steel, bev=0.010)
     vent(0, 0.145, -0.44, 0.12, 0.08, 4, iron, rust, facing='+y')
+    # shin core: structural column knee -> ankle (greaves + pistons mount on it)
+    box('shin', 0.13, 0.13, 0.40, 0, 0, -0.68, mat=iron, bev=0.010)
+    rivet_line(-0.045, 0.045, 0.07, -0.60, 3, steel)
     # layered greaves
     layered_plate(0, 0.06, -0.68, 0.20, 0.12, 0.03, 3, steel, axis='y')
     # twin ankle pistons
@@ -868,6 +871,9 @@ def b_leg_ash():
     # knee with glow core
     box('knee', 0.16, 0.07, 0.12, 0, 0.09, -0.43, mat=steel, bev=0.010)
     box('kneeglow', 0.10, 0.02, 0.03, 0, 0.125, -0.43, mat=glow)
+    # shin core: structural column knee -> ankle
+    box('shin', 0.12, 0.12, 0.38, 0, 0, -0.67, mat=iron, bev=0.010)
+    box('shinseam', 0.13, 0.02, 0.02, 0, 0.06, -0.67, mat=glow)
     layered_plate(0, 0.05, -0.66, 0.19, 0.11, 0.03, 3, steel, axis='y')
     # ankle glow cores + piston
     box('ankle', 0.13, 0.14, 0.12, 0, 0, -0.92, mat=iron, bev=0.010)
