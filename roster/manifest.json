@@ -1,0 +1,3326 @@
+{
+ "AEROBAT": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/aerobat/media-generation-aerobat-contrail-tpose-void-0-7d19d2ca-b77b-4704-87ad-65d1d018c600.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/aerobat/media-generation-aerobat-contrail-tpose-void-1791647501.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "AFTERJACK": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/afterjack/media-generation-afterjack-contrail-tpose-void-0-691e858b-8a84-4448-846b-921c97f709f4.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/afterjack/media-generation-afterjack-contrail-tpose-void-1791647368.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ALPHAJACK": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/alphajack/media-generation-alphajack-stampede-tpose-void-0-f98448db-156b-42d4-ae5e-00b6c6d5c009.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/alphajack/media-generation-alphajack-stampede-tpose-void-1791647677.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ANTIPHON": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/antiphon/media-generation-antiphon-requiem-tpose-void-0-4256a16a-7000-445d-a19d-5b6914acb8a9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/antiphon/media-generation-antiphon-requiem-tpose-void-1-1aa443c1-db85-42c4-a2cf-97a103db9d10.webp",
+    "type": "render",
+    "regen": true,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/antiphon/media-generation-antiphon-requiem-tpose-void-1791647591.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ANVIL": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/anvil/media-generation-anvil-coldiron-tpose-void-0-fa79bce3-4524-4eda-9eb0-7dfca40dc554.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/anvil/media-generation-anvil-coldiron-tpose-void-1791647614.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ANVILHEAD": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/anvilhead/media-generation-anvilhead-pummel-tpose-void-0-2d034c7e-6d8a-4c23-b34a-e41f0c33cf37.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/anvilhead/media-generation-anvilhead-pummel-tpose-void-1791647484.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "AXLEJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/axlejack/media-generation-axlejack-modeshift-tpose-void-0-8689c218-538b-47be-b232-2e6434f710ac.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/axlejack/media-generation-axlejack-modeshift-tpose-void-1791647829.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/axlejack/media-generation-axlejack-modeshift-tpose-void-1791647931.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/axlejack/media-generation-axlejack-modeshift-tpose-void-1791648069.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BEASTJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/beastjack/media-generation-beastjack-prism-tpose-void-0-32c4526f-2cf2-4662-b1df-f3185155fc31.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/beastjack/media-generation-beastjack-prism-tpose-void-1-b770eb42-b4c1-4290-8271-5ba201136754.webp",
+    "type": "render",
+    "regen": true,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/beastjack/media-generation-beastjack-prism-tpose-void-1791647505.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BEASTMARK": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/beastmark/media-generation-beastmark-wildhunt-tpose-void-0-42321da4-b9ed-4466-a408-c06e9091c64e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/beastmark/media-generation-beastmark-wildhunt-tpose-void-1791647533.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BEASTMODE": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/beastmode/media-generation-beastmode-modeshift-tpose-void-0-ed278a7a-b20b-4c4b-b558-22efedd3ca74.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/beastmode/media-generation-beastmode-modeshift-tpose-void-1791647648.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BEETLEJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/beetlejack/media-generation-beetlejack-carapace-tpose-void-0-55d2c87f-5374-4399-941f-32fb096a9e96.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/beetlejack/media-generation-beetlejack-carapace-tpose-void-1791647492.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BLOODTRACK": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/bloodtrack/media-generation-bloodtrack-wildhunt-tpose-void-0-8bf18ef3-254d-40a1-9edf-75876f69d4cb.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/bloodtrack/media-generation-bloodtrack-wildhunt-tpose-void-1791647398.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/bloodtrack/media-generation-bloodtrack-wildhunt-tpose-void-1791647820.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BOLTCUTTER": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/boltcutter/media-generation-boltcutter-scrapkings-tpose-vo-0-9cacc84a-e10f-4a15-9815-4d3f3a7ee5be.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/boltcutter/media-generation-boltcutter-scrapkings-tpose-void-1791647640.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "BURROWJACK": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/burrowjack/media-generation-burrowjack-stampede-tpose-void-0-c4de5ff6-06d3-474a-be29-c01807951586.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/burrowjack/media-generation-burrowjack-stampede-tpose-void-1791647587.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CAIRN": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cairn/media-generation-cairn-effigy-tpose-void-0-45f25673-fb62-4264-9985-067f21fc8148.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cairn/media-generation-cairn-effigy-tpose-void-1791647569.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CANTICLE": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/canticle/media-generation-canticle-requiem-tpose-void-0-be471ada-ab9a-488a-a48f-ea93db068c8c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/canticle/media-generation-canticle-requiem-tpose-void-1791647517.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CARAPACE-PRIME": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/carapace-prime/media-generation-carapace-prime-carapace-tpose-0-5ba886f9-c0e3-43ca-99b6-fa0cb2211d5b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/carapace-prime/media-generation-carapace-prime-carapace-tpose-void-1791647397.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CARAPACE-ZERO": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/carapace-zero/media-generation-carapace-zero-carapace-tpose-v-0-e0dc5afd-7501-4510-93c1-51cd404083e4.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/carapace-zero/media-generation-carapace-zero-carapace-tpose-void-1791647723.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CHAINSMASH": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/chainsmash/media-generation-chainsmash-scrapkings-tpose-vo-0-4fdf473d-5c66-49a7-bb17-48f075d3a22d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/chainsmash/media-generation-chainsmash-scrapkings-tpose-void-1791647572.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CHITIN": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/chitin/media-generation-chitin-carapace-tpose-void-0-4ea528e7-10cf-4bf0-9ae4-81668ea911e3.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/chitin/media-generation-chitin-carapace-tpose-void-1791647395.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CHROMAJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/chromajack/media-generation-chromajack-prism-tpose-void-0-c8a676cc-f658-4dc6-a99d-d57fd58e70f5.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/chromajack/media-generation-chromajack-prism-tpose-void-1-e76f4315-bf1e-4dd9-8632-ba888baf9f74.webp",
+    "type": "render",
+    "regen": true,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/chromajack/media-generation-chromajack-prism-tpose-void-1791647784.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CICADAJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cicadajack/media-generation-cicadajack-carapace-tpose-void-0-3b5bf644-318a-4b04-8a12-d2719c52e8f8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cicadajack/media-generation-cicadajack-carapace-tpose-void-1791647473.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CLAWFOOT": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/clawfoot/media-generation-clawfoot-stampede-tpose-void-0-a15523c4-0e4c-47e2-9508-0f369be3b78a.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/clawfoot/media-generation-clawfoot-stampede-tpose-void-1791647367.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CLOUDRIDER": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cloudrider/media-generation-cloudrider-contrail-tpose-void-0-b86da723-ed71-4090-87cb-91d6cf6d61e6.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cloudrider/media-generation-cloudrider-contrail-tpose-void-1791647427.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "COGJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cogjack/media-generation-cogjack-modeshift-tpose-void-0-42037085-ceb8-4527-b718-781a77830b9c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cogjack/media-generation-cogjack-modeshift-tpose-void-1791647811.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/cogjack/media-generation-cogjack-modeshift-tpose-void-1791647931.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "COLD-SNAP": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cold-snap/media-generation-cold-snap-coldiron-tpose-void-0-5a690a5f-79e5-49be-b3ae-6d6d1c3ee9b9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cold-snap/media-generation-cold-snap-coldiron-tpose-void-1791647397.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "COLDSTEEL": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/coldsteel/media-generation-coldsteel-coldiron-tpose-void-0-38fd8506-2e9b-45b7-8f73-e3b3ef493f87.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/coldsteel/media-generation-coldsteel-coldiron-tpose-void-1791647496.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CONSTRUCT": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/construct/media-generation-construct-modeshift-tpose-void-0-9010ec33-ae41-4e45-9bb2-5a0e8bd7f38a.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/construct/media-generation-construct-modeshift-tpose-void-1791647619.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/construct/media-generation-construct-modeshift-tpose-void-1791647741.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CONTRAIL-PRIME": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/contrail-prime/media-generation-contrail-prime-contrail-tpose-0-25415527-ebe8-4b13-87a0-ad860c284518.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/contrail-prime/media-generation-contrail-prime-contrail-tpose-void-1791647383.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CONTRAIL-ZERO": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/contrail-zero/media-generation-contrail-zero-contrail-tpose-v-0-8abdb82b-e38f-4009-b866-0856a7629582.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/contrail-zero/media-generation-contrail-zero-contrail-tpose-void-1791647586.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CRANEJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cranejack/media-generation-cranejack-pitlane-tpose-void-0-39efddc8-a74f-4da7-8654-7776ba5d3145.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/cranejack/media-generation-cranejack-pitlane-tpose-void-0-651ba229-b892-4a85-835c-71ed211d1ebb.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cranejack/media-generation-cranejack-pitlane-tpose-void-1791647438.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/cranejack/media-generation-cranejack-pitlane-tpose-void-1791647665.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CRICKETJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/cricketjack/media-generation-cricketjack-carapace-tpose-voi-0-5d1d58e1-6b76-44fe-afb3-aa1628ed6f59.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/cricketjack/media-generation-cricketjack-carapace-tpose-void-1791647597.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CRUNCHTIME": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/crunchtime/media-generation-crunchtime-pummel-tpose-void-0-5d22a311-1622-4255-90e9-9839e2090b5c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/crunchtime/media-generation-crunchtime-pummel-tpose-void-1791647482.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "CRUSHER": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/crusher/media-generation-crusher-scrapkings-tpose-void-0-0a90e1fd-a557-4a25-b596-0a9bf1298803.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/crusher/media-generation-crusher-scrapkings-tpose-void-1791647462.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DARKTROT": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/darktrot/media-generation-darktrot-wildhunt-tpose-void-0-835cfd27-6c63-4a59-9e65-686026ea5541.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/darktrot/media-generation-darktrot-wildhunt-tpose-void-1791647544.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DARTJACK": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/dartjack/media-generation-dartjack-brood-tpose-void-0-b3605870-e0a6-436b-aebf-98e34f76ab99.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/dartjack/media-generation-dartjack-brood-tpose-void-1791647562.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DERBYKING": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/derbyking/media-generation-derbyking-scrapkings-tpose-voi-0-67e52d60-3118-4689-89de-5ebd19156853.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/derbyking/media-generation-derbyking-scrapkings-tpose-void-1791647389.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DINOJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/dinojack/media-generation-dinojack-prism-tpose-void-0-07768d0d-ea1c-45fe-8926-db468d5fbe57.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/dinojack/media-generation-dinojack-prism-tpose-void-1791647432.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DIRGE": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/dirge/media-generation-dirge-requiem-tpose-void-0-a76ab064-ffdc-4850-8bdf-3deec16ec041.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/dirge/media-generation-dirge-requiem-tpose-void-1791647398.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "DOORBUSTER": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/doorbuster/media-generation-doorbuster-pummel-tpose-void-0-aa2ccc3c-2bd0-48b6-b62a-f18b29397bf8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/doorbuster/media-generation-doorbuster-pummel-tpose-void-1791647616.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "EARWIG": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/earwig/media-generation-earwig-brood-tpose-void-0-69bf3649-1c2a-49b9-b1f9-07aa25afed07.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/earwig/media-generation-earwig-brood-tpose-void-1791647513.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "EFFIGY-MINOR": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/effigy-minor/media-generation-effigy-minor-effigy-tpose-void-0-f09c89b0-3861-4f04-a51a-3a139590fb31.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/effigy-minor/media-generation-effigy-minor-effigy-tpose-void-1791647569.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "EFFIGY-PRIME": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/effigy-prime/media-generation-effigy-prime-effigy-tpose-void-0-d59851e1-6d7e-4fdd-81c0-dd2294f9ac11.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/effigy-prime/media-generation-effigy-prime-effigy-tpose-void-1791647469.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "EULOGY": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/eulogy/media-generation-eulogy-requiem-tpose-void-0-02e4caf4-017d-468d-be07-655fbab5ac6f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/eulogy/media-generation-eulogy-requiem-tpose-void-1791647458.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "EXOSKEL": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/exoskel/media-generation-exoskel-carapace-tpose-void-0-75eb048b-209d-4d52-ab60-bdc69f44c57e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/exoskel/media-generation-exoskel-carapace-tpose-void-1791647390.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FALCONRY": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/falconry/media-generation-falconry-contrail-tpose-void-0-9ef5fd27-5a4f-4df9-aa7a-3808d111ff97.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/falconry/media-generation-falconry-contrail-tpose-void-1791647561.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FANGJACK": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fangjack/media-generation-fangjack-stampede-tpose-void-0-7a66cc99-8439-4b74-a28d-f0df1239cc46.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fangjack/media-generation-fangjack-stampede-tpose-void-1791647381.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FANGMOON": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fangmoon/media-generation-fangmoon-wildhunt-tpose-void-0-abc64276-4f94-4702-a9aa-4cdaf5f4ca8f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fangmoon/media-generation-fangmoon-wildhunt-tpose-void-1791647580.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FENDERBENDER": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fenderbender/media-generation-fenderbender-scrapkings-tpose-0-ed4a98e8-4c51-4710-bba4-08454e9fb539.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fenderbender/media-generation-fenderbender-scrapkings-tpose-void-1791647464.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FERALJACK": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/feraljack/media-generation-feraljack-wildhunt-tpose-void-0-af4ab43d-5094-4334-a6d1-991653e05b54.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/feraljack/media-generation-feraljack-wildhunt-tpose-void-1791647461.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FERROUS": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ferrous/media-generation-ferrous-coldiron-tpose-void-0-b9b9a62a-7ed4-43d3-9d46-e92d38e31b10.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ferrous/media-generation-ferrous-coldiron-tpose-void-1791647393.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FETISH": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fetish/media-generation-fetish-effigy-tpose-void-0-3f599ee7-f203-4dfa-aa24-3d8a810f8453.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fetish/media-generation-fetish-effigy-tpose-void-1791647454.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FIREFLYJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fireflyjack/media-generation-fireflyjack-carapace-tpose-voi-0-8b3c78b7-a1fe-475f-951c-4d6e2babc073.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fireflyjack/media-generation-fireflyjack-carapace-tpose-void-1791647577.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FLIT": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/flit/media-generation-flit-brood-tpose-void-0-158c216b-4b11-4e3c-a403-5f455934e1d2.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/flit/media-generation-flit-brood-tpose-void-1791647426.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FORGEBORN": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/forgeborn/media-generation-forgeborn-coldiron-tpose-void-0-c6911d81-d781-4fb4-9e46-1310bc3f50af.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/forgeborn/media-generation-forgeborn-coldiron-tpose-void-1791647502.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FORMCHAIN": {
+  "brand": "MODESHIFT",
+  "approved_name": true,
+  "files": [
+   {
+    "file": "roster/characters/formchain/media-generation-formchain-modeshift-tpose-void-0-dabd9a79-b237-4672-af1d-d716ff92b4d3.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/formchain/media-generation-formchain-modeshift-tpose-void-1791647439.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/formchain/media-generation-formchain-modeshift-tpose-void-1791647519.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "FUELJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/fueljack/media-generation-fueljack-pitlane-tpose-void-0-3aae4263-b4f3-4731-8067-b59d9c7080c9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/fueljack/media-generation-fueljack-pitlane-tpose-void-0-4c9af010-cb5d-4015-847a-dffff2183304.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/fueljack/media-generation-fueljack-pitlane-tpose-void-1791647437.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/fueljack/media-generation-fueljack-pitlane-tpose-void-1791647713.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GALAXYJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/galaxyjack/media-generation-galaxyjack-prism-tpose-void-0-75f25ce2-2bd4-4b61-a230-a1524f2fa9b5.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/galaxyjack/media-generation-galaxyjack-prism-tpose-void-1791647620.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GEARJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/gearjack/media-generation-gearjack-modeshift-tpose-void-0-6973dc43-cafa-425c-b795-c17b31102029.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/gearjack/media-generation-gearjack-modeshift-tpose-void-1791647466.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/gearjack/media-generation-gearjack-modeshift-tpose-void-1791647520.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GNAT": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/gnat/media-generation-gnat-brood-tpose-void-0-df9ffe64-5222-41a5-a257-1a4dfcdd74f9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/gnat/media-generation-gnat-brood-tpose-void-1791647505.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GRAYMANE": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/graymane/media-generation-graymane-coldiron-tpose-void-0-97e41649-1d87-4517-ac93-1d80f58abf32.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/graymane/media-generation-graymane-coldiron-tpose-void-1791647487.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GRAZE": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/graze/media-generation-graze-stampede-tpose-void-0-11b52959-8605-42b8-a426-84c95deaf34d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/graze/media-generation-graze-stampede-tpose-void-1791647608.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GREASEFIRE": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/greasefire/media-generation-greasefire-scrapkings-tpose-vo-0-bc256385-3df8-4d1e-bfaa-03b34fc68454.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/greasefire/media-generation-greasefire-scrapkings-tpose-void-1791647524.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GRIMHUNT": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/grimhunt/media-generation-grimhunt-wildhunt-tpose-void-0-ff3cc30c-c46a-4f4e-95f1-1f7ae82e1794.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/grimhunt/media-generation-grimhunt-wildhunt-tpose-void-1791647473.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "GRINDHOUSE": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/grindhouse/media-generation-grindhouse-pummel-tpose-void-0-cbc6516c-d419-470b-a522-e99645b5cece.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/grindhouse/media-generation-grindhouse-pummel-tpose-void-1791647620.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HAYMAKER": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/haymaker/media-generation-haymaker-pummel-tpose-void-0-69ed94ac-7895-482c-a46b-67f6a725d570.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/haymaker/media-generation-haymaker-pummel-tpose-void-1791647740.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HENSHIN": {
+  "brand": "CARAPACE",
+  "approved_name": true,
+  "files": [
+   {
+    "file": "roster/characters/henshin/media-generation-henshin-carapace-tpose-void-0-213bdd52-0d62-4a86-a273-3200ac39e08e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/henshin/media-generation-henshin-carapace-tpose-void-1791647372.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HIGHTAIL": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/hightail/media-generation-hightail-brood-tpose-void-0-a4bbd149-2d96-4895-8ddb-e1a2e01190a3.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/hightail/media-generation-hightail-brood-tpose-void-1791647580.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HORNETJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/hornetjack/media-generation-hornetjack-carapace-tpose-void-0-0e361e34-ad25-4670-b4ca-85ef8c548406.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/hornetjack/media-generation-hornetjack-carapace-tpose-void-1791647496.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HORNSWEEP": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/hornsweep/media-generation-hornsweep-stampede-tpose-void-0-10cdfca2-bcb5-4ade-acb3-f3f41ff409c6.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/hornsweep/media-generation-hornsweep-stampede-tpose-void-1791647525.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "HUNTMASTER": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/huntmaster/media-generation-huntmaster-wildhunt-tpose-void-0-c28b8d32-9908-4ab9-8a09-b49892c6cd64.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/huntmaster/media-generation-huntmaster-wildhunt-tpose-void-1791647546.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "IDOLJACK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/idoljack/media-generation-idoljack-effigy-tpose-void-0-6cdf096d-455e-49c6-a94e-ff5b03202636.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/idoljack/media-generation-idoljack-effigy-tpose-void-1791647375.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "IRONBOUND": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ironbound/media-generation-ironbound-coldiron-tpose-void-0-46cfd069-940c-4169-b592-83afdc762bf2.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ironbound/media-generation-ironbound-coldiron-tpose-void-1791647546.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "IRONCLAD": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ironclad/media-generation-ironclad-coldiron-tpose-void-0-c05e6fbd-2af7-435a-88b5-d2d358e81896.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ironclad/media-generation-ironclad-coldiron-tpose-void-1791647406.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "JACKSTAND": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/jackstand/media-generation-jackstand-pitlane-tpose-void-0-0e20c488-224b-4178-a808-2015351c21a3.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/jackstand/media-generation-jackstand-pitlane-tpose-void-1791647436.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "JETWASH": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/jetwash/media-generation-jetwash-contrail-tpose-void-0-f7b9226a-b313-41ed-a3d4-85224e29ebbb.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/jetwash/media-generation-jetwash-contrail-tpose-void-1791647445.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "JUNKYARD": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/junkyard/media-generation-junkyard-scrapkings-tpose-void-0-bd2c18ba-317b-4e4e-990f-44c0ba9d4981.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/junkyard/media-generation-junkyard-scrapkings-tpose-void-1791647401.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "LAMENT": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/lament/media-generation-lament-requiem-tpose-void-0-3dd08fe2-5551-4e9a-86f4-01e4f8864bdb.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/lament/media-generation-lament-requiem-tpose-void-1791647374.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "LUMBER": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/lumber/media-generation-lumber-pummel-tpose-void-0-bf434f17-e889-4dc3-9797-3181b31af82e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/lumber/media-generation-lumber-pummel-tpose-void-1791647404.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MACHJACK": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/machjack/media-generation-machjack-contrail-tpose-void-0-9dadaaf6-93fb-41e1-a1f7-3cf1765755b8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/machjack/media-generation-machjack-contrail-tpose-void-1791647452.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MANEJACK": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/manejack/media-generation-manejack-stampede-tpose-void-0-c456ee55-d7d5-4231-a4f5-b5c3c6c140c8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/manejack/media-generation-manejack-stampede-tpose-void-1791647438.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MANTISJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/mantisjack/media-generation-mantisjack-carapace-tpose-void-0-bf33ad04-caa4-4ed4-ba66-6e63290b110d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mantisjack/media-generation-mantisjack-carapace-tpose-void-1791647499.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MASKJACK": {
+  "brand": "EFFIGY",
+  "approved_name": true,
+  "files": [
+   {
+    "file": "roster/characters/maskjack/media-generation-maskjack-effigy-tpose-void-0-bf990cbe-3457-4200-bbca-0ec3c464fdad.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/maskjack/media-generation-maskjack-effigy-tpose-void-1791647379.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MAULER": {
+  "brand": [
+   "PUMMEL",
+   "STAMPEDE"
+  ],
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/mauler/media-generation-mauler-pummel-tpose-void-0-a7864339-c259-4df4-951a-3caed951eba7.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mauler/media-generation-mauler-pummel-tpose-void-1791647371.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/mauler/media-generation-mauler-stampede-tpose-void-0-732edb19-0edc-4870-8c38-009d179f9bd5.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mauler/media-generation-mauler-stampede-tpose-void-1791647356.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MEDICJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/medicjack/media-generation-medicjack-pitlane-tpose-void-0-7f345b7c-d744-4116-a8e6-7ac1c566eb0b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/medicjack/media-generation-medicjack-pitlane-tpose-void-1791647382.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MEGALITH": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/megalith/media-generation-megalith-effigy-tpose-void-0-8db92735-5c06-4a8f-aaa6-a6e0db78020d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/megalith/media-generation-megalith-effigy-tpose-void-1791647571.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "METTLE": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/mettle/media-generation-mettle-coldiron-tpose-void-0-0fd2d66d-54e5-4710-93ba-4f071139110f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mettle/media-generation-mettle-coldiron-tpose-void-1791647585.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MONOLITH": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/monolith/media-generation-monolith-effigy-tpose-void-0-bdd4845c-db4b-43ad-99ac-25376353e0c8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/monolith/media-generation-monolith-effigy-tpose-void-1791647446.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MOONHOWL": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/moonhowl/media-generation-moonhowl-wildhunt-tpose-void-0-9ca21730-b19d-4a43-8af1-6f46bbdd6a75.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/moonhowl/media-generation-moonhowl-wildhunt-tpose-void-1791647421.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MORPHJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/morphjack/media-generation-morphjack-modeshift-tpose-void-0-8b94cdc0-e772-4dff-99f3-067cebe8e855.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/morphjack/media-generation-morphjack-modeshift-tpose-void-1791647820.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/morphjack/media-generation-morphjack-modeshift-tpose-void-1791647930.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/morphjack/media-generation-morphjack-modeshift-tpose-void-1791648078.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MUDFLAP": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/mudflap/media-generation-mudflap-scrapkings-tpose-void-0-2dc4f734-85cb-4566-bdcd-fdf6167b521c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mudflap/media-generation-mudflap-scrapkings-tpose-void-1791647516.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "MYTHJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/mythjack/media-generation-mythjack-prism-tpose-void-0-759eca95-ca72-4a36-b237-5dbc0698a6b8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/mythjack/media-generation-mythjack-prism-tpose-void-1791647646.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "NESTGUARD": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/nestguard/media-generation-nestguard-stampede-tpose-void-0-e883c966-6e8c-478b-95ef-ec2001472828.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/nestguard/media-generation-nestguard-stampede-tpose-void-1791647674.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "NIGHTSTALKER": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/nightstalker/media-generation-nightstalker-wildhunt-tpose-vo-0-2d4ab5fe-a76a-4874-a836-c0edcd8e2710.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/nightstalker/media-generation-nightstalker-wildhunt-tpose-void-1791647385.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "NIMBLEJACK": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/nimblejack/media-generation-nimblejack-brood-tpose-void-0-112d2d6d-5b34-47c8-81d3-52e140b7aa0e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/nimblejack/media-generation-nimblejack-brood-tpose-void-1791647565.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "NINJAJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ninjajack/media-generation-ninjajack-prism-tpose-void-0-52519189-e8f0-4f58-899d-48d1b7e72579.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ninjajack/media-generation-ninjajack-prism-tpose-void-1791647435.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "NOCTURNE": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/nocturne/media-generation-nocturne-requiem-tpose-void-0-e913c61e-adc8-430e-8a3c-12ec5b48d0b5.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/nocturne/media-generation-nocturne-requiem-tpose-void-1791647450.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "OBELISK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/obelisk/media-generation-obelisk-effigy-tpose-void-0-61b7b9b7-f68d-49f1-8835-1d6e2a9d6bf6.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/obelisk/media-generation-obelisk-effigy-tpose-void-1791647567.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "OILSTAIN": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/oilstain/media-generation-oilstain-scrapkings-tpose-void-0-60d87d60-3889-443d-a1bc-387f855b8a50.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/oilstain/media-generation-oilstain-scrapkings-tpose-void-1791647469.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "OVERHAUL": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/overhaul/media-generation-overhaul-pitlane-tpose-void-0-caa630e4-2fd4-418d-b023-382551458a5c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/overhaul/media-generation-overhaul-pitlane-tpose-void-1791647557.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PACKLEADER": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/packleader/media-generation-packleader-stampede-tpose-void-0-ba4607a3-eb09-4b42-9528-eca570765a38.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/packleader/media-generation-packleader-stampede-tpose-void-1791647433.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PATCHJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/patchjack/media-generation-patchjack-pitlane-tpose-void-0-e3522372-d6fc-40d9-9b06-c3f383915f3f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/patchjack/media-generation-patchjack-pitlane-tpose-void-1791647587.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PAVEMENT": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pavement/media-generation-pavement-pummel-tpose-void-0-7af3e279-d370-4d1e-b1a6-515512bf516d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pavement/media-generation-pavement-pummel-tpose-void-1791647601.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PERISCOPE": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/periscope/media-generation-periscope-brood-tpose-void-0-5700296e-89c3-4ed6-a2f7-61727a8814fd.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/periscope/media-generation-periscope-brood-tpose-void-1791647482.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PILEDRIVER": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/piledriver/media-generation-piledriver-pummel-tpose-void-0-099d6e6e-576d-45ad-a3ad-26c4cad1001e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/piledriver/media-generation-piledriver-pummel-tpose-void-1791647496.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PING": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ping/media-generation-ping-brood-tpose-void-0-35d4ceab-b928-4b8c-aa89-561052dcc966.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ping/media-generation-ping-brood-tpose-void-1791647494.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PIPSQUEAK": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pipsqueak/media-generation-pipsqueak-brood-tpose-void-0-abe8778b-9be1-4c40-b0bb-438767d7ed96.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pipsqueak/media-generation-pipsqueak-brood-tpose-void-1791647370.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PISTONJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pistonjack/media-generation-pistonjack-modeshift-tpose-voi-0-7a691946-9427-4bd1-b6da-71fbb2d42d43.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pistonjack/media-generation-pistonjack-modeshift-tpose-void-1791648004.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PITBOSS": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pitboss/media-generation-pitboss-pitlane-tpose-void-0-2121a0d7-d8bf-4e9c-ac89-2ca73cf10783.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pitboss/media-generation-pitboss-pitlane-tpose-void-1791647567.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PITLANE-PRIME": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pitlane-prime/media-generation-pitlane-prime-pitlane-tpose-vo-0-7b6cc1b7-3ca2-45c0-a699-b556e131910d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pitlane-prime/media-generation-pitlane-prime-pitlane-tpose-void-1791647390.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PITLANE-ZERO": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/pitlane-zero/media-generation-pitlane-zero-pitlane-tpose-voi-0-bc1e3c69-c391-4041-b662-557a94a92a45.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/pitlane-zero/media-generation-pitlane-zero-pitlane-tpose-void-1791647644.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PREYDRIVE": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/preydrive/media-generation-preydrive-wildhunt-tpose-void-0-e22d30f8-0e04-4c2d-ad2a-8fa4ab8ecef4.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/preydrive/media-generation-preydrive-wildhunt-tpose-void-1791647594.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PRISM-PRIME": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/prism-prime/media-generation-prism-prime-prism-tpose-void-0-1b4a1f77-e69b-4034-81de-5f2e3f43a51d.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/prism-prime/media-generation-prism-prime-prism-tpose-void-1791647411.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PRISM-ZERO": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/prism-zero/media-generation-prism-zero-prism-tpose-void-0-dac2fa5d-543d-410b-8abc-12c637e66101.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/prism-zero/media-generation-prism-zero-prism-tpose-void-1791647775.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "PSALM": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/psalm/media-generation-psalm-requiem-tpose-void-0-5e6253a4-1f44-4ee4-8312-1228438f70d9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/psalm/media-generation-psalm-requiem-tpose-void-1791647520.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "QUENCH": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/quench/media-generation-quench-coldiron-tpose-void-0-9aef8dfc-961d-4739-af2a-3f993eebdfc4.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/quench/media-generation-quench-coldiron-tpose-void-1791647584.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "QUIVER": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/quiver/media-generation-quiver-brood-tpose-void-0-2a47df0b-6088-4415-ae77-6b1cd18b7999.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/quiver/media-generation-quiver-brood-tpose-void-1791647372.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RAMJAM": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ramjam/media-generation-ramjam-scrapkings-tpose-void-0-cc94fe39-1a3c-4670-8e9b-94059271baf7.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ramjam/media-generation-ramjam-scrapkings-tpose-void-1791647540.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RANGERDANGER": {
+  "brand": "PRISM",
+  "approved_name": true,
+  "files": [
+   {
+    "file": "roster/characters/rangerdanger/media-generation-rangerdanger-prism-tpose-void-0-7f87cf87-af19-48bf-a0e1-b17d44ee1675.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/rangerdanger/media-generation-rangerdanger-prism-tpose-void-1791647433.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RAVENMOOR": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/ravenmoor/media-generation-ravenmoor-wildhunt-tpose-void-0-9cb136a3-457a-4f84-ac42-c127eedd830b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/ravenmoor/media-generation-ravenmoor-wildhunt-tpose-void-1791647484.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RECOVERY": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/recovery/media-generation-recovery-pitlane-tpose-void-0-225572a8-d911-4fee-ad89-454e291d44de.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/recovery/media-generation-recovery-pitlane-tpose-void-1791647650.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RELICJACK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/relicjack/media-generation-relicjack-effigy-tpose-void-0-52767d95-a9bd-4ae5-ad2e-d4eb5a7d8aa6.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/relicjack/media-generation-relicjack-effigy-tpose-void-1791647377.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "REQUIEM-MAJOR": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/requiem-major/media-generation-requiem-major-requiem-tpose-vo-0-be3da66a-753c-433b-b314-e07a711818c7.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/requiem-major/media-generation-requiem-major-requiem-tpose-void-1791647531.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "REQUIEM-MINOR": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/requiem-minor/media-generation-requiem-minor-requiem-tpose-vo-0-f823da0c-ef0b-46fd-805a-1f521d48f20f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/requiem-minor/media-generation-requiem-minor-requiem-tpose-void-1791647390.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "REQUIEM-PRIME": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/requiem-prime/media-generation-requiem-prime-requiem-tpose-vo-0-cc1e7705-2250-4a75-9eeb-550d5c62a447.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/requiem-prime/media-generation-requiem-prime-requiem-tpose-void-1791647398.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "REQUIEM-ZERO": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/requiem-zero/media-generation-requiem-zero-requiem-tpose-voi-0-276c7f81-2f05-44b1-879d-f137c36edb83.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/requiem-zero/media-generation-requiem-zero-requiem-tpose-void-1791647523.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ROLLJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/rolljack/media-generation-rolljack-modeshift-tpose-void-0-b74f256b-42ca-43db-be24-e78057141a87.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/rolljack/media-generation-rolljack-modeshift-tpose-void-1791647644.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "RUSTCROWN": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/rustcrown/media-generation-rustcrown-scrapkings-tpose-voi-0-3320ee3e-4104-4c42-96b7-313d1910822a.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/rustcrown/media-generation-rustcrown-scrapkings-tpose-void-1791647372.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SAMURAIJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/samuraijack/media-generation-samuraijack-prism-tpose-void-0-cea4bb3a-75d8-4aaf-8a17-7c6a80f62354.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/samuraijack/media-generation-samuraijack-prism-tpose-void-1791647567.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SCARABJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/scarabjack/media-generation-scarabjack-carapace-tpose-void-0-84e56645-fe0f-4039-aea1-9f83c2ceab45.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/scarabjack/media-generation-scarabjack-carapace-tpose-void-1791647715.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SCRAPJACK": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/scrapjack/media-generation-scrapjack-scrapkings-tpose-voi-0-515ce2a5-4261-45ed-9eb1-4e59ea2f2043.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/scrapjack/media-generation-scrapjack-scrapkings-tpose-void-1791647472.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SERVICEJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/servicejack/media-generation-servicejack-pitlane-tpose-void-0-c06ea6f2-1eef-48d3-bc6f-df27015d24ee.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/servicejack/media-generation-servicejack-pitlane-tpose-void-1791647559.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SHIFTLOCK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/shiftlock/media-generation-shiftlock-modeshift-tpose-void-0-4ffc02ff-b5ce-48a1-bbdb-8b3d2c8d71ce.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/shiftlock/media-generation-shiftlock-modeshift-tpose-void-1791647466.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/shiftlock/media-generation-shiftlock-modeshift-tpose-void-1791647524.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SHRINEJACK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/shrinejack/media-generation-shrinejack-effigy-tpose-void-0-658163f0-bb44-436b-91a4-d3a8fe645f41.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/shrinejack/media-generation-shrinejack-effigy-tpose-void-1791647473.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SKEDADDLE": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/skedaddle/media-generation-skedaddle-brood-tpose-void-0-559dd872-825a-4fac-aec3-66b65a319544.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/skedaddle/media-generation-skedaddle-brood-tpose-void-1791647370.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SKYBURN": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/skyburn/media-generation-skyburn-contrail-tpose-void-0-0ebd04a3-aa50-42d7-ac3c-d9cd023b2bf2.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/skyburn/media-generation-skyburn-contrail-tpose-void-1791647368.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SKYJACK": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/skyjack/media-generation-skyjack-modeshift-tpose-void-0-7a38a9a6-3bc2-4454-b6f1-dda89c546a0c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/skyjack/media-generation-skyjack-modeshift-tpose-void-1791647625.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SKYWRITER": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/skywriter/media-generation-skywriter-contrail-tpose-void-0-04ecdbef-1878-435e-84c9-de41f4cef66b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/skywriter/media-generation-skywriter-contrail-tpose-void-1791647510.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SLABJACK": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/slabjack/media-generation-slabjack-pummel-tpose-void-0-8d73a53f-5996-4a85-b94f-ed9e67febb27.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/slabjack/media-generation-slabjack-pummel-tpose-void-1791647394.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SLAGHEAP": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/slagheap/media-generation-slagheap-coldiron-tpose-void-0-2696bb5b-aab8-4ab7-920e-a1ab9269b33f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/slagheap/media-generation-slagheap-coldiron-tpose-void-1791647669.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SLEDGE": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/sledge/media-generation-sledge-pummel-tpose-void-0-9d4511a8-19ef-4ed7-a441-1833b60b14c8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/sledge/media-generation-sledge-pummel-tpose-void-1791647549.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "SPAREJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/sparejack/media-generation-sparejack-pitlane-tpose-void-0-4c0044ce-e00d-40dc-bc52-cd49f1d5c261.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/sparejack/media-generation-sparejack-pitlane-tpose-void-0-b175dccc-d3f9-4e10-9f79-e6ca8925b25f.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/sparejack/media-generation-sparejack-pitlane-tpose-void-1791647471.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/sparejack/media-generation-sparejack-pitlane-tpose-void-1791647664.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "STAGJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/stagjack/media-generation-stagjack-carapace-tpose-void-0-af92edd6-2f27-45b4-9c9d-9d88d2a20609.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/stagjack/media-generation-stagjack-carapace-tpose-void-1791647595.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "STAMPEDE-PRIME": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/stampede-prime/media-generation-stampede-prime-stampede-tpose-0-55640a63-d671-4732-b3e8-622fcc39af19.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/stampede-prime/media-generation-stampede-prime-stampede-tpose-void-1791647600.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "STEELRAIN": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/steelrain/media-generation-steelrain-coldiron-tpose-void-0-24a6a423-56d5-4f0d-9ded-348d2647143c.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/steelrain/media-generation-steelrain-coldiron-tpose-void-1791647404.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "STORMJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/stormjack/media-generation-stormjack-prism-tpose-void-0-f4150f0e-beac-403e-9cf5-c86d421ad143.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/stormjack/media-generation-stormjack-prism-tpose-void-1791647626.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "STRATOJACK": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/stratojack/media-generation-stratojack-contrail-tpose-void-0-2b749afe-5558-45fa-a1b9-2eadc084d952.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/stratojack/media-generation-stratojack-contrail-tpose-void-1791647451.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TABOOJACK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/taboojack/media-generation-taboojack-effigy-tpose-void-0-e742dd0e-3e05-4ebd-84f2-bed72823c142.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/taboojack/media-generation-taboojack-effigy-tpose-void-1791647613.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TALON": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/talon/media-generation-talon-stampede-tpose-void-0-40c6ab25-a33b-4791-ad82-35ec0d77b7f5.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/talon/media-generation-talon-stampede-tpose-void-1791647454.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TALONCALL": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/taloncall/media-generation-taloncall-wildhunt-tpose-void-0-52feff08-7058-453e-8178-5a8310adbc48.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/taloncall/media-generation-taloncall-wildhunt-tpose-void-1791647543.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TEMPER": {
+  "brand": "COLDIRON",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/temper/media-generation-temper-coldiron-tpose-void-0-da288dd8-8280-44c9-97fd-bb7824c43d5a.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/temper/media-generation-temper-coldiron-tpose-void-1791647602.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "THIN-AIR": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/thin-air/media-generation-thin-air-contrail-tpose-void-0-3fb33455-2fd4-4c3a-8eae-9ea2294a747b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/thin-air/media-generation-thin-air-contrail-tpose-void-1791647519.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "THORNHIDE": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/thornhide/media-generation-thornhide-wildhunt-tpose-void-0-7aafa4c3-9f7d-4d89-a0e3-e0b5ee8874b8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/thornhide/media-generation-thornhide-wildhunt-tpose-void-1791647387.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "THRENODY": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/threnody/media-generation-threnody-requiem-tpose-void-0-bca26d78-7af2-4a1e-bec7-5283e814d354.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/threnody/media-generation-threnody-requiem-tpose-void-1791647451.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "THUD": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/thud/media-generation-thud-pummel-tpose-void-0-1b9d187f-918f-4077-a4c2-6ce6bb4b5fa1.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/thud/media-generation-thud-pummel-tpose-void-1791647385.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "THUNDERJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/thunderjack/media-generation-thunderjack-prism-tpose-void-0-48e20ad0-b76d-4306-97aa-a9971e8ae416.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/thunderjack/media-generation-thunderjack-prism-tpose-void-1791647696.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TORQUE": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/torque/media-generation-torque-scrapkings-tpose-void-0-f8ee02f9-5c2e-461b-b266-bb773f09b907.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/torque/media-generation-torque-scrapkings-tpose-void-1791647519.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TOTEMJACK": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/totemjack/media-generation-totemjack-effigy-tpose-void-0-a68e89ba-892a-4661-bfe7-f54f11afafd6.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/totemjack/media-generation-totemjack-effigy-tpose-void-1791647389.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TOWJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/towjack/media-generation-towjack-pitlane-tpose-void-0-f9b082d4-2cc5-42a6-bd1a-94a39e5febd7.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/towjack/media-generation-towjack-pitlane-tpose-void-1791647387.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TRAILMIX": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/trailmix/media-generation-trailmix-brood-tpose-void-0-a6a23707-d384-40d8-ae33-a6594cb5c50a.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/trailmix/media-generation-trailmix-brood-tpose-void-1791647581.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TRAMPLE": {
+  "brand": "STAMPEDE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/trample/media-generation-trample-stampede-tpose-void-0-fa5072c0-606c-455b-891a-188a73d51cec.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/trample/media-generation-trample-stampede-tpose-void-1791647571.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TRANSMIT": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/transmit/media-generation-transmit-modeshift-tpose-void-0-5e9f25b1-3ab9-4c95-9175-b79e529ae373.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/transmit/media-generation-transmit-modeshift-tpose-void-1791647979.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TRUCKBED": {
+  "brand": "MODESHIFT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/truckbed/media-generation-truckbed-modeshift-tpose-void-0-582f3b7a-3c02-4b88-9a93-d1aacb852765.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/truckbed/media-generation-truckbed-modeshift-tpose-void-1791647461.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/truckbed/media-generation-truckbed-modeshift-tpose-void-1791647538.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "TURBOJACK": {
+  "brand": [
+   "MODESHIFT",
+   "PRISM"
+  ],
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/turbojack/media-generation-turbojack-modeshift-tpose-void-0-073b9c37-0567-4c4f-ae40-6f7bfdc347f8.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/turbojack/media-generation-turbojack-modeshift-tpose-void-1791647819.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/turbojack/media-generation-turbojack-modeshift-tpose-void-1791647934.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   },
+   {
+    "file": "roster/characters/turbojack/media-generation-turbojack-prism-tpose-void-0-fbb7f078-c199-4e6a-b716-d69c5d4dda50.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/turbojack/media-generation-turbojack-prism-tpose-void-1791647535.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "VAPORJACK": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/vaporjack/media-generation-vaporjack-contrail-tpose-void-0-71a3b58b-f2c0-4d3d-8dfb-252022d04277.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/vaporjack/media-generation-vaporjack-contrail-tpose-void-1791647371.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "VESPER": {
+  "brand": "REQUIEM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/vesper/media-generation-vesper-requiem-tpose-void-0-a5871dcd-8b8c-4d89-b719-f786e42a3ff2.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/vesper/media-generation-vesper-requiem-tpose-void-1791647449.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "VOTIVE": {
+  "brand": "EFFIGY",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/votive/media-generation-votive-effigy-tpose-void-0-b030d65b-d1f9-40be-a7c7-403ca4067df9.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/votive/media-generation-votive-effigy-tpose-void-1791647635.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WASPJACK": {
+  "brand": "CARAPACE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/waspjack/media-generation-waspjack-carapace-tpose-void-0-411d3d8f-d9ab-404e-9957-13278eae6ced.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/waspjack/media-generation-waspjack-carapace-tpose-void-1791647602.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WELDSPARK": {
+  "brand": "SCRAPKINGS",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/weldspark/media-generation-weldspark-scrapkings-tpose-voi-0-a885e450-7b33-4fff-a5c6-2fa96065001b.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/weldspark/media-generation-weldspark-scrapkings-tpose-void-1791647387.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WINGJACK": {
+  "brand": "CONTRAIL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/wingjack/media-generation-wingjack-contrail-tpose-void-0-5c506167-6ad8-4c2a-a8aa-8ee23645ee29.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/wingjack/media-generation-wingjack-contrail-tpose-void-1791647524.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WOLFSBANE": {
+  "brand": "WILDHUNT",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/wolfsbane/media-generation-wolfsbane-wildhunt-tpose-void-0-aedb466b-25d9-4c63-90bd-11a059fe4957.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/wolfsbane/media-generation-wolfsbane-wildhunt-tpose-void-1791647466.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WRECKBALL": {
+  "brand": "PUMMEL",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/wreckball/media-generation-wreckball-pummel-tpose-void-0-5bb7e427-ad57-4707-8dd1-702c57005ad0.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/wreckball/media-generation-wreckball-pummel-tpose-void-1791647605.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "WRENCHJACK": {
+  "brand": "PITLANE",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/wrenchjack/media-generation-wrenchjack-pitlane-tpose-void-0-d743a3bf-0314-47aa-8b59-93aeb9697511.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/wrenchjack/media-generation-wrenchjack-pitlane-tpose-void-1791647387.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ZEOJACK": {
+  "brand": "PRISM",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/zeojack/media-generation-zeojack-prism-tpose-void-0-3678e3f5-ac7d-4949-9462-92496b58ac91.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/zeojack/media-generation-zeojack-prism-tpose-void-1791647503.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ZIGJACK": {
+  "brand": "BROOD",
+  "approved_name": false,
+  "files": [
+   {
+    "file": "roster/characters/zigjack/media-generation-zigjack-brood-tpose-void-0-a9d79003-fa1e-47d0-9db3-aaa5e1039d4e.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/zigjack/media-generation-zigjack-brood-tpose-void-1791647611.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ },
+ "ZOYD": {
+  "brand": "STAMPEDE",
+  "approved_name": true,
+  "files": [
+   {
+    "file": "roster/characters/zoyd/media-generation-zoyd-stampede-tpose-void-0-a7690830-4f98-43fa-867e-054462b1cb40.webp",
+    "type": "render",
+    "regen": false,
+    "in_old_manifest": true
+   },
+   {
+    "file": "roster/characters/zoyd/media-generation-zoyd-stampede-tpose-void-1791647378.json",
+    "type": "sidecar",
+    "regen": false,
+    "in_old_manifest": false
+   }
+  ]
+ }
+}
