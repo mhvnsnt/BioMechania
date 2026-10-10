@@ -3,7 +3,7 @@
 # Finals: M-1 @ 1920x1080/64sp (denoised), M-2/M-3 @ 1280x720/64sp.
 # Poses from tools/render/pose.py are applied inside render_shot.py.
 cd ~/workspace/BioMechania-renders-heroes || exit 1
-BL="env -u PYTHONPATH ~/workspace/tools/blender/blender-4.0.2-linux-x64/blender"
+BL="env -u PYTHONPATH $HOME/workspace/tools/blender/blender-4.0.2-linux-x64/blender"
 
 heartbeat() {
   python3 -c "
