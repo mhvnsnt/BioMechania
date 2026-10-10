@@ -171,23 +171,25 @@ def stage_weapon_fire(info, weapon):
     muzzle = Vector(((mn.x + mx.x) / 2, mx.y + 0.02, (mn.z + mx.z) / 2))
 
     # Procedural muzzle flash: short emissive cone + spark orbs + point light.
-    fmat = _emission_material("fx_muzzle", (1.0, 0.55, 0.12), 9.0)
+    # Compact burst: earlier cone (0.55/0.16, then 0.35/0.10) read as a beige
+    # balloon and the orbs floated as eggs. Tighter + deeper color.
+    fmat = _emission_material("fx_muzzle", (1.0, 0.45, 0.08), 9.0)
     bpy.ops.mesh.primitive_cone_add(
-        radius1=0.02, radius2=0.10, depth=0.35,  # 0.55/0.16 read as a cartoon marshmallow; tighter flash
-        location=(muzzle.x, muzzle.y + 0.20, muzzle.z))
+        radius1=0.025, radius2=0.085, depth=0.26,
+        location=(muzzle.x, muzzle.y + 0.155, muzzle.z))
     cone = bpy.context.active_object
     cone.name = "fx_muzzle_cone"
     cone.rotation_euler = (math.radians(90), 0, 0)  # point +Y
     cone.data.materials.append(fmat)
-    for i, off in enumerate(((0.10, 0.25), (-0.09, 0.38), (0.03, 0.52))):
+    for i, off in enumerate(((0.04, 0.12), (-0.03, 0.18), (0.01, 0.24))):
         bpy.ops.mesh.primitive_uv_sphere_add(
-            radius=0.035, segments=10, ring_count=6,
-            location=(muzzle.x + off[0], muzzle.y + off[1], muzzle.z + 0.05))
+            radius=0.02, segments=10, ring_count=6,
+            location=(muzzle.x + off[0], muzzle.y + off[1], muzzle.z + 0.03))
         orb = bpy.context.active_object
         orb.name = f"fx_spark_{i}"
         orb.data.materials.append(fmat)
     bpy.ops.object.light_add(type="POINT",
-                             location=(muzzle.x, muzzle.y + 0.45, muzzle.z))
+                             location=(muzzle.x, muzzle.y + 0.35, muzzle.z))
     lamp = bpy.context.active_object
     lamp.name = "fx_muzzle_light"
     lamp.data.energy = 900
