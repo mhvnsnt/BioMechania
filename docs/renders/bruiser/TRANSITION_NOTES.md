@@ -33,7 +33,7 @@ leaner and meaner; this is the shipped part scale, not a staging error.
 |------|------|---------|
 | B-1 | Restraint release | Combat mech in restraint hardware: bolted neck collar, 2 torso straps, 4 limb cuffs. Collar lifted +0.30 / 1.25×; 8 bolts scattered mid-air; straps snapped back 0.7 rad; cuffs popped. 7 breach parts inbound mid-flight (breach palette). Soul on the bruiser head. Lighting: combat rig. |
 | B-2 | Reveal + palette shift | Breach parts seated. Restraint hardware jettisoned on the ground — accounted for. Breach grade + undersuit heat (1.0, 0.22, 0.05 @ 0.8). Lighting: breach studio rig (under-glow hot). |
-| B-3 | Breach weapon deploying | As B-2, plus core-maul lifted 0.45 out of mount away from the body, −30° deploy rotation, warmup emissive (1.0, 0.35, 0.08 @ ≥2.5). Root flinch −0.045 rad. Soul on the fracture-helm. Lighting: breach rig. |
+| B-3 | Breach weapon deploying | As B-2, plus core-maul swung 0.60 out plus forward/up, −45° deploy rotation, warmup emissive (1.0, 0.35, 0.08 @ ≥2.5). Root flinch −0.045 rad. Soul on the fracture-helm. Lighting: breach rig. |
 
 ## Blending-rule compliance
 
