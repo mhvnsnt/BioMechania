@@ -190,6 +190,7 @@ def assemble_mech(spec, parts_dir, undersuit=True):
     generation = genmod.detect_generation(raw_head)
     N = genmod.normalize_matrix(generation)
     info["generation"] = generation
+    info["N"] = N  # Lane B: transition assembler needs per-part normalization.
 
     # Normalized socket positions in canonical torso space.
     sock = {}

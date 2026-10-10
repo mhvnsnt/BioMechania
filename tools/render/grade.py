@@ -65,9 +65,15 @@ def _is_accent(r, g, b):
     return s > 0.45 and (h < 0.13 or h > 0.90)
 
 
-def grade_materials(mode):
-    """Apply the mode color treatment to every imported part material."""
-    for mat in bpy.data.materials:
+def grade_materials(mode, materials=None):
+    """Apply the mode color treatment to every imported part material.
+
+    materials: optional explicit material list (Lane B: per-part grading so
+    from-mode parts keep their mode identity while to-mode parts carry
+    theirs — color carry-over per part, study §8 blending rules).
+    """
+    mats = materials if materials is not None else bpy.data.materials
+    for mat in mats:
         if mat.name.startswith(EXEMPT_PREFIXES):
             continue
         bsdf = _principled(mat)
