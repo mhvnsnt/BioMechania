@@ -170,34 +170,51 @@ def stage_weapon_fire(info, weapon):
         o.location.y += 0.10
     bpy.context.view_layer.update()
 
-    # Muzzle point: most forward weapon-mesh point.
+    # Muzzle point: the actual most-forward VERTEX of the weapon meshes.
+    # (Bbox center was wrong: the -22° anchor tilt moves the tip off the
+    # bbox center in Z, leaving the flash floating beside the barrel.)
     wmeshes = [o for o in info["slot_meshes"]["weapon"] if o.type == "MESH"]
-    mn, mx = assemble.mesh_bounds(wmeshes)
-    muzzle = Vector(((mn.x + mx.x) / 2, mx.y + 0.02, (mn.z + mx.z) / 2))
+    tip = None
+    for o in wmeshes:
+        for v in o.data.vertices:
+            w = o.matrix_world @ v.co
+            if tip is None or w.y > tip.y:
+                tip = w
+    # Forward = the weapon anchor's +Y in world space (canonical forward,
+    # includes the -22° tilt), so the flash is coaxial with the barrel.
+    fwd = (info["anchors"]["weapon"].matrix_world.to_quaternion()
+           @ Vector((0, 1, 0)))
+    if fwd.length < 1e-6:
+        fwd = Vector((0, 1, 0))
+    fwd.normalize()
 
     # Procedural muzzle flash: short emissive cone + spark orbs + point light.
-    # Compact burst: earlier cone (0.55/0.16, then 0.35/0.10) read as a beige
-    # balloon and the orbs floated as eggs. Tighter + deeper color.
+    # Narrow end (-Z) at the muzzle, wide end (+Z) flaring along fwd; the
+    # cone base overlaps the tip so the flash visibly touches the barrel.
     fmat = _emission_material("fx_muzzle", (1.0, 0.45, 0.08), 9.0)
+    cone_depth = 0.30
+    cone_center = tip + fwd * (cone_depth / 2 - 0.05)
     bpy.ops.mesh.primitive_cone_add(
-        radius1=0.025, radius2=0.085, depth=0.30,
-        location=(muzzle.x, muzzle.y + 0.11, muzzle.z))
+        radius1=0.025, radius2=0.085, depth=cone_depth,
+        location=cone_center)
     cone = bpy.context.active_object
     cone.name = "fx_muzzle_cone"
-    # -90 about X: wide end (radius2) flares toward +Y (forward). +90 was
-    # backwards (wide end at the muzzle). Base overlaps the muzzle point
-    # so the flash visibly touches the barrel — no floating gap.
-    cone.rotation_euler = (math.radians(-90), 0, 0)
+    cone.rotation_euler = fwd.to_track_quat("+Z", "Y").to_euler()
     cone.data.materials.append(fmat)
-    for i, off in enumerate(((0.04, 0.12), (-0.03, 0.18), (0.01, 0.24))):
+    # Side vector for spark offsets (perpendicular to fwd).
+    side = fwd.cross(Vector((0, 0, 1)))
+    if side.length < 1e-6:
+        side = Vector((1, 0, 0))
+    side.normalize()
+    for i, (s, d) in enumerate(((0.03, 0.10), (-0.025, 0.16), (0.008, 0.22))):
         bpy.ops.mesh.primitive_uv_sphere_add(
             radius=0.02, segments=10, ring_count=6,
-            location=(muzzle.x + off[0], muzzle.y + off[1], muzzle.z + 0.03))
+            location=tip + fwd * d + side * s)
         orb = bpy.context.active_object
         orb.name = f"fx_spark_{i}"
         orb.data.materials.append(fmat)
     bpy.ops.object.light_add(type="POINT",
-                             location=(muzzle.x, muzzle.y + 0.35, muzzle.z))
+                             location=tip + fwd * 0.32)
     lamp = bpy.context.active_object
     lamp.name = "fx_muzzle_light"
     lamp.data.energy = 900
