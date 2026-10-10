@@ -60,4 +60,6 @@ per build (proves Device 6 color delta).
 
 `docs/renders/lane-c-proof.png` — labeled grid of all 23 lane-C deliverables.
 
-| C-SOUL-scout-racer | docs/renders/contact/soul-scout-racer.png | PASS | Tight soul face-plate closeup; twin optics + mouth grille read clearly; racer teal identity. The small floating teal octahedron above the head is the head's authored 'antenna_tip' part (verified in scene), not a stray. |
+| C-SOUL-scout-racer | docs/renders/contact/soul-scout-racer.png | PASS | Tight soul face-plate; twin optics + mouth grille; racer teal. Antenna_tip verified as authored part. |
+| C-SOUL-scout-combat | docs/renders/contact/soul-scout-combat.png | PASS | Soul face-plate constant vs racer (twin optics identical); combat orange accents on surroundings. Constancy proven. |
+| C-SOUL-scout-breach | docs/renders/contact/soul-scout-breach.png | PASS | Soul face-plate constant vs racer/combat; breach bulk around it. Constancy proven. |
