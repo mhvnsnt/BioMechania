@@ -150,6 +150,35 @@ has a *cost or commitment* (window, meter, stamina, vulnerability), a *clear pay
 (roles big enough to feel different), and *level design that demands it*.
 Free-and-painless switching produces the Fall of Cybertron outcome.
 
+### 13i. The balance net rule — contract policy for BioMechania
+
+§13h's net rule is now standing design policy, not just research. Every
+transformation we ship must clear all three bars, and the contract
+(`MECHA_CONTRACT.md`) carries the enforcement:
+
+1. **Cost / commitment.** Every switch spends something real: meter
+   shared with boost (`cost.meter`, default 25), a cooldown that stops
+   mode-flicker (`cooldownSec`, default 8), or rage charge that must be
+   earned by dealing damage and drains while the form is active
+   (`breachRage`). A transform with no cost is a transform with no
+   decision — and players will optimize the decision away by flickering.
+2. **Clear payoff.** Mode roles must be big and asymmetric — racer =
+   speed/reposition, combat = armor/power, breach = earned burst
+   window. The Dark Spark warning stands: if a form is only "slightly
+   faster," it gets 80% ignored. The weight→speed formula and per-mode
+   part sets are the levers that keep the deltas large.
+3. **Level design that demands switching.** The Fall of Cybertron
+   warning: transformation was bolted-on where levels were tight
+   corridors — only rare open/flying segments demanded it, so robot
+   mode ate ~80% of playtime. BioMechania's tracks and derby arenas
+   must physically *require* both forms: straights and drift zones
+   where racer wins, crush zones and wreckage fields where combat
+   wins, and set-piece moments where a charged breach is the answer.
+   And the Dark Spark anti-pattern is law: **never script-lock the
+   core verb** — no segment forbids transformation.
+
+If a new form can't clear all three bars, it doesn't ship.
+
 ---
 
 ## Sources
