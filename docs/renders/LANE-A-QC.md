@@ -29,6 +29,10 @@ M-2 = side profile orthographic; M-3 = rear elevated (tools/render/cameras.py).
 ### scout / M-3 / racer (1280x720/64sp) — PASS
 - Inspected ~08:50Z. Rear elevated view as specified: backpack thruster nozzles (twin glowing cyan) dominate — strong "rear power read"; backpack cyan accents, racer kit readable.
 - Gates: 1 N/A from rear (face-plate/sigil occluded by angle; confirmed present in M-1/M-2), 2 PASS (racer thruster bus + cyan kit), 3 PASS (all parts present; weapon seated at hand, blade visible at side), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted). Framing: full mech with margins.
+
+### scout / M-1 / combat (1920x1080/64sp) — PASS
+- Inspected ~09:20Z. Planted combat stance as specified: torso slightly fwd, head menace tilt, right arm raised with weapon-siegeplow deployed forward, legs braced.
+- Gates: 1 PASS (face-plate optics + chest sigil readable), 2 PASS (combat orange/red kit clearly distinct from racer cyan), 3 PASS (all parts present; weapon firmly gripped — re-parent fix verified via weapon-region crop, no floating), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted). Framing: full mech with margins.
 - v1 inspected 2026-10-10 ~07:42Z. Pose: coiled aero tuck reads well (torso pitched fwd, arms swept back, legs trailing). Gates: 1 PASS (face-plate optics + chest sigil readable), 2 PASS (racer cyan aero kit), 4 PASS (no clipping), 6 PASS (feet planted, soft shadows), 5 N/A.
 - **v1 FAIL gate 3 (assembly integrity): the scrapblade weapon floated detached from the hand** — weapon anchor is parented to the torso anchor in assemble.py, so the arms -25° sweep left the weapon behind (~0.5 m gap); pommel sphere also read as floating debris. Cyan dot above head is the antenna tip light — not a defect.
 - **Fix:** pose.py apply_pose() now re-parents the weapon anchor under the arms anchor (world-transform-preserving, lane-local; other lanes don't pose) — committed 4b274bd. Defective v1 retired (git rm); v2 rendered 08:17Z.
