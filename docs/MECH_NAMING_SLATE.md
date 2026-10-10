@@ -497,3 +497,76 @@ dedicated web checks unavailable — second-pass verification recommended).
 (except CLUTCHPOP + JACKKNIFE, flagged above for a second pass).
 
 _This document is a candidate slate only. Nothing is canon until the owner picks._
+
+---
+
+## BRAND NAMES v2 (2026-10-10 — owner rejected all v1 brands)
+
+**Owner verdict (2026-10-09):** v1 brands (ANTSY, HEFT, BANGER, VESPERS, SORTIE,
+BESTIARY, PACKLAW, SWITCHFRAME, TOTEMFORGE, KICKFORGE, COLORCORPS, JETWASH,
+PATCHGANG) were "not good enough" — good enough for single characters, not for
+whole lines. New directive: **study real mech naming — official AND fan stuff —
+from the inspirations, and build the brand names from those patterns.**
+
+### What the research found (naming patterns per source)
+
+- **Zoids:** `[Descriptor] + [Beast]` — Blade Liger, Geno Saurer, Shield Liger,
+  Lightning Saix. The beast is the soul; the descriptor is the loadout. Fan
+  customs follow the same grammar (phen0type forums: "Aquazoid, Hellrunner,
+  Slither, Tarantulon"). Bootleg lines kept it too ("Dyno-Rassic," "Dino X").
+- **Transformers:** `[Trait] + [Noun]` compounds — Ironhide, Starscream,
+  Bumblebee, Rattrap, Dinobot. Beast Wars = animal + attitude. Hasbro's own
+  legal notes show they treat these as defensible marks; the pattern is the
+  formula, not any one word.
+- **Gundam:** military designation + epithet — RX-78-2 Gundam, Barbatos,
+  "Iron-Blooded Orphans." Fans name customs the same way: alphanumeric prefix
+  + name. The designation does the heavy lifting for "line" identity.
+- **Evangelion:** theological word + number — EVA-00/01/02, "Evangelion"
+  ("good news"). The brand is one big sacred word; units are numbered.
+- **Bionicle:** vowel-rich invented compounds from real lesser-known languages
+  (Matoran: Tahu, Onua, Gali, Kanohi). LEGO's own lesson: real-language words
+  are SAFER for trademarks than pure inventions ("less likely to run into legal
+  trouble… than they were likely to get sued" — BZPower community history).
+  Totem/mask/ancestor vocabulary carries the line.
+- **Kamen Rider:** `[Theme] + Rider` — Kuuga, Agito, Ryuki, Kabuto, Gotchard.
+  Insect/armor theme word first, title second. The theme word IS the brand.
+- **Power Rangers:** `[Animal/Vehicle] + Zord`, teams combine into Megazords.
+  Fanon follows: "Firetruck Warrior Zord, Racecar Warrior Zord." Color +
+  machine is the whole grammar.
+
+**Synthesis for BioMechania brands:** a line brand should be ONE strong,
+umbrella-feeling word — a beast-collective (Zoids), a sacred word (EVA), a
+theme word (Rider), or a trade-word (pit crew, derby). It must read as the
+name of a *family*, not a unit. MDickie twist: evoke the pattern, never the
+actual word.
+
+### v2 brand proposals (all web-checked 2026-10-10)
+
+| Line | v2 Brand | Anchor | Pattern built from | Check |
+|---|---|---|---|---|
+| Light recon | **BROOD** | SKITTER | Zoids beast-collective: a brood is a swarm-family | Clean — no mech-franchise use; "The Brood" is Marvel aliens, different space |
+| Heavy combat | **PUMMEL** | POUNDCAKE | Transformers trait-noun, single punch-word | Clean-ish — "Pummel Party" is a party game (different genre); common English word, low confusion risk. Flagged for owner |
+| Derby brawlers | **SCRAPKINGS** | — | Fan-custom grammar: junkyard royalty | Clean — no hits |
+| Evangelion-inspired | **REQUIEM** | VANGEL | EVA sacred-word pattern: one big theological word | Clean — common word, no mech-franchise use; Khara enforces "Evangelion" itself, not requiems |
+| Gundam-inspired | **COLDIRON** | VERNIER | Folklore "cold iron" + IBO's iron obsession, designation-ready | Clean — no mech use found |
+| Zoids-inspired | **STAMPEDE** | ZOYD | Zoids beast-collective: the herd as the brand | Clean — no mech-franchise use found |
+| Beast-form | **WILDHUNT** | — | Mythological hunt-pack; the pack as the brand | Flagged for owner — "Wild Hunt" is Witcher 3's subtitle and a myth term; different industry, but visible |
+| Transformers-inspired | **MODESHIFT** | FORMCHAIN | The transformation itself as the brand word | Clean — no product found |
+| Bionicle-inspired | **EFFIGY** | MASKJACK | Totem/statue vocabulary, real-word-safe per LEGO's lesson | Clean — no mech use found |
+| Kamen Rider-inspired | **CARAPACE** | HENSHIN | Rider insect-armor theme word as the brand | Clean — no product found |
+| Power Rangers-inspired | **PRISM** | RANGERDANGER | Color as the brand: the spectrum is the team | Clean — no mech-line use; Charter "Spectrum" is telecom, different class |
+| Aerial / skirmisher | **CONTRAIL** | — | The sky-trail as the brand; flight-family word | Clean — no game/mech use found |
+| Support / repair rigs | **PITLANE** | — | Trade-word brand: the crew's territory | Note — "Pit Lane Sim Racing" is a small Canadian sim-hardware outlet; different product, low risk |
+
+### Dropped in v2
+- **HIVEWIRE** (v2 candidate, light recon) — COLLISION: HiveWire 3D is a real
+  3D-content company in the mecha-adjacent space. Dropped, replaced by BROOD.
+- **IRONBLOOD** (v2 candidate, Gundam line) — too close to "Iron-Blooded"
+  Gundam (the actual series subtitle); barely a twist. Dropped, replaced by
+  COLDIRON.
+
+**Totals: 13 v2 brands + 184 character names = 197 names.** The 9 anchors
+(SKITTER, POUNDCAKE, VANGEL, VERNIER, ZOYD, FORMCHAIN, MASKJACK, HENSHIN,
+RANGERDANGER) are approved as INDIVIDUAL mech names only — never brands.
+
+_This document is a candidate slate only. Nothing is canon until the owner picks._
