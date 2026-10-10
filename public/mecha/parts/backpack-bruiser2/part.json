@@ -1,0 +1,17 @@
+{
+ "id": "backpack-bruiser2",
+ "slot": "backpack",
+ "name": "Furnace Pack",
+ "description": "Vented boiler drum with twin exhaust stacks and flares. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 13,
+  "speed": 4,
+  "power": 7,
+  "weight": 8
+ },
+ "model": "backpack-bruiser2.glb",
+ "tris": 888
+}

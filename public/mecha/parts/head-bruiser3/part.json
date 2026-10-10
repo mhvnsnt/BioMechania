@@ -1,0 +1,17 @@
+{
+ "id": "head-bruiser3",
+ "slot": "head",
+ "name": "Cinder Crown",
+ "description": "Horned helm split around a glowing core, vent slits and a glow visor. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 15,
+  "speed": 4,
+  "power": 8,
+  "weight": 9
+ },
+ "model": "head-bruiser3.glb",
+ "tris": 558
+}

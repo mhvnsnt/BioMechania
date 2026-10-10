@@ -1,0 +1,17 @@
+{
+ "id": "legs-bruiser3",
+ "slot": "legs",
+ "name": "Ash Stride",
+ "description": "Legs with glowing knee, ankle and thigh-seam cores over layered greaves. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 17,
+  "speed": 4,
+  "power": 8,
+  "weight": 10
+ },
+ "model": "legs-bruiser3.glb",
+ "tris": 972
+}

@@ -1,0 +1,17 @@
+{
+ "id": "arms-bruiser3",
+ "slot": "arms",
+ "name": "Ember Fist",
+ "description": "Arms with glowing knuckle cores, forearm vent glow and a panel groove. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 16,
+  "speed": 4,
+  "power": 10,
+  "weight": 9
+ },
+ "model": "arms-bruiser3.glb",
+ "tris": 460
+}

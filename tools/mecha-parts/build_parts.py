@@ -156,6 +156,94 @@ def piston(x, y, z0, z1, r_rod, r_sleeve, mat_rod, mat_sleeve):
     cyl('rod', r_rod, abs(z1-z0), x, y, zm, mat=mat_rod, verts=10)
     cyl('sleeve', r_sleeve, abs(z1-z0)*0.55, x, y, (z0+zm)/2.0, mat=mat_sleeve, verts=10)
 
+# ============ DETAIL BAR tooling (owner 2026-10-10: HG Gunpla model-kit bar) ============
+def groove(x, y, z, sx, sy, sz, rx=0, ry=0, rz=0):
+    """Cut a panel-line groove into every mesh in the scene (boolean difference).
+
+    sx/sy/sz = cutter dimensions; make one axis thin (0.004-0.008) to read
+    as a panel line. Call AFTER all geometry for the part is placed.
+    """
+    bpy.ops.mesh.primitive_cube_add(location=(x, y, z), rotation=(rx, ry, rz))
+    cutter = bpy.context.active_object; cutter.name = 'groove_cutter'
+    cutter.scale = (sx/2.0, sy/2.0, sz/2.0)
+    bpy.ops.object.transform_apply(location=False, rotation=True, scale=True)
+    for o in list(bpy.context.scene.objects):
+        if o.type != 'MESH' or o is cutter:
+            continue
+        m = o.modifiers.new('groove', 'BOOLEAN')
+        m.operation = 'DIFFERENCE'
+        m.object = cutter
+        m.solver = 'EXACT'
+        bpy.ops.object.select_all(action='DESELECT')
+        o.select_set(True)
+        bpy.context.view_layer.objects.active = o
+        try:
+            bpy.ops.object.modifier_apply(modifier=m.name)
+        except RuntimeError:
+            o.modifiers.remove(m)
+    bpy.ops.object.select_all(action='DESELECT')
+    cutter.select_set(True)
+    bpy.ops.object.delete()
+
+def vent(x, y, z, w, h, n, mat_dark, mat_slat, depth=0.03, facing='+y'):
+    """Recessed vent: dark inset box + n angled slats. facing '+y' puts the
+    vent plane on the +Y side of the given point (use '-y', '+x', '-x' etc.)."""
+    dw, dh, dd = w, depth, h
+    if facing in ('+x', '-x'):
+        dw, dh, dd = depth, w, h
+    s = 1.0 if facing in ('+y', '+x') else -1.0
+    ox = s*depth/2 if facing in ('+x', '-x') else 0
+    oy = s*depth/2 if facing in ('+y', '-y') else 0
+    box('ventwell', dw, dh, dd, x+ox, y+oy, z, mat=mat_dark)
+    for i in range(n):
+        t = (i+0.5)/n
+        if facing in ('+y', '-y'):
+            box(f'ventslat{i}', w*0.92, 0.008, h/n*0.7, x, y+s*0.004, z-h/2+t*h, mat=mat_slat, rx=0.5)
+        else:
+            box(f'ventslat{i}', 0.008, w*0.92, h/n*0.7, x+s*0.004, y, z-h/2+t*h, mat=mat_slat, ry=0.5)
+
+def greebles(cx, cy, cz, spread, n, mats, seed=0):
+    """Deterministic greeble cluster: small boxes/cyls scattered in a box
+    volume. mats = list of materials to cycle through."""
+    import random
+    rnd = random.Random(seed)
+    for i in range(n):
+        x = cx + (rnd.random()-0.5)*spread[0]
+        y = cy + (rnd.random()-0.5)*spread[1]
+        z = cz + (rnd.random()-0.5)*spread[2]
+        mat = mats[i % len(mats)]
+        k = rnd.random()
+        if k < 0.5:
+            box(f'grb{i}', 0.015+rnd.random()*0.03, 0.015+rnd.random()*0.03,
+                0.01+rnd.random()*0.03, x, y, z, mat=mat,
+                rx=rnd.random()*0.6, ry=rnd.random()*0.6, bev=0.003)
+        elif k < 0.8:
+            cyl(f'grc{i}', 0.008+rnd.random()*0.012, 0.02+rnd.random()*0.04,
+                x, y, z, mat=mat, verts=8,
+                rx=rnd.random()*3.14, ry=rnd.random()*3.14)
+        else:
+            sph(f'grs{i}', 0.01+rnd.random()*0.015, x, y, z, mat=mat, u=8, v=6)
+
+def layered_plate(x, y, z, w, h, t, layers, mat, bev=0.008, axis='z', gap=0.012):
+    """Stack of `layers` beveled plates, each smaller than the last, offset
+    along `axis` — reads as layered armor plating."""
+    for i in range(layers):
+        f = 1.0 - 0.14*i
+        off = i*(t+gap)
+        dx, dy, dz = (off,0,0) if axis=='x' else ((0,off,0) if axis=='y' else (0,0,off))
+        box(f'plate{i}', w*f, h*f, t, x+dx, y+dy, z+dz, mat=mat, bev=bev)
+
+def bolt_circle(x, y, z, R, n, r, mat, axis='z'):
+    """Ring of n bolt heads around (x,y,z) in the plane perpendicular to axis."""
+    for i in range(n):
+        a = 2*math.pi*i/n
+        if axis == 'z':
+            sph(f'bolt{i}', r, x+R*math.cos(a), y+R*math.sin(a), z, mat=mat, u=8, v=6)
+        elif axis == 'y':
+            sph(f'bolt{i}', r, x+R*math.cos(a), y, z+R*math.sin(a), mat=mat, u=8, v=6)
+        else:
+            sph(f'bolt{i}', r, x, y+R*math.cos(a), z+R*math.sin(a), mat=mat, u=8, v=6)
+
 def poly_count():
     return sum(len(o.data.polygons) for o in bpy.context.scene.objects if o.type == 'MESH')
 
@@ -574,7 +662,266 @@ def b_wp_pilespike():  # COMBAT exclusive
     cyl('gauge', 0.025, 0.02, 0.075, 0, 0.14, mat=oil, verts=10, rz=1.5708)
     cyl('grip', 0.030, 0.12, 0, -0.09, 0.02, mat=rub, verts=8, rx=1.5708)
 
-# ============ BREACH (rage-gated third form, Grimlock-style earned form) ============
+# ============ BRUISER DISTINCT COMBAT SET (bruiser2) ============
+# Design language: "layered siege bastion" — angular stacked armor, panel-line
+# grooves, vents, rivet fields, exposed joint mechanics. Original designs,
+# distinct from the shared scout combat set. All COMBAT-mode exclusive.
+def b_head_bulwark():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    cyl('neck', 0.09, 0.08, 0, 0, 0.04, mat=iron, verts=14)
+    torus('neckring', 0.10, 0.016, 0, 0, 0.08, mat=steel, major=14, minor=8)
+    # heavy angular cranium
+    box('cranium', 0.23, 0.21, 0.18, 0, 0.0, 0.18, mat=iron, bev=0.014)
+    # panel grooves: two vertical cuts down the face
+    box('cheekplate_l', 0.05, 0.17, 0.13, 0.12, 0.02, 0.17, mat=steel, bev=0.008)
+    box('cheekplate_r', 0.05, 0.17, 0.13, -0.12, 0.02, 0.17, mat=steel, bev=0.008)
+    # offset mono-eye sensor (asymmetric, right of center)
+    box('eyehouse', 0.09, 0.06, 0.06, 0.055, 0.10, 0.22, mat=rust, bev=0.008)
+    cyl('eye', 0.028, 0.03, 0.055, 0.115, 0.22, mat=oil, verts=12, rx=1.5708)
+    bolt_circle(0.055, 0.115, 0.20, 0.045, 6, 0.008, steel, axis='y')
+    # brow plate with rivets
+    box('brow', 0.21, 0.06, 0.05, 0, 0.095, 0.26, mat=steel, rx=-0.25, bev=0.008)
+    rivet_line(-0.08, 0.08, 0.11, 0.27, 5, iron)
+    # cheek vents
+    vent(0.145, 0.02, 0.15, 0.06, 0.08, 4, iron, rust, facing='+x')
+    vent(-0.145, 0.02, 0.15, 0.06, 0.08, 4, iron, rust, facing='-x')
+    # rear crest fin with grooves
+    box('crest', 0.015, 0.14, 0.12, 0, -0.11, 0.24, mat=rust, rx=0.35, bev=0.004)
+    greebles(0, -0.05, 0.10, (0.16, 0.08, 0.12), 6, [iron, steel, haz], seed=11)
+    groove(0, 0.105, 0.18, 0.16, 0.006, 0.14)   # horizontal panel line, face
+    groove(0.0, 0.105, 0.18, 0.006, 0.006, 0.14) # vertical panel line, face
+
+def b_torso_bastion():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    box('pelvis', 0.36, 0.28, 0.20, 0, 0, -0.06, mat=iron, bev=0.015)
+    rivet_line(-0.14, 0.14, 0.145, -0.02, 5, steel)
+    # spine + layered front armor
+    cyl('spine', 0.06, 0.44, 0, 0.02, 0.22, mat=steel, verts=12, rx=0.1)
+    layered_plate(0, 0.14, 0.30, 0.30, 0.22, 0.035, 3, steel, axis='y')
+    # panel grooves across the chest stack
+    groove(0, 0.16, 0.30, 0.28, 0.006, 0.20)
+    groove(0, 0.16, 0.22, 0.26, 0.006, 0.18)
+    # side vents
+    vent(0.19, 0.05, 0.28, 0.10, 0.14, 5, iron, rust, facing='+x')
+    vent(-0.19, 0.05, 0.28, 0.10, 0.14, 5, iron, rust, facing='-x')
+    # rivet fields on the pelvis flanks
+    rivet_line(-0.14, -0.06, 0.145, -0.06, 3, steel)
+    rivet_line(0.06, 0.14, 0.145, -0.06, 3, steel)
+    # back greebles + shoulder yoke
+    greebles(0, -0.20, 0.30, (0.30, 0.10, 0.20), 8, [iron, rust, haz], seed=22)
+    cyl('yoke', 0.035, 0.88, 0, 0, 0.26, mat=iron, verts=10, ry=1.5708)
+    torso_sockets()
+
+def b_arm_forge():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    # layered delt cap
+    layered_plate(0, 0, -0.04, 0.16, 0.16, 0.03, 3, rust, axis='z')
+    box('upper', 0.14, 0.14, 0.22, 0, 0, -0.16, mat=iron, bev=0.012)
+    rivet_line(-0.05, 0.05, 0.075, -0.12, 3, steel)
+    groove(0, 0.075, -0.16, 0.15, 0.006, 0.006)  # groove around upper arm
+    # forearm with vent + piston
+    box('fore', 0.16, 0.16, 0.22, 0, 0, -0.38, mat=steel, bev=0.012)
+    vent(0, 0.085, -0.38, 0.09, 0.12, 4, iron, rust, facing='+y')
+    piston(0, -0.09, -0.28, -0.46, 0.016, 0.026, steel, iron)
+    # heavy fist with knuckle plates
+    box('fist', 0.11, 0.12, 0.10, 0, 0.01, -0.55, mat=iron, bev=0.012)
+    for i in range(3):
+        box(f'knuckle{i}', 0.028, 0.05, 0.04, -0.035+i*0.035, 0.075, -0.56, mat=haz, bev=0.006)
+    cyl('wrist', 0.05, 0.05, 0, 0, -0.50, mat=rust, verts=10)
+    arm_weapon_socket()
+
+def b_leg_pylon():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    box('hip', 0.18, 0.19, 0.14, 0, 0, -0.06, mat=iron, bev=0.012)
+    box('thigh', 0.19, 0.20, 0.30, 0, 0, -0.26, mat=rust, bev=0.015)
+    rivet_line(-0.07, 0.07, 0.105, -0.22, 4, steel)
+    groove(0, 0.0, -0.26, 0.20, 0.20, 0.006)     # horizontal groove, thigh
+    # knee shroud with vent
+    box('kneeshroud', 0.20, 0.08, 0.14, 0, 0.10, -0.44, mat=steel, bev=0.010)
+    vent(0, 0.145, -0.44, 0.12, 0.08, 4, iron, rust, facing='+y')
+    # shin core: structural column knee -> ankle (greaves + pistons mount on it)
+    box('shin', 0.13, 0.13, 0.40, 0, 0, -0.68, mat=iron, bev=0.010)
+    rivet_line(-0.045, 0.045, 0.07, -0.60, 3, steel)
+    # layered greaves
+    layered_plate(0, 0.06, -0.68, 0.20, 0.12, 0.03, 3, steel, axis='y')
+    # twin ankle pistons
+    piston(0.05, -0.10, -0.80, -1.00, 0.016, 0.026, steel, iron)
+    piston(-0.05, -0.10, -0.80, -1.00, 0.016, 0.026, steel, iron)
+    box('foot', 0.22, 0.34, 0.10, 0, 0.06, -1.07, mat=iron, bev=0.012)
+    box('toe', 0.22, 0.12, 0.08, 0, 0.24, -1.08, mat=steel, bev=0.010)
+    box('sole', 0.23, 0.36, 0.02, 0, 0.06, -1.11, mat=rub)
+
+def b_sh_slab():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    # asymmetric layered slab: bigger outer stack
+    layered_plate(0.02, 0, 0.02, 0.24, 0.20, 0.035, 3, steel, axis='z')
+    layered_plate(0.06, 0, 0.10, 0.16, 0.14, 0.03, 2, rust, axis='z')
+    # panel grooves across the top slab
+    groove(0.02, 0, 0.12, 0.22, 0.18, 0.006)
+    rivet_line(-0.06, 0.10, 0.10, 0.16, 4, iron)
+    # under-greebles
+    greebles(0.02, 0, -0.06, (0.16, 0.14, 0.06), 6, [iron, haz], seed=33)
+    # side vent
+    vent(0.15, 0, 0.04, 0.08, 0.10, 4, iron, rust, facing='+x')
+
+def b_pk_furnace():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    # origin = mount point on the torso's back; pack body extends -Y from it
+    # vented boiler drum
+    cyl('boiler', 0.13, 0.30, 0, -0.10, 0.16, mat=rust, verts=16)
+    for i in range(3):
+        torus(f'band{i}', 0.135, 0.012, 0, -0.10, 0.06+i*0.10, mat=iron, major=16, minor=8)
+    vent(0, 0.04, 0.16, 0.16, 0.16, 5, iron, rust, facing='+y')
+    # twin stacks with flares
+    for sx in [0.10, -0.10]:
+        cyl(f'stack{sx}', 0.035, 0.26, sx, -0.10, 0.38, mat=iron, verts=12)
+        cone(f'flare{sx}', 0.035, 0.055, 0.05, sx, -0.10, 0.53, mat=steel, verts=12)
+        box(f'stackvent{sx}', 0.05, 0.02, 0.10, sx, -0.06, 0.38, mat=rub)
+    rivet_line(-0.08, 0.08, 0.04, 0.04, 4, steel)
+    greebles(0, -0.10, -0.01, (0.24, 0.10, 0.12), 6, [iron, steel, oil], seed=44)
+    groove(0, -0.10, 0.16, 0.27, 0.006, 0.28)   # vertical groove down the boiler
+
+def b_wp_shear():
+    iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    cyl('haft', 0.028, 0.50, 0, 0, 0.18, mat=rust, verts=10)
+    cyl('grip', 0.036, 0.14, 0, 0, -0.04, mat=rub, verts=10)
+    # shear housing with grooves
+    box('housing', 0.16, 0.14, 0.26, 0, 0, 0.50, mat=iron, bev=0.012)
+    groove(0, 0.075, 0.50, 0.15, 0.006, 0.24)
+    rivet_line(-0.06, 0.06, 0.075, 0.42, 3, steel)
+    # hydraulic piston driving the jaws
+    piston(0, -0.06, 0.40, 0.58, 0.018, 0.028, steel, iron)
+    # twin shear jaws with teeth
+    for sx, rz in [(0.05, 0.28), (-0.05, -0.28)]:
+        box(f'jaw{sx}', 0.045, 0.10, 0.26, sx, 0.02, 0.74, mat=steel, rz=rz, bev=0.008)
+        for i in range(4):
+            box(f'tooth{sx}_{i}', 0.02, 0.04, 0.035, sx+math.copysign(0.02, sx), 0.02, 0.66+i*0.05, mat=haz, bev=0.003)
+    cyl('pivot', 0.035, 0.16, 0, 0.02, 0.64, mat=oil, verts=10, ry=1.5708)
+
+# ============ BRUISER DISTINCT BREACH SET (bruiser3) ============
+# Design language: "contained inferno" — glowing cores venting through cracked
+# plating, overbuilt hardware. Original designs, distinct from the fracture
+# set. All BREACH-mode exclusive.
+def b_head_cinder():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    cyl('neck', 0.085, 0.075, 0, 0, 0.038, mat=iron, verts=14)
+    torus('neckring', 0.095, 0.015, 0, 0, 0.075, mat=rust, major=14, minor=8)
+    # ember skull: glowing core under a split helm
+    sph('core', 0.095, 0, 0.02, 0.17, mat=glow, sx=1.0, sy=1.1, sz=1.0)
+    # split helm chunks with fault gaps
+    box('helm_top', 0.15, 0.15, 0.05, 0, 0.0, 0.28, mat=steel, rx=0.2, bev=0.008)
+    box('helm_l', 0.09, 0.12, 0.14, 0.10, 0.03, 0.19, mat=rust, rz=0.3, bev=0.006)
+    box('helm_r', 0.09, 0.12, 0.14, -0.10, 0.03, 0.19, mat=rust, rz=-0.3, bev=0.006)
+    # vent horns
+    cone('horn_l', 0.022, 0.008, 0.13, 0.09, -0.08, 0.27, mat=iron, verts=8, rx=-0.55)
+    cone('horn_r', 0.022, 0.008, 0.13, -0.09, -0.08, 0.27, mat=iron, verts=8, rx=-0.55)
+    # glowing vent slits on the cheeks
+    box('slit_l', 0.02, 0.06, 0.015, 0.115, 0.05, 0.15, mat=glow)
+    box('slit_r', 0.02, 0.06, 0.015, -0.115, 0.05, 0.15, mat=glow)
+    # visor slit + brow
+    box('visor', 0.12, 0.02, 0.025, 0, 0.135, 0.175, mat=glow)
+    box('brow', 0.19, 0.05, 0.045, 0, 0.10, 0.24, mat=iron, rx=-0.25, bev=0.008)
+    rivet_line(-0.07, 0.07, 0.115, 0.25, 4, steel)
+
+def b_torso_magma():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    box('pelvis', 0.37, 0.29, 0.21, 0, 0, -0.06, mat=iron, bev=0.015)
+    rivet_line(-0.15, 0.15, 0.15, -0.02, 5, steel)
+    cyl('spine', 0.06, 0.44, 0, 0.02, 0.22, mat=steel, verts=12, rx=0.1)
+    # magma core window in the chest
+    cyl('magmacore', 0.10, 0.28, 0, 0.07, 0.28, mat=glow, verts=16)
+    for i, z in enumerate([0.18, 0.28, 0.38]):
+        torus(f'corering{i}', 0.105, 0.015, 0, 0.07, z, mat=iron, major=16, minor=8)
+    # cracked chest plates tilted away from the core
+    box('plate_tl', 0.15, 0.16, 0.05, 0.11, 0.14, 0.42, mat=steel, rx=-0.4, rz=0.3, bev=0.008)
+    box('plate_tr', 0.15, 0.16, 0.05, -0.11, 0.14, 0.42, mat=steel, rx=-0.4, rz=-0.3, bev=0.008)
+    box('plate_ll', 0.16, 0.15, 0.05, 0.115, 0.13, 0.15, mat=rust, rx=0.35, rz=-0.25, bev=0.008)
+    box('plate_lr', 0.16, 0.15, 0.05, -0.115, 0.13, 0.15, mat=rust, rx=0.35, rz=0.25, bev=0.008)
+    # glowing side vents
+    for sx in [0.23, -0.23]:
+        box(f'ventwell{sx}', 0.03, 0.14, 0.16, sx, 0.0, 0.28, mat=iron)
+        box(f'ventglow{sx}', 0.032, 0.10, 0.03, sx, 0.0, 0.28, mat=glow)
+        box(f'ventglow2{sx}', 0.032, 0.10, 0.03, sx, 0.0, 0.34, mat=glow)
+    bolt_circle(0, 0.07, 0.44, 0.06, 6, 0.009, steel, axis='y')
+    torso_sockets()
+
+def b_arm_ember():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    # delt with glow seam
+    box('delt', 0.15, 0.15, 0.12, 0, 0, -0.05, mat=rust, bev=0.010)
+    box('deltseam', 0.16, 0.02, 0.02, 0, 0.065, -0.05, mat=glow)
+    box('upper', 0.13, 0.13, 0.22, 0, 0, -0.18, mat=iron, bev=0.012)
+    groove(0, 0.07, -0.18, 0.14, 0.006, 0.20)
+    # forearm with glowing vent
+    box('fore', 0.15, 0.15, 0.22, 0, 0, -0.40, mat=steel, bev=0.012)
+    box('forevent', 0.10, 0.02, 0.12, 0, 0.075, -0.40, mat=iron)
+    box('foreglow', 0.08, 0.022, 0.025, 0, 0.075, -0.40, mat=glow)
+    piston(0, -0.085, -0.28, -0.46, 0.015, 0.024, steel, iron)
+    # ember fist: knuckle cores glow
+    box('fist', 0.10, 0.11, 0.10, 0, 0.01, -0.55, mat=iron, bev=0.010)
+    for i in range(3):
+        box(f'core{i}', 0.026, 0.045, 0.035, -0.032+i*0.032, 0.068, -0.56, mat=glow, bev=0.004)
+    arm_weapon_socket()
+
+def b_leg_ash():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    box('hip', 0.17, 0.18, 0.14, 0, 0, -0.06, mat=iron, bev=0.012)
+    box('thigh', 0.18, 0.19, 0.28, 0, 0, -0.25, mat=rust, bev=0.014)
+    box('thighseam', 0.19, 0.02, 0.02, 0, 0.095, -0.25, mat=glow)  # glow seam
+    rivet_line(-0.065, 0.065, 0.10, -0.20, 4, steel)
+    # knee with glow core
+    box('knee', 0.16, 0.07, 0.12, 0, 0.09, -0.43, mat=steel, bev=0.010)
+    box('kneeglow', 0.10, 0.02, 0.03, 0, 0.125, -0.43, mat=glow)
+    # shin core: structural column knee -> ankle
+    box('shin', 0.12, 0.12, 0.38, 0, 0, -0.67, mat=iron, bev=0.010)
+    box('shinseam', 0.13, 0.02, 0.02, 0, 0.06, -0.67, mat=glow)
+    layered_plate(0, 0.05, -0.66, 0.19, 0.11, 0.03, 3, steel, axis='y')
+    # ankle glow cores + piston
+    box('ankle', 0.13, 0.14, 0.12, 0, 0, -0.92, mat=iron, bev=0.010)
+    box('ankleglow_l', 0.03, 0.10, 0.04, 0.05, 0.03, -0.92, mat=glow)
+    box('ankleglow_r', 0.03, 0.10, 0.04, -0.05, 0.03, -0.92, mat=glow)
+    piston(0, -0.10, -0.70, -0.95, 0.016, 0.026, steel, iron)
+    box('foot', 0.21, 0.33, 0.10, 0, 0.06, -1.07, mat=iron, bev=0.012)
+    box('sole', 0.22, 0.35, 0.02, 0, 0.06, -1.11, mat=rub)
+
+def b_sh_flare():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    # layered mantle with glow vents between layers
+    layered_plate(0.02, 0, 0.02, 0.22, 0.19, 0.035, 3, steel, axis='z')
+    box('ventglow1', 0.18, 0.16, 0.015, 0.02, 0, 0.055, mat=glow)
+    box('ventglow2', 0.16, 0.14, 0.015, 0.02, 0, 0.10, mat=glow)
+    groove(0.02, 0, 0.14, 0.20, 0.17, 0.006)
+    rivet_line(-0.05, 0.09, 0.095, 0.17, 4, iron)
+    # flare spikes on the rim
+    for i, a in enumerate([-0.4, 0, 0.4]):
+        cone(f'spike{i}', 0.015, 0.004, 0.07, 0.02+math.sin(a)*0.10, math.cos(a)*0.08, 0.15, mat=rust, verts=8, ry=a)
+
+def b_pk_pyre():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    # origin = mount point on the torso's back; stack rises +Z just behind it
+    cyl('stack', 0.11, 0.34, 0, -0.10, 0.20, mat=iron, verts=16)
+    cyl('pyrecore', 0.06, 0.30, 0, -0.10, 0.20, mat=glow, verts=12)
+    # cracked shroud chunks around the stack
+    for i, a in enumerate([0.5, 2.0, 3.6, 5.1]):
+        box(f'shroud{i}', 0.10, 0.06, 0.20, math.cos(a)*0.13, -0.10+math.sin(a)*0.10, 0.20, mat=rust, rz=a*0.5, bev=0.006)
+    cone('crown', 0.13, 0.09, 0.08, 0, -0.10, 0.41, mat=steel, verts=16)
+    rivet_line(-0.09, 0.09, 0.02, 0.06, 4, steel)
+    greebles(0, -0.10, 0.0, (0.26, 0.10, 0.12), 6, [iron, oil, haz], seed=55)
+
+def b_wp_brand():
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    cyl('shaft', 0.026, 0.52, 0, 0, 0.20, mat=rust, verts=10)
+    cyl('grip', 0.034, 0.14, 0, 0, -0.04, mat=rub, verts=10)
+    # vented collar
+    cyl('collar', 0.055, 0.10, 0, 0, 0.42, mat=iron, verts=12)
+    for i in range(4):
+        box(f'collarvent{i}', 0.02, 0.06, 0.05, 0.045*math.cos(i*1.57), 0.045*math.sin(i*1.57), 0.42, mat=glow)
+    # glowing brand head: faceted spear tip
+    cone('brand', 0.06, 0.010, 0.26, 0, 0, 0.60, mat=glow, verts=8)
+    cyl('brandbase', 0.045, 0.06, 0, 0, 0.47, mat=steel, verts=8)
+    # counterweight pommel
+    sph('pommel', 0.04, 0, 0, -0.12, mat=iron, sx=1, sy=1, sz=1.2)
+    groove(0, 0.0, 0.20, 0.056, 0.006, 0.40)   # groove down the shaft
 # Design language: the mech's restrained power breaking loose — cracked armor
 # plates split apart to reveal a molten breach-glow core, overbuilt siege
 # hardware, barely-contained energy. EVA-biomech + derby grit, original
@@ -776,6 +1123,24 @@ PARTS = [
  ('fracture-crest','shoulder','Fracture Crest','Jagged crest split by a glowing fault line. Breach mode.',['breach'],{'armor':7,'speed':3,'power':5,'weight':7},'b_sh_fracturecrest'),
  ('vent-surge','backpack','Vent Surge','Overloaded triple vent stack with cracked shrouds venting breach-glow. Breach mode.',['breach'],{'armor':6,'speed':4,'power':9,'weight':8},'b_pk_ventsurge'),
  ('core-maul','weapon','Core Maul','Siege maul with a cracked head venting a molten core. Breach mode.',['breach'],{'armor':2,'speed':4,'power':10,'weight':8},'b_wp_coremaul'),
+ # --- BRUISER DISTINCT COMBAT SET (bruiser2): replaces the shared scout
+ # combat set for the bruiser build. Layered siege-bastion language.
+ ('head-bruiser2','head','Bulwark Helm','Heavy angular helm with an offset mono-eye sensor, cheek vents and a grooved crest fin. Bruiser combat.',['combat'],{'armor':16,'speed':4,'power':7,'weight':9},'b_head_bulwark'),
+ ('torso-bruiser2','torso','Bastion Core','Layered front armor over a spine frame, panel grooves, side vents and rivet fields. Bruiser combat.',['combat'],{'armor':19,'speed':3,'power':6,'weight':10},'b_torso_bastion'),
+ ('arms-bruiser2','arm','Forge Gauntlet','Heavy fists with knuckle plates, forearm vent and exposed piston. Bruiser combat.',['combat'],{'armor':16,'speed':3,'power':9,'weight':9},'b_arm_forge'),
+ ('legs-bruiser2','leg','Pylon Stomp','Wide pylon legs with a vented knee shroud, layered greaves and twin ankle pistons. Bruiser combat.',['combat'],{'armor':17,'speed':3,'power':7,'weight':10},'b_leg_pylon'),
+ ('shoulders-bruiser2','shoulder','Slab Pauldron','Asymmetric layered slab pauldrons with panel grooves and rivets. Bruiser combat.',['combat'],{'armor':15,'speed':3,'power':5,'weight':8},'b_sh_slab'),
+ ('backpack-bruiser2','backpack','Furnace Pack','Vented boiler drum with twin exhaust stacks and flares. Bruiser combat.',['combat'],{'armor':13,'speed':4,'power':7,'weight':8},'b_pk_furnace'),
+ ('weapon-bruiser2','weapon','Shear Jaws','Hydraulic demolition shear with toothed pincer jaws. Bruiser combat.',['combat'],{'armor':3,'speed':4,'power':10,'weight':8},'b_wp_shear'),
+ # --- BRUISER DISTINCT BREACH SET (bruiser3): contained-inferno language,
+ # glowing cores venting through cracked plating.
+ ('head-bruiser3','head','Cinder Crown','Horned helm split around a glowing core, vent slits and a glow visor. Bruiser breach.',['breach'],{'armor':15,'speed':4,'power':8,'weight':9},'b_head_cinder'),
+ ('torso-bruiser3','torso','Magma Heart','Magma core window ringed by cracked chest plates and glowing side vents. Bruiser breach.',['breach'],{'armor':18,'speed':3,'power':9,'weight':10},'b_torso_magma'),
+ ('arms-bruiser3','arm','Ember Fist','Arms with glowing knuckle cores, forearm vent glow and a panel groove. Bruiser breach.',['breach'],{'armor':16,'speed':4,'power':10,'weight':9},'b_arm_ember'),
+ ('legs-bruiser3','leg','Ash Stride','Legs with glowing knee, ankle and thigh-seam cores over layered greaves. Bruiser breach.',['breach'],{'armor':17,'speed':4,'power':8,'weight':10},'b_leg_ash'),
+ ('shoulders-bruiser3','shoulder','Flare Mantle','Layered mantle with glow vents between the plates and rim flare spikes. Bruiser breach.',['breach'],{'armor':14,'speed':4,'power':6,'weight':8},'b_sh_flare'),
+ ('backpack-bruiser3','backpack','Pyre Stack','Central vent stack with a glowing pyre core under cracked shroud chunks. Bruiser breach.',['breach'],{'armor':12,'speed':5,'power':9,'weight':8},'b_pk_pyre'),
+ ('weapon-bruiser3','weapon','Brand Lance','Spear with a glowing faceted brand head, vented collar and grooved shaft. Bruiser breach.',['breach'],{'armor':2,'speed':5,'power':10,'weight':7},'b_wp_brand'),
 ]
 
 def main():

@@ -1,0 +1,17 @@
+{
+ "id": "arms-bruiser2",
+ "slot": "arms",
+ "name": "Forge Gauntlet",
+ "description": "Heavy fists with knuckle plates, forearm vent and exposed piston. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 16,
+  "speed": 3,
+  "power": 9,
+  "weight": 9
+ },
+ "model": "arms-bruiser2.glb",
+ "tris": 888
+}

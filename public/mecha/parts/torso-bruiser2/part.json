@@ -1,0 +1,17 @@
+{
+ "id": "torso-bruiser2",
+ "slot": "torso",
+ "name": "Bastion Core",
+ "description": "Layered front armor over a spine frame, panel grooves, side vents and rivet fields. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 19,
+  "speed": 3,
+  "power": 6,
+  "weight": 10
+ },
+ "model": "torso-bruiser2.glb",
+ "tris": 1057
+}

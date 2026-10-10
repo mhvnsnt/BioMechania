@@ -1,0 +1,17 @@
+{
+ "id": "torso-bruiser3",
+ "slot": "torso",
+ "name": "Magma Heart",
+ "description": "Magma core window ringed by cracked chest plates and glowing side vents. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 18,
+  "speed": 3,
+  "power": 9,
+  "weight": 10
+ },
+ "model": "torso-bruiser3.glb",
+ "tris": 1110
+}

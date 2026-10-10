@@ -1,0 +1,17 @@
+{
+ "id": "legs-bruiser2",
+ "slot": "legs",
+ "name": "Pylon Stomp",
+ "description": "Wide pylon legs with a vented knee shroud, layered greaves and twin ankle pistons. Bruiser combat.",
+ "modes": [
+  "combat"
+ ],
+ "stats": {
+  "armor": 17,
+  "speed": 3,
+  "power": 7,
+  "weight": 10
+ },
+ "model": "legs-bruiser2.glb",
+ "tris": 1328
+}

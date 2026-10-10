@@ -1,0 +1,17 @@
+{
+ "id": "shoulders-bruiser3",
+ "slot": "shoulders",
+ "name": "Flare Mantle",
+ "description": "Layered mantle with glow vents between the plates and rim flare spikes. Bruiser breach.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 14,
+  "speed": 4,
+  "power": 6,
+  "weight": 8
+ },
+ "model": "shoulders-bruiser3.glb",
+ "tris": 624
+}
