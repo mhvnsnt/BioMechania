@@ -224,37 +224,43 @@ def stage_weapon_fire(info, weapon):
         fwd = Vector((0, 1, 0))
     fwd.normalize()
 
-    # Procedural muzzle flash: short emissive cone + spark orbs + point light.
-    # Narrow end (-Z) at the muzzle, wide end (+Z) flaring along fwd; the
-    # cone base overlaps the tip so the flash visibly touches the barrel.
-    fmat = _emission_material("fx_muzzle", (1.0, 0.45, 0.08), 9.0)
-    cone_depth = 0.30
-    cone_center = tip + fwd * (cone_depth / 2 - 0.05)
-    bpy.ops.mesh.primitive_cone_add(
-        radius1=0.025, radius2=0.085, depth=cone_depth,
-        location=cone_center)
-    cone = bpy.context.active_object
-    cone.name = "fx_muzzle_cone"
-    cone.rotation_euler = fwd.to_track_quat("Z", "Y").to_euler()
-    cone.data.materials.append(fmat)
-    # Side vector for spark offsets (perpendicular to fwd).
-    side = fwd.cross(Vector((0, 0, 1)))
-    if side.length < 1e-6:
-        side = Vector((1, 0, 0))
-    side.normalize()
-    for i, (s, d) in enumerate(((0.03, 0.10), (-0.025, 0.16), (0.008, 0.22))):
-        bpy.ops.mesh.primitive_uv_sphere_add(
-            radius=0.02, segments=10, ring_count=6,
-            location=tip + fwd * d + side * s)
-        orb = bpy.context.active_object
-        orb.name = f"fx_spark_{i}"
-        orb.data.materials.append(fmat)
-    bpy.ops.object.light_add(type="POINT",
-                             location=tip + fwd * 0.32)
-    lamp = bpy.context.active_object
-    lamp.name = "fx_muzzle_light"
-    lamp.data.energy = 900
-    lamp.data.color = (1.0, 0.5, 0.15)
+    # Muzzle flash only for weapons that fire projectiles/energy: the
+    # core-maul is a physical hammer — a flash cone on its head reads as
+    # a floating detached blob (caught 2026-10-10). The maul's "fire" is
+    # the hot core glow + recoil pose, no projectile FX.
+    if weapon != "core-maul":
+
+        # Procedural muzzle flash: short emissive cone + spark orbs + point light.
+        # Narrow end (-Z) at the muzzle, wide end (+Z) flaring along fwd; the
+        # cone base overlaps the tip so the flash visibly touches the barrel.
+        fmat = _emission_material("fx_muzzle", (1.0, 0.45, 0.08), 9.0)
+        cone_depth = 0.30
+        cone_center = tip + fwd * (cone_depth / 2 - 0.05)
+        bpy.ops.mesh.primitive_cone_add(
+            radius1=0.025, radius2=0.085, depth=cone_depth,
+            location=cone_center)
+        cone = bpy.context.active_object
+        cone.name = "fx_muzzle_cone"
+        cone.rotation_euler = fwd.to_track_quat("Z", "Y").to_euler()
+        cone.data.materials.append(fmat)
+        # Side vector for spark offsets (perpendicular to fwd).
+        side = fwd.cross(Vector((0, 0, 1)))
+        if side.length < 1e-6:
+            side = Vector((1, 0, 0))
+        side.normalize()
+        for i, (s, d) in enumerate(((0.03, 0.10), (-0.025, 0.16), (0.008, 0.22))):
+            bpy.ops.mesh.primitive_uv_sphere_add(
+                radius=0.02, segments=10, ring_count=6,
+                location=tip + fwd * d + side * s)
+            orb = bpy.context.active_object
+            orb.name = f"fx_spark_{i}"
+            orb.data.materials.append(fmat)
+        bpy.ops.object.light_add(type="POINT",
+                                 location=tip + fwd * 0.32)
+        lamp = bpy.context.active_object
+        lamp.name = "fx_muzzle_light"
+        lamp.data.energy = 900
+        lamp.data.color = (1.0, 0.5, 0.15)
 
     # Recoil pose: shove the root back and pitch it, then re-ground.
     info["mech_root"].location.y -= 0.12
