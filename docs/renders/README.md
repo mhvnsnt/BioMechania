@@ -32,7 +32,10 @@ docs/renders/<build>/<shot-id>.png
 
 **Current status (foundation build):** smoke-test heroes only —
 `scout/M-1-racer.png`, `scout/M-1-combat.png`, `scout/M-1-breach.png`.
-The full ~25-shot-per-build production is the render lanes' work, using
+The pipeline assembles a **neutral stance**; dynamic per-shot posing
+(racer tuck, combat planted weapon pose, breach restraint-release) is
+the render lanes' pass on top of this foundation. The full
+~25-shot-per-build production is the render lanes' work, using
 this pipeline. Every shot must pass the 6 QC gates (§9.9): soul-part
 constancy, mode delta, no mass vanish, no clipping, hybrid readability,
 grounding.
