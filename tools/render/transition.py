@@ -46,8 +46,9 @@ SHOT_STATES = {
     "T-25": {
         # Frames 0-6: head retracts, aero releases. Combat parts stowed
         # (Device 3: combat-only armor retracts in racer mode) except the
-        # head, which begins its descent early for readability.
-        "head":      ("retract", 0.55, True),
+        # head, which begins its descent early for readability — kept close
+        # (0.35) so it doesn't stretch the framing.
+        "head":      ("retract", 0.35, True),
         "torso":     (0.00, 1.00, False),
         "arms":      (0.12, 1.00, False),
         "legs":      (0.12, 1.00, False),
