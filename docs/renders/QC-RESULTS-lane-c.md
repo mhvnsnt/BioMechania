@@ -51,7 +51,7 @@ per build (proves Device 6 color delta).
 | T-FRONT (bruiser) | docs/renders/bruiser/T-FRONT-combat.png | PENDING | |
 | T-SIDE (bruiser) | docs/renders/bruiser/T-SIDE-combat.png | PENDING | |
 | T-BACK (bruiser) | docs/renders/bruiser/T-BACK-combat.png | PENDING | |
-| D-CRACK (scout) | docs/renders/scout/D-CRACK-combat.png | FAIL→re-render | Cracks unreadable: 0.045u plate shifts invisible at 1280x720, under-glow lamp (260) too subtle — damage didn't read. Fix: crack displacement 0.045→0.07, crack lamp 260→450. Queued for fixup pass. |
+| D-CRACK (scout) | docs/renders/scout/D-CRACK-combat.png | PASS | Re-rendered with stronger cracks (0.07 displacement, 450 lamp): plate separations visible at torso/pelvis with warm under-glow leaking through (4x zoom confirms gaps + orange light). Reads as cracked plating. |
 | D-WRECK (scout) | docs/renders/scout/D-WRECK-combat.png | FAIL→re-render | Real defect: the destroyed arm (x>0) was hidden but the WEAPON mounted on it was not — siegeplow floated detached in mid-air (4x zoom of mount area). Fix: stage_damage_wreck now hides the "weapon" slot too. Queued for fixup pass. |
 | D-CRACK (bruiser) | docs/renders/bruiser/D-CRACK-combat.png | PENDING | |
 | D-WRECK (bruiser) | docs/renders/bruiser/D-WRECK-combat.png | PENDING | |
