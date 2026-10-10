@@ -52,7 +52,14 @@ def frame_mech(azim_deg, elev_deg, dist_mul=2.6, zoff=0.0,
     el = math.radians(elev_deg)
     if ortho:
         cam.data.type = "ORTHO"
-        cam.data.ortho_scale = size * 1.45
+        # Fit the full height vertically with margin, accounting for the
+        # render aspect ratio: in Blender ortho_scale is the HORIZONTAL
+        # extent, so vertical extent = ortho_scale * res_y / res_x.
+        # (The old fixed 1.45 multiplier cut the head/feet off at 16:9.)
+        rx = bpy.context.scene.render.resolution_x
+        ry = bpy.context.scene.render.resolution_y
+        aspect = rx / max(ry, 1)
+        cam.data.ortho_scale = size * 1.25 * aspect
         d = size * 4.0 + 1.0
     else:
         cam.data.type = "PERSP"
