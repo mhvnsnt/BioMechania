@@ -63,9 +63,9 @@ def pose_for(shot, mode):
 
 def apply_pose(info, shot, mode):
     """Rotate slot anchors per the pose table. Returns applied table."""
+    import bpy
+
     table = pose_for(shot, mode)
-    if not table:
-        return {}
     anchors = info["anchors"]
     targets = dict(anchors)
     targets["torso"] = info["torso_anchor"]
@@ -78,4 +78,15 @@ def apply_pose(info, shot, mode):
             obj.rotation_euler.y + math.radians(ry),
             obj.rotation_euler.z + math.radians(rz),
         )
+    # The weapon is mounted to the arm's hand socket but assemble.py parents
+    # its anchor under the torso anchor. Rotating the arms then leaves the
+    # weapon behind (floating detached). Re-parent it under the arms anchor,
+    # preserving world transform, so it stays gripped through the pose.
+    # Lane-local: only render_shot.py poses; other lanes unaffected.
+    w = anchors.get("weapon")
+    arms = anchors.get("arms")
+    if w is not None and arms is not None and w.parent is not arms:
+        bpy.context.view_layer.update()
+        w.parent = arms
+        w.matrix_parent_inverse = arms.matrix_world.inverted()
     return table
