@@ -200,7 +200,8 @@ def place_soul(info):
       surface + 0.025.
 
     Geometry is identical in every mode; only the placement adapts.
-    Call AFTER grounding (uses world positions).
+    Called before grounding in render_shot.py; the soul anchors ride the
+    anchors, so the later uniform ground shift carries them along.
     """
     from .assemble import parent_keep, place_on_anchor
 
