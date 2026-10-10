@@ -517,8 +517,15 @@ def weapon_warmup(info):
     assemble.parent_keep(dep, anchor)
     for o in wobjs:
         assemble.parent_keep(o, dep)
-    dep.location = Vector((0.30, 0.0, 0.12))
-    dep.rotation_euler = (0, 0, math.radians(-18))
+    # Deploy: lift the weapon group out of the mount, away from the body.
+    # Outward = horizontal direction from torso center to the weapon anchor.
+    anchor_pos = anchor.matrix_world.translation.copy()
+    torso_pos = info["torso_anchor"].matrix_world.translation.copy()
+    out = anchor_pos - torso_pos
+    out.z = 0.0
+    out = out.normalized() if out.length > 1e-6 else Vector((1, 0, 0))
+    dep.location = out * 0.45 + Vector((0, 0, 0.15))
+    dep.rotation_euler = (0, 0, math.radians(-30))
     # Warmup glow on the weapon's materials.
     for mt in _obj_materials(wobjs):
         bsdf = mt.node_tree.nodes.get("Principled BSDF") if mt.use_nodes else None
