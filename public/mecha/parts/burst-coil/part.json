@@ -1,0 +1,17 @@
+{
+ "id": "burst-coil",
+ "slot": "torso",
+ "name": "Burst Coil",
+ "description": "Siege torso whose chest plating burst open around a glowing coil core. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 9,
+  "speed": 3,
+  "power": 8,
+  "weight": 9
+ },
+ "model": "burst-coil.glb",
+ "tris": 1170
+}

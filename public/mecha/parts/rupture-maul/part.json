@@ -1,0 +1,17 @@
+{
+ "id": "rupture-maul",
+ "slot": "arms",
+ "name": "Rupture Maul",
+ "description": "Overbuilt arm with cracked gauntlet plates, a split delt and overdrive pistons. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 8,
+  "speed": 3,
+  "power": 10,
+  "weight": 9
+ },
+ "model": "rupture-maul.glb",
+ "tris": 1076
+}

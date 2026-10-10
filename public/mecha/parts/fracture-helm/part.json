@@ -1,0 +1,17 @@
+{
+ "id": "fracture-helm",
+ "slot": "head",
+ "name": "Fracture Helm",
+ "description": "Cracked helm split open to vent a breach-glow core, split brow and vent horns. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 8,
+  "speed": 3,
+  "power": 7,
+  "weight": 8
+ },
+ "model": "fracture-helm.glb",
+ "tris": 640
+}

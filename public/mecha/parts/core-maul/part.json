@@ -1,0 +1,17 @@
+{
+ "id": "core-maul",
+ "slot": "weapon",
+ "name": "Core Maul",
+ "description": "Siege maul with a cracked head venting a molten core. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 2,
+  "speed": 4,
+  "power": 10,
+  "weight": 8
+ },
+ "model": "core-maul.glb",
+ "tris": 436
+}

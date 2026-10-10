@@ -1,0 +1,17 @@
+{
+ "id": "surge-stomp",
+ "slot": "legs",
+ "name": "Surge Stomp",
+ "description": "Heavy leg with cracked greaves, glowing seams and twin drive pistons. Breach mode.",
+ "modes": [
+  "breach"
+ ],
+ "stats": {
+  "armor": 9,
+  "speed": 3,
+  "power": 8,
+  "weight": 9
+ },
+ "model": "surge-stomp.glb",
+ "tris": 748
+}
