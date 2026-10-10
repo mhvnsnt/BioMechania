@@ -150,14 +150,18 @@ def _surface_y(target_meshes, x, z, fallback_y):
     # Walk all hits along the ray manually: ray_cast returns the closest;
     # re-cast past soul/undersuit hits (shouldn't occur pre-placement, but
     # this keeps the helper safe to reuse after placement too).
-    target_ids = {o.as_pointer() for o in target_meshes if o.type == "MESH"}
+    target_names = {o.name for o in target_meshes if o.type == "MESH"}
     for _ in range(8):
         result, loc, _n, _i, obj, _m = bpy.context.scene.ray_cast(
             depsgraph, origin, direction
         )
         if not result or obj is None:
             break
-        if obj.as_pointer() in target_ids:
+        # NOTE: ray_cast returns EVALUATED objects — identity-compare by
+        # original name, not by pointer (evaluated proxies have different
+        # C pointers than the scene objects).
+        hit_name = obj.original.name if obj.original else obj.name
+        if hit_name in target_names:
             hit_y = loc.y
             break
         # Skip anything that isn't one of our target part meshes.
@@ -167,24 +171,38 @@ def _surface_y(target_meshes, x, z, fallback_y):
     return hit_y
 
 
+def _proudest_point(target_meshes, fractions, mn, mx, fallback_y):
+    """Sweep several heights across the face zone; return (y, z) of the most
+    forward surface hit. Guards against sloped crowns: a single sample near
+    the top can hit the crown and bury the soul part behind the face."""
+    best = (fallback_y, mn.z + 0.65 * (mx.z - mn.z))
+    for f in fractions:
+        z = mn.z + f * (mx.z - mn.z)
+        y = _surface_y(target_meshes, 0.0, z, fallback_y)
+        if y > best[0]:
+            best = (y, z)
+    return best
+
+
 def place_soul(info):
     """Position the canonical soul geometry on the assembled mech.
 
-    Placement is computed by RAYCASTING the actual part surfaces, so the
-    soul always sits proud of the real geometry (angled breastplates,
-    protruding visors) instead of a bbox guess:
+    Placement is computed by RAYCASTING the actual part surfaces — sweeping
+    several heights and taking the most forward hit — so the soul always
+    sits proud of the real geometry (angled breastplates, protruding
+    visors, sloped crowns) instead of a bbox guess:
 
-    - face-plate: upper face (68% of head height), centered x=0, plate
-      front clear of the measured surface + 0.035. The plate covers the
-      upper-face zone so the twin optics ARE the face read — the visual
-      constant across modes (study §8, Device 1).
-    - chest sigil: torso front at 62% torso height, clear of the measured
-      chest surface + 0.025.
+    - face-plate: upper-face zone, centered x=0, plate clear of the most
+      forward measured surface + 0.030. The plate covers the upper-face
+      zone so the twin optics ARE the face read — the visual constant
+      across modes (study §8, Device 1).
+    - chest sigil: torso front, clear of the most forward measured chest
+      surface + 0.025.
 
     Geometry is identical in every mode; only the placement adapts.
     Call AFTER grounding (uses world positions).
     """
-    from .assemble import parent_keep
+    from .assemble import parent_keep, place_on_anchor
 
     bpy.context.view_layer.update()
     mats = soul_materials()
@@ -195,29 +213,31 @@ def place_soul(info):
     tmn, tmx = _bounds_world(torso_meshes)
     head_w = hmx.x - hmn.x
 
-    # --- face-plate: upper face, proud of the measured surface ---
+    # --- face-plate: upper face, proud of the most forward surface ---
     plate_w = min(0.34, head_w * 0.80)
-    z_face = hmn.z + 0.68 * (hmx.z - hmn.z)
-    surf_y = _surface_y(head_meshes, 0.0, z_face, hmx.y)
+    surf_y, z_face = _proudest_point(
+        head_meshes, (0.55, 0.60, 0.65, 0.70, 0.75), hmn, hmx, hmx.y
+    )
+    print(f"soul face: proudest surface y={surf_y:.3f} at z={z_face:.3f}")
     face = build_face_plate(mats, width=plate_w)
-    face_loc = Vector((0.0, surf_y + 0.035, z_face))
+    face_loc = Vector((0.0, surf_y + 0.030, z_face))
     bpy.ops.object.empty_add(type="PLAIN_AXES", location=face_loc)
     face_anchor = bpy.context.active_object
     face_anchor.name = "soul_face_anchor"
-    for o in face:
-        parent_keep(o, face_anchor)
+    place_on_anchor(face, face_anchor)
     parent_keep(face_anchor, info["anchors"]["head"])
 
-    # --- chest sigil: torso front at 62% height, proud of the surface ---
-    chest_z = tmn.z + 0.62 * (tmx.z - tmn.z)
-    chest_y = _surface_y(torso_meshes, 0.0, chest_z, tmx.y)
+    # --- chest sigil: torso front, proud of the most forward surface ---
+    chest_y, chest_z = _proudest_point(
+        torso_meshes, (0.55, 0.62, 0.69), tmn, tmx, tmx.y
+    )
+    print(f"soul sigil: proudest surface y={chest_y:.3f} at z={chest_z:.3f}")
     sigil = build_chest_sigil(mats)
     sigil_loc = Vector((0.0, chest_y + 0.025, chest_z))
     bpy.ops.object.empty_add(type="PLAIN_AXES", location=sigil_loc)
     sigil_anchor = bpy.context.active_object
     sigil_anchor.name = "soul_sigil_anchor"
-    for o in sigil:
-        parent_keep(o, sigil_anchor)
+    place_on_anchor(sigil, sigil_anchor)
     parent_keep(sigil_anchor, info["torso_anchor"])
 
     bpy.context.view_layer.update()
