@@ -42,7 +42,7 @@ for s in "${shots[@]}"; do
   rc=$?
   echo "=== DONE $b/$m/$sh rc=$rc ($(date -u +%H:%M)) ==="
   heartbeat
-  git add "docs/renders/${b}/" 2>/dev/null
+  git add "$out" 2>/dev/null
   git commit -qm "Lane A: hero shot ${b} ${sh}-${m} (@${r}/${sp})" 2>/dev/null && echo "committed ${b} ${sh}-${m}" || echo "nothing to commit"
 done
 echo "ALL 18 SHOTS DONE"
