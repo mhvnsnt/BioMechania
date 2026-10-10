@@ -766,19 +766,20 @@ def b_sh_slab():
 
 def b_pk_furnace():
     iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
+    # origin = mount point on the torso's back; pack body extends -Y from it
     # vented boiler drum
-    cyl('boiler', 0.13, 0.30, 0, -0.34, 0.22, mat=rust, verts=16)
+    cyl('boiler', 0.13, 0.30, 0, -0.10, 0.16, mat=rust, verts=16)
     for i in range(3):
-        torus(f'band{i}', 0.135, 0.012, 0, -0.34, 0.12+i*0.10, mat=iron, major=16, minor=8)
-    vent(0, -0.20, 0.22, 0.16, 0.16, 5, iron, rust, facing='+y')
+        torus(f'band{i}', 0.135, 0.012, 0, -0.10, 0.06+i*0.10, mat=iron, major=16, minor=8)
+    vent(0, 0.04, 0.16, 0.16, 0.16, 5, iron, rust, facing='+y')
     # twin stacks with flares
     for sx in [0.10, -0.10]:
-        cyl(f'stack{sx}', 0.035, 0.26, sx, -0.34, 0.44, mat=iron, verts=12)
-        cone(f'flare{sx}', 0.035, 0.055, 0.05, sx, -0.34, 0.59, mat=steel, verts=12)
-        box(f'stackvent{sx}', 0.05, 0.02, 0.10, sx, -0.30, 0.44, mat=rub)
-    rivet_line(-0.08, 0.08, -0.20, 0.10, 4, steel)
-    greebles(0, -0.34, 0.05, (0.24, 0.10, 0.12), 6, [iron, steel, oil], seed=44)
-    groove(0, -0.34, 0.22, 0.27, 0.006, 0.28)   # vertical groove down the boiler
+        cyl(f'stack{sx}', 0.035, 0.26, sx, -0.10, 0.38, mat=iron, verts=12)
+        cone(f'flare{sx}', 0.035, 0.055, 0.05, sx, -0.10, 0.53, mat=steel, verts=12)
+        box(f'stackvent{sx}', 0.05, 0.02, 0.10, sx, -0.06, 0.38, mat=rub)
+    rivet_line(-0.08, 0.08, 0.04, 0.04, 4, steel)
+    greebles(0, -0.10, -0.01, (0.24, 0.10, 0.12), 6, [iron, steel, oil], seed=44)
+    groove(0, -0.10, 0.16, 0.27, 0.006, 0.28)   # vertical groove down the boiler
 
 def b_wp_shear():
     iron, steel, rust, haz, rub, bone, oil = (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE), M(*OILRED))
@@ -897,15 +898,15 @@ def b_sh_flare():
 
 def b_pk_pyre():
     iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
-    # pyre stack: central vent with glow core
-    cyl('stack', 0.11, 0.34, 0, -0.34, 0.26, mat=iron, verts=16)
-    cyl('pyrecore', 0.06, 0.30, 0, -0.34, 0.26, mat=glow, verts=12)
+    # origin = mount point on the torso's back; stack rises +Z just behind it
+    cyl('stack', 0.11, 0.34, 0, -0.10, 0.20, mat=iron, verts=16)
+    cyl('pyrecore', 0.06, 0.30, 0, -0.10, 0.20, mat=glow, verts=12)
     # cracked shroud chunks around the stack
     for i, a in enumerate([0.5, 2.0, 3.6, 5.1]):
-        box(f'shroud{i}', 0.10, 0.06, 0.20, math.cos(a)*0.13, -0.34+math.sin(a)*0.10, 0.26, mat=rust, rz=a*0.5, bev=0.006)
-    cone('crown', 0.13, 0.09, 0.08, 0, -0.34, 0.47, mat=steel, verts=16)
-    rivet_line(-0.09, 0.09, -0.22, 0.12, 4, steel)
-    greebles(0, -0.34, 0.06, (0.26, 0.10, 0.12), 6, [iron, oil, haz], seed=55)
+        box(f'shroud{i}', 0.10, 0.06, 0.20, math.cos(a)*0.13, -0.10+math.sin(a)*0.10, 0.20, mat=rust, rz=a*0.5, bev=0.006)
+    cone('crown', 0.13, 0.09, 0.08, 0, -0.10, 0.41, mat=steel, verts=16)
+    rivet_line(-0.09, 0.09, 0.02, 0.06, 4, steel)
+    greebles(0, -0.10, 0.0, (0.26, 0.10, 0.12), 6, [iron, oil, haz], seed=55)
 
 def b_wp_brand():
     iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
