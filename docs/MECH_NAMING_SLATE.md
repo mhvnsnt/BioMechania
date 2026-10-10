@@ -446,6 +446,18 @@ Cleared.
 - **RAINDANCE ROXY** — storm-caller mech. Check: original compound; no hits. Cleared.
 - **TOTEMFRAME** (r1) — totem-pole stacking of biomechanical parts. Cleared.
 - **TRIBEBORN** (r1) — born of the tribe. Cleared.
+- **MASKGRAFT** (r2) — grafts fallen masks onto its own frame; every scar is a trophy. Check: original compound; no hits. Cleared.
+- **TOTEMJACK** (r2) — stacks spirit-totems into one towering mech. Check: original compound; no hits. Cleared.
+- **IDOLJACK** (r2) — golden idol mech; worship it or get crushed. Check: original compound; no hits. Cleared.
+- **SPIRITCARVER** (r2) — carves spirit-channels into enemy armor. Check: original compound; closest is a Roblox "Spiritcleaver" accessory (distinct). Cleared.
+- **BONEIDOL** (r2) — bone idol; prays to itself, fights dirty. Check: original compound; no hits. Cleared.
+- **RELICMASK** (r2) — ancient relic mask, older than the arena. Check: original compound; no hits. Cleared.
+- **GHOSTCARVE** (r2) — carves curses that outlast the fight. Check: original compound; no hits. Cleared.
+- **MONOLITHJACK** (r2) — one slab, immovable, unkillable. Check: original compound; no hits. Cleared.
+- **HEADDRESS** (r2) — wears its victories as a crown. Check: common word; no character. Cleared.
+- **STONEMASK** (r2) — face of stone, fists of stone. Check: original compound; no hits. Cleared.
+- **TIKICHIEF** (r2) — tiki-faced chief of the carve gang. Check: original compound; no hits. Cleared.
+- **CHIEFTAIN** (r2) — the tribe's boss mech. Check: common word; no character (Tobot's "Wild Chief" is a distinct name; "Chief Robot Man" is a tin toy). Cleared, flagged as generic-adjacent — owner call.
 
 Dropped: TOTEMWORKS (brand — real "Totem Works" venture in use). WARDRUM (2026
 "Wardrum" rhythm-roguelite game + Greek power-metal band Wardrum) → final
@@ -476,6 +488,18 @@ Kamen Rider/mech/trademark — zero hits. Cleared.
 - **POSEDOWN** — transformation pose-off showboat. Check: original compound; "pose down" is a bodybuilding term, no character. Cleared.
 - **KICKJACK** (r1) — the Rider Kick, MDickie-fied. Cleared.
 - **BELTJACK** (r1) — the henshin belt, jacked. Cleared.
+- **CHITIN** (r2) — chitin-plated tank; the shell IS the strategy. Check: common biology word; no character. Cleared.
+- **MANDIBLE** (r2) — jaw-first grappler; bites before it thinks. Check: common biology word; no character. Cleared.
+- **FEELERJACK** (r2) — antenna-feeler scout; touches you before it hits you. Check: original compound; no character (a Steam fan-artwork titled "Jack The Feeler" is not a character). Cleared. Renamed off ANTENNAJACK to stay clear of CARAPACE's ANTENNA ACE and PUMMEL's ANTENNAE.
+- **COCOONER** (r2) — wraps foes in binding silk mid-fight. Check: original compound; no hits. Cleared.
+- **PUPA** (r2) — starts small, ends enormous. Check: common biology word; no character. Cleared.
+- **MOLTED** (r2) — sheds its broken armor and keeps swinging. Check: common biology word; no hits. Cleared.
+- **WINGCASE** (r2) — armored wing-cases double as shields. Check: original compound; no hits. Cleared.
+- **THORAXJACK** (r2) — thorax-core powerhouse; hits from the center. Check: original compound; no hits. Cleared.
+- **STINGERJACK** (r2) — stinger-first striker; one hit, done. Check: original compound; no hits. Cleared.
+- **SWARMKING** (r2) — commands a drone swarm. Check: original compound; no hits. Cleared.
+- **ELYTRA** (r2) — beetle-wing plated duelist. Check: common biology word; no hits. Cleared.
+- **GRUBJACK** (r2) — grubby underdog that outlasts everyone. Check: original compound; no hits. Cleared.
 
 ---
 
@@ -502,6 +526,21 @@ Rangers/team/trademark — zero hits. Cleared.
 - **MORPHJACK** (r1) — "morph" is the Rangers' word; jack it and make it ours. Cleared.
 - **CAGEBREAK** (r1) — breaks out of the monster-of-the-week cage. Cleared.
 - **POWERSTRANGER** (r1) — Power Rangers, one vowel off. Cleared.
+- **VIOLETJACK** (r2) — violet stealth ranger. Check: original compound; no hits. Cleared.
+- **MAGENTAMAX** (r2) — max-power magenta bruiser. Check: original compound; no hits. Cleared.
+- **CYANSPEED** (r2) — cyan speedster; blink and it's behind you. Check: original compound; no hits. Cleared.
+- **AMBERJACK** (r2) — amber wrecking ball. Check: original compound; no hits. Cleared.
+- **RAINBOWJACK** (r2) — full-spectrum showboat; every color is a weapon. Check: original compound; no hits. Cleared.
+- **HUEHUNTER** (r2) — hunts by color-signature. Check: original compound; no hits. Cleared.
+- **GOLDSHIFT** (r2) — gold-tier form-shifter. Check: original compound; no hits. Cleared.
+- **PURPLEJACK** (r2) — purple heavy. Check: original compound; no hits. Cleared.
+- **GREENJACK** (r2) — green grappler. Check: original compound; no hits. Cleared.
+- **ORANGEJACK** (r2) — orange blaster. Check: original compound; no hits. Cleared.
+- **SILVERJACK** (r2) — silver veteran; seen every color of war. Check: original compound; no hits. Cleared.
+- **PINKJACK** (r2) — pink daredevil. Check: original compound; no hits. Cleared.
+
+(r2) dropped: REDSHIFT (Marvel Comics Herald of Galactus) → final GOLDSHIFT.
+BLUESHIFT (Transformers Velocitronian scientist) → final CYANSPEED.
 
 Dropped: MEGABRAWL ("Power Rangers Megaforce: Swappz MegaBrawl" mobile game) →
 final DOGPILE. HIGHFIVE ("High Five" is the Glitch Techs protagonist + a
@@ -532,6 +571,21 @@ mech/trademark/game/character — zero hits. Cleared.
 - **FLYBY** — the hit-and-run itself. Check: no official character; only TF fan-RP OCs and a fan "OC name list" (free sample names). Cleared.
 - **WINGBEAT WALLY** — heartbeat of the flock. Check: "Wingbeat" appears only as attack-move names (MHA game, Marvel Snap, Yu-Gi-Oh); no character. Cleared.
 - **WINDSHEAR** — sudden, violent, gone. Check: common weather word; no character. Cleared.
+- **WINDPIPE** (r2) — screams through the sky at full throttle. Check: common word; no character. Cleared.
+- **ALTITUDE** (r2) — lives above the fight; drops in when it matters. Check: common word; no character. Cleared.
+- **AIRHOOK** (r2) — grapple-hook flyer; snags rivals mid-air. Check: original compound; no hits. Cleared.
+- **DIVEJACK** (r2) — dive-bomb specialist. Check: original compound; no hits. Cleared.
+- **MACHJACK** (r2) — breaks the sound barrier for fun. Check: original compound; no hits. Cleared.
+- **TAILWIND** (r2) — rides the wind; faster when everyone's chasing. Check: common word; no character. Cleared.
+- **AIRBRAKE** (r2) — stops on a dime, hits like a wall. Check: common word; no character. Cleared.
+- **GLIDESLOPE** (r2) — silent glider; you hear it after it lands. Check: original compound; no hits. Cleared.
+- **JETWASH** (r2) — leaves nothing standing in its wake. Check: common word; no character. Cleared.
+- **CLOUDSURF** (r2) — surfs stormfronts into battle. Check: original compound; no hits. Cleared.
+- **THUNDERHEAD** (r2) — storm-cloud bruiser. Check: no exact character; TF's Thunderhoof/Thunderwing are distinct names. Cleared.
+- **STORMCELL** (r2) — the storm's center; everything spins around it. Check: original compound; no hits. Cleared.
+
+(r2) dropped: SKYHOOK (Transformers Collaborative: Tonka Mash-Up Autobot
+Skyhook) → final AIRHOOK.
 
 Dropped: SKYFLOCK (brand — Hypixel Skyblock guild + "Skyflock" Minecraft mod +
 @SkyFlock YouTube), TALONWORKS (brand — real businesses), DIVEWORKS (brand — UK
@@ -561,6 +615,24 @@ mech/trademark/game — zero hits. Cleared.
 - **TRIAGE** — decides who gets fixed and who gets scrapped. Check: common word; no character. Cleared.
 - **DUCTTAPE DAN** — if it moves and shouldn't, tape it. Check: original compound; no hits. Cleared.
 - **CHECKENGINE** — the light is always on. Check: common dashboard phrase; no character. Cleared.
+- **PITBOSS** (r2) — runs the crew; fixes or scraps on command. Check: common phrase; no character. Cleared.
+- **LAPJACK** (r2) — lap-counter turned lap-taker. Check: original compound; no hits. Cleared.
+- **GRIDLOCK** (r2) — starts dead last, finishes first anyway. Check: common word; closest is a "Slugbot Gridlock" episode title, not a named character. Cleared.
+- **REVJACK** (r2) — revs the engine, revs the fight. Check: original compound; no hits. Cleared.
+- **PITSTOP** (r2) — fastest repair in the business; in and out. Check: common phrase; no character. Cleared.
+- **FULLTHROTTLE** (r2) — no brakes, no mercy. Check: common phrase; no character. Cleared.
+- **POLEJACK** (r2) — pole-position perfectionist. Check: original compound; no hits. Cleared.
+- **DRIFTJACK** (r2) — sideways is the only way in. Check: original compound; no hits. Cleared.
+- **NITROJACK** (r2) — nitro-boosted brawler. Check: original compound; no hits. Cleared.
+- **GREENFLAG** (r2) — the race starts when Greenflag says so. Check: original compound; no hits. Cleared.
+- **APEXJACK** (r2) — hits every apex, every time. Check: original compound; no hits. Cleared.
+- **FINISHLINE** (r2) — ends races and rivalries. Check: common phrase; no character. Cleared.
+
+(r2) dropped: REDLINE (Pixar Cars 2 — Rod "Torque" Redline) → final REVJACK.
+OCTANE (Transformers G1 Decepticon Triple Changer) → final NITROJACK. BURNOUT
+(Transformers Dia Burnout) → final FINISHLINE. FASTLANE (Transformers G1
+Micromaster Clone) → final APEXJACK. SPEEDTRAP (fanon TF Driftcon) → final
+FINISHLINE.
 
 Dropped: PATCHWORKS (brand — live trademarks AU #1125995 + EU EUTM 015661556),
 PITWORKS (brand — active NGP PITWORKS auto-parts brand), WRENCHWORKS (brand —
@@ -591,6 +663,14 @@ USPTO filings + "Wrenchworks" level in Marvel: Ultimate Alliance).
 | FIDGET | Inspector Gadget robot. |
 | SCAMPER | G1 Transformers character. |
 | MITE | BattleTech MTE-12C recon 'Mech — and also recon. |
+| REDSHIFT | Marvel Comics character (Herald of Galactus). |
+| BLUESHIFT | Transformers Velocitronian scientist. |
+| SKYHOOK | Transformers Collaborative: Tonka Mash-Up Autobot Skyhook. |
+| OCTANE | Transformers G1 Decepticon Triple Changer. |
+| BURNOUT | Transformers Dia Burnout. |
+| FASTLANE | Transformers G1 Micromaster Clone. |
+| SPEEDTRAP | Fanon Transformers Driftcon (TV Tropes registration). |
+| ANTENNAJACK | Near-duplicate of CARAPACE's ANTENNA ACE within the same brand; renamed FEELERJACK. |
 | SKIRMISH | War Robots VR: The Skirmish. |
 | SPYGLASS | G1 Transformers Reflector member. |
 | BLIP | BattleBots heavyweight competitor. |
@@ -745,7 +825,7 @@ actual word.
   Gundam (the actual series subtitle); barely a twist. Dropped, replaced by
   COLDIRON.
 
-**Totals: 13 v2 brands + 184 character names = 197 names.** The 9 anchors
+**Totals: 13 v2 brands + 340 character names = 353 names (recalculated 2026-10-10 after wave-2 batch C).** The 9 anchors
 (SKITTER, POUNDCAKE, VANGEL, VERNIER, ZOYD, FORMCHAIN, MASKJACK, HENSHIN,
 RANGERDANGER) are approved as INDIVIDUAL mech names only — never brands.
 
