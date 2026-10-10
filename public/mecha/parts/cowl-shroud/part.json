@@ -1,18 +1,19 @@
 {
- "id": "cowl-shroud",
- "slot": "shoulders",
- "name": "Cowl Shroud",
- "description": "Ribbed organic shroud curving over the shoulder.",
- "modes": [
-  "racer",
-  "combat"
- ],
- "stats": {
-  "armor": 5,
-  "speed": 5,
-  "power": 3,
-  "weight": 5
- },
- "model": "cowl-shroud.glb",
- "tris": 916
+  "id": "cowl-shroud",
+  "slot": "shoulders",
+  "name": "Cowl Shroud",
+  "description": "Ribbed organic shroud curving over the shoulder.",
+  "modes": [
+    "racer",
+    "combat",
+    "breach"
+  ],
+  "stats": {
+    "armor": 5,
+    "speed": 5,
+    "power": 3,
+    "weight": 5
+  },
+  "model": "cowl-shroud.glb",
+  "tris": 916
 }

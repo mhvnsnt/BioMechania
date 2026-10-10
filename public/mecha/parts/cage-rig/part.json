@@ -1,18 +1,19 @@
 {
- "id": "cage-rig",
- "slot": "backpack",
- "name": "Cage Rig",
- "description": "Roll-cage frame bolted over the back.",
- "modes": [
-  "racer",
-  "combat"
- ],
- "stats": {
-  "armor": 6,
-  "speed": 4,
-  "power": 3,
-  "weight": 6
- },
- "model": "cage-rig.glb",
- "tris": 88
+  "id": "cage-rig",
+  "slot": "backpack",
+  "name": "Cage Rig",
+  "description": "Roll-cage frame bolted over the back.",
+  "modes": [
+    "racer",
+    "combat",
+    "breach"
+  ],
+  "stats": {
+    "armor": 6,
+    "speed": 4,
+    "power": 3,
+    "weight": 6
+  },
+  "model": "cage-rig.glb",
+  "tris": 88
 }

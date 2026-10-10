@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, Copy, Save, Trash2, Zap } from "lucide-react";
-import { MechViewer } from "@/mecha/viewer";
+import { MechViewer, nextMode } from "@/mecha/viewer";
 import {
   MODES,
   SLOTS,
@@ -36,6 +36,12 @@ import {
   type StoredMech,
 } from "@/mecha/storage";
 
+const MODE_LABELS: Record<MechMode, string> = {
+  racer: "Racer",
+  combat: "Combat",
+  breach: "Breach",
+};
+
 const SLOT_LABELS: Record<Slot, string> = {
   head: "Head",
   torso: "Torso",
@@ -50,6 +56,7 @@ const TRIGGER_LABELS: Record<TransformTrigger, string> = {
   manual: "Manual — transform on command",
   meter_full: "Meter full — auto-transforms when the boost meter fills (meter is consumed)",
   damage_threshold: "Damage threshold — auto-transforms when hull drops to the threshold",
+  breach_rage: "Breach rage — auto-transforms to the Breach form when rage charge fills",
 };
 
 /** Bar scales: fixed so builds compare stably as parts change. */
@@ -68,7 +75,7 @@ function statsForModes(build: MechBuild, registry: PartRegistry): Record<MechMod
   try {
     return aggregateBuildStats(build, (id) => registry.parts[id]);
   } catch {
-    return { racer: ZERO_STATS, combat: ZERO_STATS };
+    return Object.fromEntries(MODES.map((m) => [m, ZERO_STATS])) as Record<MechMode, MechStats>;
   }
 }
 
@@ -202,7 +209,10 @@ export function MechaBay() {
   }, []);
 
   const modeStats: Record<MechMode, MechStats> = useMemo(
-    () => (registry ? statsForModes(build, registry) : { racer: ZERO_STATS, combat: ZERO_STATS }),
+    () =>
+      registry
+        ? statsForModes(build, registry)
+        : (Object.fromEntries(MODES.map((m) => [m, ZERO_STATS])) as Record<MechMode, MechStats>),
     [build, registry],
   );
   const stats = modeStats[mode];
@@ -233,16 +243,18 @@ export function MechaBay() {
   async function doTransform() {
     const viewer = viewerRef.current;
     if (!viewer || transforming || viewer.failed) return;
-    const other: MechMode = mode === "racer" ? "combat" : "racer";
+    const target = nextMode(mode);
     setTransforming(true);
     setError(null);
     setNotice(null);
     try {
-      await viewer.playTransform(other);
+      // Follow the viewer's N-mode cycle; the promise resolves when the
+      // (retuned) animation completes, so the UI always matches viewer timing.
+      await viewer.playTransform(target);
       // onModeChange syncs `mode` state; read the viewer as backup.
       const landed = viewer.getMode();
       setMode(landed);
-      setNotice(`Transformed — now in ${landed === "racer" ? "Racer" : "Combat"} mode.`);
+      setNotice(`Transformed — now in ${MODE_LABELS[landed]} mode.`);
     } catch (err) {
       setError(err instanceof Error ? err.message : "The transform failed.");
     } finally {
@@ -323,7 +335,7 @@ export function MechaBay() {
           Mecha Bay
         </h1>
         <p className="mt-3 max-w-xl text-base text-mist">
-          Bolt parts onto your biomech in Racer or Combat mode, watch the stats move,
+          Bolt parts onto your biomech in Racer, Combat, or Breach mode, watch the stats move,
           then hit Transform and watch it change shape.
         </p>
       </header>
@@ -342,7 +354,7 @@ export function MechaBay() {
                 mode === m ? "bg-sodium text-sodium-ink" : "text-mist hover:text-bone"
               }`}
             >
-              {m === "racer" ? "Racer" : "Combat"}
+              {MODE_LABELS[m]}
             </button>
           ))}
         </div>
@@ -353,7 +365,7 @@ export function MechaBay() {
           disabled={transforming || !previewLive}
         >
           <Zap className="size-4" aria-hidden="true" />
-          {transforming ? "Transforming…" : "Transform"}
+          {transforming ? "Transforming…" : `Transform → ${MODE_LABELS[nextMode(mode)]}`}
         </button>
         <button type="button" className="btn btn-ghost" onClick={copyRacerToCombat} disabled={!registry}>
           <Copy className="size-4" aria-hidden="true" />
@@ -378,7 +390,7 @@ export function MechaBay() {
           <div className="flex items-center justify-between">
             <h2 className="font-mono text-xs tracking-widest text-mist uppercase">Live preview</h2>
             <p className="font-mono text-xs text-sodium uppercase">
-              {mode === "racer" ? "Racer mode" : "Combat mode"}
+              {MODE_LABELS[mode]} mode
             </p>
           </div>
           <div className="relative mt-3 h-[420px] overflow-hidden border border-line bg-ink sm:h-[520px]">
@@ -403,7 +415,7 @@ export function MechaBay() {
         <div className="flex flex-col gap-6">
           <section className="border border-line bg-panel p-4 sm:p-6" aria-label="Mode stats">
             <h2 className="font-mono text-xs tracking-widest text-mist uppercase">
-              {mode === "racer" ? "Racer" : "Combat"} stats
+              {MODE_LABELS[mode]} stats
             </h2>
             <div className="mt-4 flex flex-col gap-4">
               <StatBar label="Armor" value={stats.armor} max={BAR_MAX.armor} />
@@ -499,7 +511,7 @@ export function MechaBay() {
       {/* Slot picker */}
       <section className="mt-6 border border-line bg-panel p-4 sm:p-6" aria-label="Part picker">
         <h2 className="font-mono text-xs tracking-widest text-mist uppercase">
-          Parts — {mode === "racer" ? "Racer" : "Combat"} mode
+          Parts — {MODE_LABELS[mode]} mode
         </h2>
         {registry ? (
           <div className="mt-4 flex flex-col gap-3">

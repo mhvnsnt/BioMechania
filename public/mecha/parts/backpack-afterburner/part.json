@@ -10,7 +10,8 @@
     "weight": 8
   },
   "modes": [
-    "racer"
+    "racer",
+    "breach"
   ],
   "model": "backpack-afterburner.glb"
 }

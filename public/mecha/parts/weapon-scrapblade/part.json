@@ -11,7 +11,8 @@
   },
   "modes": [
     "racer",
-    "combat"
+    "combat",
+    "breach"
   ],
   "model": "weapon-scrapblade.glb"
 }

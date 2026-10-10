@@ -11,7 +11,8 @@
   },
   "modes": [
     "racer",
-    "combat"
+    "combat",
+    "breach"
   ],
   "model": "backpack-jumpjets.glb"
 }

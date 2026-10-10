@@ -114,6 +114,20 @@ def M(name, color, metallic=0.5, roughness=0.5):
     _MATS[name] = m
     return m
 
+def E(name, color, emission_strength=3.5, metallic=0.0, roughness=0.5):
+    """Emissive material for the breach-glow cores (exports as glTF emissive)."""
+    if name in _MATS: return _MATS[name]
+    m = bpy.data.materials.new(name)
+    m.use_nodes = True
+    bsdf = m.node_tree.nodes['Principled BSDF']
+    bsdf.inputs['Base Color'].default_value = (*color, 1.0)
+    bsdf.inputs['Metallic'].default_value = metallic
+    bsdf.inputs['Roughness'].default_value = roughness
+    bsdf.inputs['Emission Color'].default_value = (*color, 1.0)
+    bsdf.inputs['Emission Strength'].default_value = emission_strength
+    _MATS[name] = m
+    return m
+
 # palette: industrial derby grit, NO eva purple/green scheme
 IRON   = ('iron',   (0.16,0.16,0.18), 0.80, 0.50)
 STEEL  = ('steel',  (0.45,0.46,0.50), 0.85, 0.35)
@@ -122,6 +136,7 @@ HAZ    = ('haz',    (0.95,0.62,0.05), 0.10, 0.60)
 RUB    = ('rubber', (0.06,0.06,0.07), 0.00, 0.90)
 BONE   = ('bone',   (0.72,0.66,0.55), 0.10, 0.55)   # organic plating
 OILRED = ('oilred', (0.55,0.08,0.06), 0.40, 0.55)
+BREACHGLOW = (1.0, 0.28, 0.04)   # molten core glow (emissive, via E())
 
 def rivet_line(x0, x1, y, z, n, mat, r=0.012, axis='x'):
     for i in range(n):
@@ -559,37 +574,195 @@ def b_wp_pilespike():  # COMBAT exclusive
     cyl('gauge', 0.025, 0.02, 0.075, 0, 0.14, mat=oil, verts=10, rz=1.5708)
     cyl('grip', 0.030, 0.12, 0, -0.09, 0.02, mat=rub, verts=8, rx=1.5708)
 
+# ============ BREACH (rage-gated third form, Grimlock-style earned form) ============
+# Design language: the mech's restrained power breaking loose — cracked armor
+# plates split apart to reveal a molten breach-glow core, overbuilt siege
+# hardware, barely-contained energy. EVA-biomech + derby grit, original
+# designs only. All 7 are BREACH-mode exclusive.
+def _bmats():
+    return (M(*IRON), M(*STEEL), M(*RUST), M(*HAZ), M(*RUB), M(*BONE),
+            M(*OILRED), E('breachglow', BREACHGLOW))
+
+def b_head_fracture():  # BREACH exclusive
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    cyl('neck', 0.08, 0.07, 0, 0, 0.035, mat=iron, verts=14)
+    torus('neckring', 0.088, 0.014, 0, 0, 0.065, mat=steel, major=14, minor=8)
+    # revealed core: molten skull the armor split open around
+    sph('core', 0.10, 0, 0.02, 0.16, mat=glow, sx=1.0, sy=1.15, sz=1.0)
+    # cracked dome: tilted chunks with fault gaps between them
+    box('dome_top', 0.14, 0.14, 0.045, 0, 0.01, 0.275, mat=steel, rx=0.25, bev=0.008)
+    box('dome_fl', 0.10, 0.11, 0.05, 0.065, 0.09, 0.21, mat=rust, rx=-0.3, rz=0.35, bev=0.006)
+    box('dome_fr', 0.10, 0.11, 0.05, -0.065, 0.09, 0.21, mat=rust, rx=-0.3, rz=-0.35, bev=0.006)
+    box('dome_bl', 0.10, 0.10, 0.05, 0.06, -0.075, 0.20, mat=steel, rx=0.3, rz=-0.3, bev=0.006)
+    box('dome_br', 0.10, 0.10, 0.05, -0.06, -0.075, 0.20, mat=steel, rx=0.3, rz=0.3, bev=0.006)
+    rivet_line(-0.05, 0.05, 0.075, 0.285, 3, iron)
+    # split brow: gap vents the core
+    box('brow_l', 0.075, 0.05, 0.05, 0.055, 0.115, 0.235, mat=rust, rx=-0.25, bev=0.006)
+    box('brow_r', 0.075, 0.05, 0.05, -0.055, 0.115, 0.235, mat=rust, rx=-0.25, bev=0.006)
+    # glowing visor slit riding proud of the core
+    box('visor', 0.12, 0.02, 0.025, 0, 0.14, 0.17, mat=glow)
+    # split jaw plates
+    box('jaw_l', 0.065, 0.09, 0.06, 0.05, 0.075, 0.075, mat=iron, bev=0.006)
+    box('jaw_r', 0.065, 0.09, 0.06, -0.05, 0.075, 0.075, mat=iron, bev=0.006)
+    # cheek vents + rear vent horns
+    box('cheek_l', 0.025, 0.09, 0.05, 0.10, 0.045, 0.13, mat=iron)
+    box('cheek_r', 0.025, 0.09, 0.05, -0.10, 0.045, 0.13, mat=iron)
+    cone('horn_l', 0.02, 0.008, 0.12, 0.075, -0.075, 0.26, mat=iron, verts=8, rx=-0.6)
+    cone('horn_r', 0.02, 0.008, 0.12, -0.075, -0.075, 0.26, mat=iron, verts=8, rx=-0.6)
+
+def b_torso_burstcoil():  # BREACH exclusive
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    box('pelvis', 0.36, 0.28, 0.20, 0, 0, -0.06, mat=iron, bev=0.015)
+    rivet_line(-0.14, 0.14, 0.145, -0.02, 5, steel)
+    cyl('spine', 0.055, 0.42, 0, 0.02, 0.22, mat=steel, verts=12, rx=0.12)
+    # burst core: glowing coil the chest plating split open around
+    cyl('coilcore', 0.095, 0.26, 0, 0.06, 0.28, mat=glow, verts=16)
+    for i, z in enumerate([0.20, 0.28, 0.36]):
+        torus(f'coilring{i}', 0.10, 0.014, 0, 0.06, z, mat=iron, major=16, minor=8)
+    # burst chest plates: big tilted chunks, gaps vent the coil
+    box('plate_tl', 0.14, 0.15, 0.05, 0.10, 0.13, 0.40, mat=steel, rx=-0.35, rz=0.25, bev=0.008)
+    box('plate_tr', 0.14, 0.15, 0.05, -0.10, 0.13, 0.40, mat=steel, rx=-0.35, rz=-0.25, bev=0.008)
+    box('plate_ll', 0.15, 0.14, 0.05, 0.105, 0.12, 0.17, mat=rust, rx=0.3, rz=-0.2, bev=0.008)
+    box('plate_lr', 0.15, 0.14, 0.05, -0.105, 0.12, 0.17, mat=rust, rx=0.3, rz=0.2, bev=0.008)
+    rivet_line(0.05, 0.15, 0.20, 0.40, 3, iron)
+    rivet_line(-0.15, -0.05, 0.20, 0.40, 3, iron)
+    # over-pressure side stacks with glowing bands
+    for sx in [0.22, -0.22]:
+        cyl(f'stack{sx}', 0.03, 0.24, sx, -0.08, 0.32, mat=rust, verts=12)
+        cyl(f'stackglow{sx}', 0.032, 0.035, sx, -0.08, 0.28, mat=glow, verts=12)
+        cone(f'stackflare{sx}', 0.03, 0.05, 0.06, sx, -0.08, 0.47, mat=iron, verts=12)
+    cyl('yoke', 0.038, 0.88, 0, 0, 0.26, mat=iron, verts=10, ry=1.5708)
+    torso_sockets()
+
+def b_arm_rupture():  # BREACH exclusive (pair: one half, X-symmetric)
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    # split delt: two half-domes with a glowing seam between
+    box('deltseam', 0.025, 0.11, 0.13, 0, 0, -0.05, mat=glow)
+    sph('delt_a', 0.095, 0.045, 0, -0.05, mat=steel, sx=1, sy=1, sz=1.15)
+    sph('delt_b', 0.095, -0.045, 0, -0.05, mat=steel, sx=1, sy=1, sz=1.15)
+    # overbuilt upper arm: chunk plates flanking a glow gap
+    box('upper', 0.15, 0.15, 0.22, 0, 0, -0.19, mat=iron, bev=0.012)
+    box('uchunk_l', 0.06, 0.16, 0.20, 0.055, 0, -0.19, mat=rust, rz=0.12, bev=0.008)
+    box('uchunk_r', 0.06, 0.16, 0.20, -0.055, 0, -0.19, mat=rust, rz=-0.12, bev=0.008)
+    box('useam', 0.025, 0.155, 0.19, 0, 0, -0.19, mat=glow)
+    # oversized overdrive piston on the back
+    piston(0, -0.095, -0.10, -0.40, 0.020, 0.032, steel, iron)
+    cyl('elbow', 0.05, 0.08, 0, 0, -0.32, mat=iron, verts=10, ry=1.5708)
+    # cracked gauntlet: heavy forearm with chunk plates + glowing knuckle line
+    box('fore', 0.17, 0.17, 0.22, 0, 0, -0.44, mat=steel, bev=0.012)
+    box('gchunk_l', 0.06, 0.18, 0.20, 0.075, 0, -0.44, mat=iron, rz=0.15, bev=0.008)
+    box('gchunk_r', 0.06, 0.18, 0.20, -0.075, 0, -0.44, mat=iron, rz=-0.15, bev=0.008)
+    box('gchunk_b', 0.17, 0.06, 0.20, 0, -0.075, -0.44, mat=iron, rx=0.15, bev=0.008)
+    box('knuckleglow', 0.15, 0.025, 0.03, 0, 0.08, -0.53, mat=glow)
+    # crusher fist with glowing cracks
+    box('fist', 0.14, 0.13, 0.12, 0, 0.01, -0.62, mat=iron, bev=0.012)
+    box('fistcrack', 0.145, 0.02, 0.02, 0, 0.01, -0.62, mat=glow)
+    for i in range(3):
+        box(f'stud{i}', 0.03, 0.03, 0.03, -0.045+i*0.045, 0.075, -0.62, mat=steel, bev=0.005)
+    arm_weapon_socket()
+
+def b_leg_surge():  # BREACH exclusive (pair: one half, X-symmetric)
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    sph('hip', 0.09, 0, 0, -0.04, mat=iron, sx=1.1, sy=1.1, sz=0.9)
+    box('thigh', 0.17, 0.18, 0.30, 0, 0, -0.24, mat=rust, bev=0.015)
+    # cracked thigh: chunk plates flanking glowing front seams
+    box('tchunk_l', 0.07, 0.05, 0.28, 0.065, 0.075, -0.24, mat=iron, rx=0.08, rz=-0.1, bev=0.008)
+    box('tchunk_r', 0.07, 0.05, 0.28, -0.065, 0.075, -0.24, mat=iron, rx=0.08, rz=0.1, bev=0.008)
+    box('tseam_l', 0.025, 0.02, 0.26, 0.03, 0.09, -0.24, mat=glow)
+    box('tseam_r', 0.025, 0.02, 0.26, -0.03, 0.09, -0.24, mat=glow)
+    # twin drive pistons
+    piston(0.06, -0.095, -0.30, -0.62, 0.020, 0.030, steel, rust)
+    piston(-0.06, -0.095, -0.30, -0.62, 0.020, 0.030, steel, rust)
+    cyl('knee', 0.065, 0.11, 0, 0, -0.44, mat=iron, verts=10, ry=1.5708)
+    box('kneevent', 0.09, 0.025, 0.05, 0, 0.06, -0.44, mat=glow)
+    # cracked greave: heavy shin with chunk plates + glowing center seam
+    box('shin', 0.18, 0.19, 0.32, 0, 0, -0.64, mat=iron, bev=0.015)
+    box('greave_l', 0.075, 0.06, 0.30, 0.07, 0.075, -0.64, mat=steel, rx=-0.06, rz=-0.1, bev=0.008)
+    box('greave_r', 0.075, 0.06, 0.30, -0.07, 0.075, -0.64, mat=steel, rx=-0.06, rz=0.1, bev=0.008)
+    box('greaveseam', 0.03, 0.025, 0.28, 0, 0.095, -0.64, mat=glow)
+    # heavy foot, sole at -1.11
+    box('foot', 0.20, 0.34, 0.10, 0, 0.06, -1.06, mat=iron, bev=0.012)
+    box('toeglow', 0.16, 0.025, 0.04, 0, 0.225, -1.03, mat=glow)
+    box('sole', 0.21, 0.36, 0.02, 0, 0.06, -1.11, mat=rub)
+
+def b_sh_fracturecrest():  # BREACH exclusive (pair: one half, X-symmetric)
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    sph('cap', 0.11, 0, 0, 0.05, mat=steel, sx=1.1, sy=1.1, sz=0.85)
+    rivet_line(-0.07, 0.07, 0.10, 0.05, 4, iron)
+    # glowing fault line splitting the crest
+    box('fault', 0.03, 0.15, 0.17, 0, 0, 0.13, mat=glow)
+    # jagged crest blades flanking the fault
+    box('blade_l', 0.055, 0.17, 0.22, 0.055, -0.03, 0.22, mat=iron, rz=0.38, rx=-0.12, bev=0.008)
+    box('blade_r', 0.055, 0.17, 0.22, -0.055, -0.03, 0.22, mat=iron, rz=-0.38, rx=-0.12, bev=0.008)
+    box('blade_f', 0.10, 0.05, 0.16, 0, 0.075, 0.18, mat=rust, rx=-0.2, bev=0.006)
+    cone('spike', 0.035, 0.008, 0.16, 0, -0.09, 0.24, mat=rust, verts=8, rx=-0.5)
+
+def b_pk_ventsurge():  # BREACH exclusive
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    box('frame', 0.26, 0.09, 0.32, 0, -0.06, 0.06, mat=iron, bev=0.01)
+    box('strut_l', 0.04, 0.10, 0.06, 0.10, -0.03, -0.02, mat=iron)
+    box('strut_r', 0.04, 0.10, 0.06, -0.10, -0.03, -0.02, mat=iron)
+    # triple vent stacks: glowing cores inside cracked shrouds
+    for sx in [0.09, 0, -0.09]:
+        cyl(f'core{sx}', 0.032, 0.30, sx, -0.075, 0.26, mat=glow, verts=12)
+        box(f'shroud_l{sx}', 0.045, 0.06, 0.28, sx+0.055, -0.075, 0.26, mat=rust, rz=-0.10, bev=0.006)
+        box(f'shroud_r{sx}', 0.045, 0.06, 0.28, sx-0.055, -0.075, 0.26, mat=rust, rz=0.10, bev=0.006)
+        torus(f'band1{sx}', 0.048, 0.011, sx, -0.075, 0.17, mat=iron, major=12, minor=8)
+        torus(f'band2{sx}', 0.048, 0.011, sx, -0.075, 0.35, mat=iron, major=12, minor=8)
+        cone(f'flare{sx}', 0.042, 0.062, 0.06, sx, -0.075, 0.44, mat=iron, verts=12)
+    # pressure gauge + side tanks + cracked deflector
+    cyl('gauge', 0.028, 0.02, 0.135, -0.115, 0.10, mat=haz, verts=10, rx=1.5708)
+    cyl('tank_l', 0.045, 0.20, 0.165, -0.075, 0.12, mat=steel, verts=12)
+    cyl('tank_r', 0.045, 0.20, -0.165, -0.075, 0.12, mat=steel, verts=12)
+    box('deflector', 0.30, 0.03, 0.10, 0, -0.115, 0.50, mat=rust, rx=0.35, bev=0.005)
+
+def b_wp_coremaul():  # BREACH exclusive
+    iron, steel, rust, haz, rub, bone, oil, glow = _bmats()
+    cyl('haft', 0.026, 0.55, 0, 0, 0.20, mat=rust, verts=10)
+    cyl('grip', 0.033, 0.12, 0, 0, -0.02, mat=rub, verts=10)
+    sph('pommel', 0.035, 0, 0, -0.10, mat=iron)
+    # molten core inside a cracked siege head
+    box('core', 0.14, 0.14, 0.22, 0, 0, 0.52, mat=glow)
+    box('chunk_top', 0.15, 0.15, 0.06, 0, 0, 0.645, mat=steel, bev=0.008)
+    box('chunk_bot', 0.15, 0.15, 0.06, 0, 0, 0.395, mat=steel, bev=0.008)
+    box('chunk_l', 0.055, 0.15, 0.17, 0.0775, 0, 0.52, mat=iron, rz=0.08, bev=0.006)
+    box('chunk_r', 0.055, 0.15, 0.17, -0.0775, 0, 0.52, mat=iron, rz=-0.08, bev=0.006)
+    box('chunk_f', 0.15, 0.055, 0.17, 0, 0.0775, 0.52, mat=iron, rx=-0.08, bev=0.006)
+    box('chunk_b', 0.15, 0.055, 0.17, 0, -0.0775, 0.52, mat=iron, rx=0.08, bev=0.006)
+    rivet_line(-0.05, 0.05, 0.078, 0.645, 3, iron)
+    cone('spike', 0.035, 0.008, 0.14, 0, 0, 0.745, mat=haz, verts=8)
+
 # ============ REGISTRY ============
 PARTS = [
  # pid, slot, name, description, modes, stats, builder
- ('hound-vis','head','Hound Visor','Bestial cowl with a wide hazard visor slit, riveted brow and exhaust nostrils.',['racer','combat'],{'armor':4,'speed':7,'power':4,'weight':4},'b_head_hound'),
- ('scrap-crown','head','Scrap Crown','Riveted blocky cranium with a grilled face and cyclops optic band.',['racer','combat'],{'armor':6,'speed':5,'power':5,'weight':6},'b_head_crown'),
- ('dart-probe','head','Dart Probe','Sleek teardrop aero head with canopy and swept rear fin. Racer mode.',['racer'],{'armor':2,'speed':10,'power':3,'weight':2},'b_head_dart'),
- ('siege-maw','head','Siege Maw','Heavy jaw-crusher block head with armored cheeks and crusher teeth. Combat mode.',['combat'],{'armor':9,'speed':2,'power':6,'weight':9},'b_head_maul'),
- ('ribcage-core','torso','Ribcage Core','Exposed ribbed organic core over a hunched spine column with an engine fan.',['racer','combat'],{'armor':5,'speed':6,'power':6,'weight':5},'b_torso_ribcage'),
- ('pit-mono','torso','Pit Mono','Central keel frame with an organic chest shell and vented side pods.',['racer','combat'],{'armor':4,'speed':8,'power':5,'weight':4},'b_torso_pitmono'),
- ('aero-wedge','torso','Aero Wedge','Streamlined wedge cockpit torso with strakes and a rear diffuser. Racer mode.',['racer'],{'armor':3,'speed':10,'power':4,'weight':3},'b_torso_aerowedge'),
- ('siege-plate','torso','Siege Plate','Heavy riveted slab armor with a boiler chest and side exhaust. Combat mode.',['combat'],{'armor':10,'speed':2,'power':5,'weight':10},'b_torso_siegeplate'),
- ('sinew-arm','arm','Sinew Arm','Sinewy biomech arm with an exposed piston and a plated knuckle hand.',['racer','combat'],{'armor':5,'speed':6,'power':7,'weight':5},'b_arm_sinew'),
- ('wrecker-claw','arm','Wrecker Claw','Heavy arm ending in a three-finger wrecker claw.',['racer','combat'],{'armor':7,'speed':4,'power':8,'weight':7},'b_arm_wrecker'),
- ('quickjack-arm','arm','Quickjack Arm','Slim finned pit-crew arm built for speed. Racer mode.',['racer'],{'armor':3,'speed':10,'power':4,'weight':3},'b_arm_quickjack'),
- ('pile-arm','arm','Pile Arm','Armored heavy arm with a forearm ram plate. Combat mode.',['combat'],{'armor':9,'speed':2,'power':8,'weight':9},'b_arm_pilearm'),
- ('derby-stomp','leg','Derby Stomp','Wide plated legs with tread shin guards and a hydraulic piston.',['racer','combat'],{'armor':6,'speed':5,'power':7,'weight':6},'b_leg_stomp'),
- ('sinew-stilt','leg','Sinew Stilt','Digitigrade sinewy legs with ribbed plating and an exposed achilles piston.',['racer','combat'],{'armor':5,'speed':7,'power':5,'weight':5},'b_leg_sinew'),
- ('street-sprinter','leg','Street Sprinter','Slim runner legs with an aero calf fairing and blade feet. Racer mode.',['racer'],{'armor':3,'speed':10,'power':3,'weight':3},'b_leg_sprinter'),
- ('crusher-tread','leg','Crusher Tread','Massive tread-plate legs on twin hydraulic rams. Combat mode.',['combat'],{'armor':9,'speed':3,'power':6,'weight':9},'b_leg_tread'),
- ('cowl-shroud','shoulder','Cowl Shroud','Ribbed organic shroud curving over the shoulder.',['racer','combat'],{'armor':5,'speed':5,'power':3,'weight':5},'b_sh_cowl'),
- ('rivet-guard','shoulder','Rivet Guard','Riveted plate guard with a scrap skirt.',['racer','combat'],{'armor':6,'speed':4,'power':3,'weight':6},'b_sh_rivetguard'),
- ('draft-fin','shoulder','Draft Fin','Aero fin shoulder for slipstream speed. Racer mode.',['racer'],{'armor':2,'speed':9,'power':1,'weight':2},'b_sh_draftfin'),
- ('bullbar-guard','shoulder','Bullbar Guard','Forward bullbar hoops over heavy plate. Combat mode.',['combat'],{'armor':8,'speed':3,'power':4,'weight':8},'b_sh_bullbar'),
- ('stack-pipes','backpack','Stack Pipes','Twin exhaust stacks with bands, flares and rain flaps.',['racer','combat'],{'armor':4,'speed':5,'power':6,'weight':5},'b_pk_stacks'),
- ('cage-rig','backpack','Cage Rig','Roll-cage frame bolted over the back.',['racer','combat'],{'armor':6,'speed':4,'power':3,'weight':6},'b_pk_cage'),
- ('aero-sail','backpack','Aero Sail','Big spoiler sail with endplates for downforce. Racer mode.',['racer'],{'armor':2,'speed':9,'power':3,'weight':3},'b_pk_aerosail'),
- ('war-rack','backpack','War Rack','Ammo drums and a spare spike rack. Combat mode.',['combat'],{'armor':7,'speed':3,'power':7,'weight':7},'b_pk_warrack'),
- ('scrap-sledge','weapon','Scrap Sledge','Welded-plate sledgehammer with a spike poll.',['racer','combat'],{'armor':2,'speed':5,'power':9,'weight':7},'b_wp_sledge'),
- ('ripper-chain','weapon','Ripper Chain','Motor-driven chain bar with hazard teeth.',['racer','combat'],{'armor':1,'speed':7,'power':8,'weight':5},'b_wp_ripper'),
- ('ram-lance','weapon','Ram Lance','Streamlined boost lance with an aero ram head. Racer mode.',['racer'],{'armor':1,'speed':9,'power':6,'weight':4},'b_wp_ramlance'),
- ('pile-spike','weapon','Pile Spike','Piston-driven spike driver. Combat mode.',['combat'],{'armor':3,'speed':4,'power':10,'weight':7},'b_wp_pilespike'),
+ ('hound-vis','head','Hound Visor','Bestial cowl with a wide hazard visor slit, riveted brow and exhaust nostrils.',['racer','combat','breach'],{'armor':4,'speed':7,'power':4,'weight':4},'b_head_hound'),
+ ('scrap-crown','head','Scrap Crown','Riveted blocky cranium with a grilled face and cyclops optic band.',['racer','combat','breach'],{'armor':6,'speed':5,'power':5,'weight':6},'b_head_crown'),
+ ('dart-probe','head','Dart Probe','Sleek teardrop aero head with canopy and swept rear fin. Racer mode.',['racer','breach'],{'armor':2,'speed':10,'power':3,'weight':2},'b_head_dart'),
+ ('siege-maw','head','Siege Maw','Heavy jaw-crusher block head with armored cheeks and crusher teeth. Combat mode.',['combat','breach'],{'armor':9,'speed':2,'power':6,'weight':9},'b_head_maul'),
+ ('ribcage-core','torso','Ribcage Core','Exposed ribbed organic core over a hunched spine column with an engine fan.',['racer','combat','breach'],{'armor':5,'speed':6,'power':6,'weight':5},'b_torso_ribcage'),
+ ('pit-mono','torso','Pit Mono','Central keel frame with an organic chest shell and vented side pods.',['racer','combat','breach'],{'armor':4,'speed':8,'power':5,'weight':4},'b_torso_pitmono'),
+ ('aero-wedge','torso','Aero Wedge','Streamlined wedge cockpit torso with strakes and a rear diffuser. Racer mode.',['racer','breach'],{'armor':3,'speed':10,'power':4,'weight':3},'b_torso_aerowedge'),
+ ('siege-plate','torso','Siege Plate','Heavy riveted slab armor with a boiler chest and side exhaust. Combat mode.',['combat','breach'],{'armor':10,'speed':2,'power':5,'weight':10},'b_torso_siegeplate'),
+ ('sinew-arm','arm','Sinew Arm','Sinewy biomech arm with an exposed piston and a plated knuckle hand.',['racer','combat','breach'],{'armor':5,'speed':6,'power':7,'weight':5},'b_arm_sinew'),
+ ('wrecker-claw','arm','Wrecker Claw','Heavy arm ending in a three-finger wrecker claw.',['racer','combat','breach'],{'armor':7,'speed':4,'power':8,'weight':7},'b_arm_wrecker'),
+ ('quickjack-arm','arm','Quickjack Arm','Slim finned pit-crew arm built for speed. Racer mode.',['racer','breach'],{'armor':3,'speed':10,'power':4,'weight':3},'b_arm_quickjack'),
+ ('pile-arm','arm','Pile Arm','Armored heavy arm with a forearm ram plate. Combat mode.',['combat','breach'],{'armor':9,'speed':2,'power':8,'weight':9},'b_arm_pilearm'),
+ ('derby-stomp','leg','Derby Stomp','Wide plated legs with tread shin guards and a hydraulic piston.',['racer','combat','breach'],{'armor':6,'speed':5,'power':7,'weight':6},'b_leg_stomp'),
+ ('sinew-stilt','leg','Sinew Stilt','Digitigrade sinewy legs with ribbed plating and an exposed achilles piston.',['racer','combat','breach'],{'armor':5,'speed':7,'power':5,'weight':5},'b_leg_sinew'),
+ ('street-sprinter','leg','Street Sprinter','Slim runner legs with an aero calf fairing and blade feet. Racer mode.',['racer','breach'],{'armor':3,'speed':10,'power':3,'weight':3},'b_leg_sprinter'),
+ ('crusher-tread','leg','Crusher Tread','Massive tread-plate legs on twin hydraulic rams. Combat mode.',['combat','breach'],{'armor':9,'speed':3,'power':6,'weight':9},'b_leg_tread'),
+ ('cowl-shroud','shoulder','Cowl Shroud','Ribbed organic shroud curving over the shoulder.',['racer','combat','breach'],{'armor':5,'speed':5,'power':3,'weight':5},'b_sh_cowl'),
+ ('rivet-guard','shoulder','Rivet Guard','Riveted plate guard with a scrap skirt.',['racer','combat','breach'],{'armor':6,'speed':4,'power':3,'weight':6},'b_sh_rivetguard'),
+ ('draft-fin','shoulder','Draft Fin','Aero fin shoulder for slipstream speed. Racer mode.',['racer','breach'],{'armor':2,'speed':9,'power':1,'weight':2},'b_sh_draftfin'),
+ ('bullbar-guard','shoulder','Bullbar Guard','Forward bullbar hoops over heavy plate. Combat mode.',['combat','breach'],{'armor':8,'speed':3,'power':4,'weight':8},'b_sh_bullbar'),
+ ('stack-pipes','backpack','Stack Pipes','Twin exhaust stacks with bands, flares and rain flaps.',['racer','combat','breach'],{'armor':4,'speed':5,'power':6,'weight':5},'b_pk_stacks'),
+ ('cage-rig','backpack','Cage Rig','Roll-cage frame bolted over the back.',['racer','combat','breach'],{'armor':6,'speed':4,'power':3,'weight':6},'b_pk_cage'),
+ ('aero-sail','backpack','Aero Sail','Big spoiler sail with endplates for downforce. Racer mode.',['racer','breach'],{'armor':2,'speed':9,'power':3,'weight':3},'b_pk_aerosail'),
+ ('war-rack','backpack','War Rack','Ammo drums and a spare spike rack. Combat mode.',['combat','breach'],{'armor':7,'speed':3,'power':7,'weight':7},'b_pk_warrack'),
+ ('scrap-sledge','weapon','Scrap Sledge','Welded-plate sledgehammer with a spike poll.',['racer','combat','breach'],{'armor':2,'speed':5,'power':9,'weight':7},'b_wp_sledge'),
+ ('ripper-chain','weapon','Ripper Chain','Motor-driven chain bar with hazard teeth.',['racer','combat','breach'],{'armor':1,'speed':7,'power':8,'weight':5},'b_wp_ripper'),
+ ('ram-lance','weapon','Ram Lance','Streamlined boost lance with an aero ram head. Racer mode.',['racer','breach'],{'armor':1,'speed':9,'power':6,'weight':4},'b_wp_ramlance'),
+ ('pile-spike','weapon','Pile Spike','Piston-driven spike driver. Combat mode.',['combat','breach'],{'armor':3,'speed':4,'power':10,'weight':7},'b_wp_pilespike'),
 ]
 
 def main():
@@ -607,7 +780,13 @@ def main():
         tris = export_part(pid, slot, name, desc, modes, stats)
         results[pid] = tris
     summ = os.path.join(os.path.dirname(OUT), 'build_summary.json')
-    json.dump(results, open(summ, 'w'), indent=1)
+    # Merge with the existing summary so PART_ONLY runs don't clobber it.
+    try:
+        merged = json.load(open(summ))
+    except (OSError, ValueError):
+        merged = {}
+    merged.update(results)
+    json.dump(merged, open(summ, 'w'), indent=1)
     over = [k for k, v in results.items() if v > 8000]
     print(f'DONE parts={len(results)} over_8k={over}')
 

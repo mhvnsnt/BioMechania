@@ -1,17 +1,18 @@
 {
- "id": "siege-maw",
- "slot": "head",
- "name": "Siege Maw",
- "description": "Heavy jaw-crusher block head with armored cheeks and crusher teeth. Combat mode.",
- "modes": [
-  "combat"
- ],
- "stats": {
-  "armor": 9,
-  "speed": 2,
-  "power": 6,
-  "weight": 9
- },
- "model": "siege-maw.glb",
- "tris": 530
+  "id": "siege-maw",
+  "slot": "head",
+  "name": "Siege Maw",
+  "description": "Heavy jaw-crusher block head with armored cheeks and crusher teeth. Combat mode.",
+  "modes": [
+    "combat",
+    "breach"
+  ],
+  "stats": {
+    "armor": 9,
+    "speed": 2,
+    "power": 6,
+    "weight": 9
+  },
+  "model": "siege-maw.glb",
+  "tris": 530
 }

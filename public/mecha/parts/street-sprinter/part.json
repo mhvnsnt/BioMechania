@@ -1,17 +1,18 @@
 {
- "id": "street-sprinter",
- "slot": "legs",
- "name": "Street Sprinter",
- "description": "Slim runner legs with an aero calf fairing and blade feet. Racer mode.",
- "modes": [
-  "racer"
- ],
- "stats": {
-  "armor": 3,
-  "speed": 10,
-  "power": 3,
-  "weight": 3
- },
- "model": "street-sprinter.glb",
- "tris": 344
+  "id": "street-sprinter",
+  "slot": "legs",
+  "name": "Street Sprinter",
+  "description": "Slim runner legs with an aero calf fairing and blade feet. Racer mode.",
+  "modes": [
+    "racer",
+    "breach"
+  ],
+  "stats": {
+    "armor": 3,
+    "speed": 10,
+    "power": 3,
+    "weight": 3
+  },
+  "model": "street-sprinter.glb",
+  "tris": 344
 }

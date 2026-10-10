@@ -10,8 +10,11 @@ import {
 } from "./schemas.ts";
 
 /**
- * The starter build — both modes. Racer mode runs the light scout set,
- * combat mode runs the heavy bruiser set. These ids are placeholders
+ * The starter build — every mode. Racer mode runs the light scout set,
+ * combat mode runs the heavy bruiser set, breach mode runs the bruiser
+ * set too until the parts lane ships breach-exclusive parts (any part
+ * can equip in breach — mode-exclusivity only keeps racer-only aero
+ * parts off combat and vice versa). These ids are placeholders
  * the parts lane fulfills with real part.json + .glb files under
  * public/mecha/parts/.
  */
@@ -35,12 +38,23 @@ export const DEFAULT_BUILD: MechBuild = {
       backpack: "backpack-bruiser",
       weapon: "weapon-siegeplow",
     },
+    breach: {
+      head: "head-bruiser",
+      torso: "torso-bruiser",
+      arms: "arms-bruiser",
+      legs: "legs-bruiser",
+      shoulders: "shoulders-bruiser",
+      backpack: "backpack-bruiser",
+      weapon: "weapon-siegeplow",
+    },
   },
   transform: {
     trigger: "manual",
     cost: { meter: 25 },
     cooldownSec: 8,
     damageThresholdPct: 35,
+    autoTargets: { meter_full: "combat", damage_threshold: "breach", breach_rage: "breach" },
+    breachRage: { chargePerDamage: 0.5, entryThreshold: 75, drainPerSec: 12, entryGated: true },
   },
 };
 
