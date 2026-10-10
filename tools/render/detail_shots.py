@@ -158,8 +158,8 @@ def stage_weapon_fire(info, weapon):
     # Procedural muzzle flash: short emissive cone + spark orbs + point light.
     fmat = _emission_material("fx_muzzle", (1.0, 0.55, 0.12), 9.0)
     bpy.ops.mesh.primitive_cone_add(
-        radius1=0.02, radius2=0.16, depth=0.55,
-        location=(muzzle.x, muzzle.y + 0.30, muzzle.z))
+        radius1=0.02, radius2=0.10, depth=0.35,  # 0.55/0.16 read as a cartoon marshmallow; tighter flash
+        location=(muzzle.x, muzzle.y + 0.20, muzzle.z))
     cone = bpy.context.active_object
     cone.name = "fx_muzzle_cone"
     cone.rotation_euler = (math.radians(90), 0, 0)  # point +Y
