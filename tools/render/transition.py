@@ -485,15 +485,20 @@ def thruster_flash(info, hot=(1.0, 0.45, 0.08)):
 
 def undersuit_heat():
     """Breach reveal: the under-plating runs hot (Device 4). Session-local
-    mutation of the shared undersuit material — safe: fresh scene per shot."""
+    mutation of the shared undersuit material — safe: fresh scene per shot.
+
+    Kept to a hot HINT (0.8): the breach under-glow point light already
+    carries the heat, and 1.6 blew the small breach mech out to white
+    (measured 2026-10-10 on scout B-2).
+    """
     m = bpy.data.materials.get("undersuit_dark")
     if m is None:
         return
     bsdf = m.node_tree.nodes.get("Principled BSDF")
     if bsdf is None:
         return
-    bsdf.inputs["Emission Color"].default_value = (1.0, 0.28, 0.06, 1.0)
-    bsdf.inputs["Emission Strength"].default_value = 1.6
+    bsdf.inputs["Emission Color"].default_value = (1.0, 0.22, 0.05, 1.0)
+    bsdf.inputs["Emission Strength"].default_value = 0.8
     bpy.context.view_layer.update()
 
 

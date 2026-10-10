@@ -24,7 +24,7 @@ head of each beat (QC gate 1).
 | Shot | Beat | Staging |
 |------|------|---------|
 | B-1 | Restraint release | Combat mech wearing modeled restraint hardware (Device 4): bolted neck collar, 2 torso strap bands, 4 limb joint cuffs. Collar lifted +0.30 and scaled 1.25×; 8 collar bolts scattered mid-air (the violence read); straps snapped back 0.7 rad; cuffs popped. 7 breach-exclusive parts floating mid-flight above the mech (breach palette grade). Soul on the combat head. Lighting: combat rig. |
-| B-2 | Reveal + palette shift | Breach parts seated (fresh breach-mode assembly). Restraint hardware jettisoned on the ground beside the mech — collar, bolts, straps, cuffs all visible, accounted for. Palette shift: breach grade (hot accent). Undersuit emission raised (1.0, 0.28, 0.06 @ 1.6) — the under-plating runs hot. Lighting: breach studio rig (warm key, hot rim, under-glow point). |
+| B-2 | Reveal + palette shift | Breach parts seated (fresh breach-mode assembly). Restraint hardware jettisoned on the ground beside the mech — collar, bolts, straps, cuffs all visible, accounted for. Palette shift: breach grade (hot accent). Undersuit emission raised (1.0, 0.22, 0.05 @ 0.8) — the under-plating runs hot. Lighting: breach studio rig (warm key, hot rim, under-glow point). |
 | B-3 | Breach weapon deploying | As B-2, plus: core-maul lifted 0.30 out of its mount along the arm axis, rotated −18° (deploying, not yet fired), weapon materials pushed to warmup emissive (1.0, 0.35, 0.08 @ ≥2.5). Whole-mech flinch: root leaned back 0.045 rad. Soul on the fracture-helm. Lighting: breach rig, under-glow hot. |
 
 ## Blending-rule compliance
