@@ -1,194 +1,399 @@
 # BioMechania Mech Naming Slate
 
 **Status:** candidate slate for owner picks — NOT canon. Nothing here becomes a real
-mech line name until the owner picks it personally.
+mech name until the owner picks it personally.
 
 **Naming law (owner 2026-10-09):** names work like MDickie games do it — based on the
 mech each design is inspired by, with a slight change to make it proprietary, all
 living in the BioMechania universe. "Scout" and "Bruiser" are retired as names.
 
+**Brand law (owner 2026-10-09):** each LINE carries one BRAND name — the umbrella
+identity for the whole line (like "Zoids" vs "Blade Liger"). The 9 anchors
+(SKITTER, POUNDCAKE, VANGEL, VERNIER, ZOYD, FORMCHAIN, MASKJACK, HENSHIN,
+RANGERDANGER) are CHARACTER names only, never brands. Structure: BRAND →
+characters (anchor included).
+
 **How each candidate was vetted:** web search for the exact name plus likely variant
 spellings against mech/franchise names, trademarks, and well-known characters
 (Gundam, Transformers, Evangelion, Zoids, Bionicle, Kamen Rider, Power Rangers).
-Results per candidate below. Search dates: 2026-10-09/10.
+Brand names held to the hardest bar (the first round killed MODELOCK on a live
+USPTO trademark). Results per candidate below. Search dates: 2026-10-09/10.
+Two assembly-time replacements (CLUTCHPOP, JACKKNIFE) are original compounds with
+no known franchise term; their dedicated web checks could not run (search
+transport failure at assembly) — flagged for second-pass verification before lock.
 
-> ★ = recommended top pick for that slot.
-
----
-
-## Light recon line (replaces "Scout")
-
-**★ SKITTER** — The skittering quick-step of a recon unit; bug-quick movement vibe.
-Check: "skitter" used for generic small bug-bots in indie games and a Skitterbot toy;
-no major franchise mech named Skitter. Cleared.
-
-**NIMBLEJACK** — Nimble + jack (mechanic's jack / hijack energy). Quick and scrappy.
-Check: "Nimblejack" is an Indianapolis marketing company; "nimble robot" is generic
-industrial-robot language. No mech character. Cleared.
-
-**DARTJACK** — Darts in, jacks the objective, darts out. Recon-and-steal flavor.
-Check: no mech-franchise collision; Battletech had a "Dartjak" vehicle (different
-spelling, obscure). Cleared.
-
-**ZIGJACK** — Zigs when it should zag; evasive recon mover.
-Check: BattleBots has "Ziggo" and there's a "Ziggy" EV-charging robot — different
-full names, not characters in the covered franchises. Cleared with note.
+> ★ = top pick for that slot (owner approves everything personally).
+> (r1) = carried over from the first slate round, already vetted.
 
 ---
 
-## Heavy combat line (replaces "Bruiser")
+## LINE 1 — Light recon — BRAND: ★ ANTSY
 
-**TONNAGE** — Pure weight as a name. The joke is the whole personality.
-Check: generic BattleTech weight-class term; no character named Tonnage. Cleared.
+Bug-swarm recon umbrella; jittery nervous energy, reads instantly as small-fast-many.
+Check: searched exact + "Antsy robot/mech/Transformers"; only near-hit is Robot Wars
+antweight champion "Anty B" (different spelling, different weight class); no
+mech-franchise use, no live trademark found. Cleared.
 
-**MAULRAT** — A rat that mauls. Mean little heavy with a bite problem.
-Check: "Mauler" BattleBots bot is a different name (and BattleBots ≠ the covered
-franchises); no mech named Maulrat. Cleared. (Note: don't confuse with MAULER —
-see dropped list below.)
+- **SKITTER** ★ anchor — bug-quick recon mover. (r1, cleared.)
+- **PIPSQUEAK** — tiny loudmouth that picks fights above its weight class. Check: hits are the mouse game "Pipsqueak!" + a Warpips unit; neither a mech character. Cleared.
+- **SKEDADDLE** — bolt-at-first-contact runner. Check: no hits. Cleared.
+- **QUIVER** — trembling sensor-spike that reads the whole field. Check: only a 1997 Doom-clone shareware game "Quiver"; no mech character. Cleared.
+- **FLIT** — blink and it's behind you. Check: clean. Cleared.
+- **GNAT** — annoying little pest that won't leave you alone. Check: Powerpuff Girls villain "The Gnat" + a ReBoot joke droid; no mech-franchise character. Cleared.
+- **EARWIG** — low crawler that gets under your plating. Check: clean. Cleared.
+- **PING** — sonar-tap scout. Check: clean. Cleared.
+- **PERISCOPE** — peeks over cover, never commits. Check: no Transformers character by this name — FLAG for owner: phonetically adjacent to TF Perceptor; kept per judgment call. Cleared with flag.
+- **TRAILMIX** — scavenger that eats whatever the field drops. Check: clean. Cleared.
+- **HIGHTAIL** — fastest thing on four-plus legs when it matters. Check: clean. Cleared.
+- **NIMBLEJACK** (r1) — nimble + jack; quick and scrappy. Cleared.
+- **DARTJACK** (r1) — darts in, jacks the objective, darts out. Cleared.
+- **ZIGJACK** (r1) — zigs when it should zag; evasive recon mover. Cleared.
 
-**★ POUNDCAKE** — Hits like a truck, named like a snack. Peak MDickie energy.
-Check: no mech-franchise collision. Cleared.
-
-**SIEGEPIG** — Stubborn, armored, smashes walls. Hog-shaped problem.
-Check: "Robopig" (Robot Wars) and "RoboPig" are different names; no character named
-Siegepig. Cleared.
-
-**BEASTCHASSIS** — All frame, no finesse. The chassis IS the weapon.
-Check: "UGV Beast" is a Waveshare robot-chassis product, not a franchise character;
-no mech named Beastchassis. Cleared.
-
-**CRUSHBOAR** — Charges and crushes; boar energy in a heavy frame.
-Check: CMU "Crusher" military UGV and Robot Wars "Crusher Crunch Up" are different
-names; no mech named Crushboar. Cleared.
-
----
-
-## Evangelion-inspired line
-
-**★ VANGEL** — Evangelion with the E-V-A shaved off; reads as the same word
-half-remembered.
-Check: minor EVE Online ship name; no mech-franchise collision. Cleared.
-
-**GOSPEL** — The wink is the bootleg energy: Evangelion merch bootlegs famously
-render it as "Gospel" (as in "Gospel Warrior No.76").
-Check: no mech named Gospel in any covered franchise. Cleared.
-
-**HALOBREAKER** — Halo = angel imagery; breaker = what it does to angels.
-Check: a Jestress of Oz side character and CoD gamertags; no mech franchise. Cleared.
-
-**APOCRYPHA** — Non-canonical texts, non-canonical angel. Biblical-adjacent without
-saying the quiet part.
-Check: Fate/Apocrypha is an anime (not a mech); no mech named Apocrypha. Cleared.
+Dropped: SCUTTLE (fan Transformers OC + SCUTTLE open-source robot kit), WHIRR (one
+letter off TF Whirl), SCURRY (Fallout Tactics "scurry robot"), CRITTER
+(Critter-TEK BattleTech parody), CLATTER (Facepunch robot-battle game "Clatter"),
+FIDGET (Inspector Gadget robot), SCAMPER (G1 Transformers), MITE (BattleTech
+MTE-12C recon 'Mech — and also recon), SKIRMISH (War Robots VR: The Skirmish),
+SPYGLASS (G1 TF Reflector member), BLIP (BattleBots heavyweight). Held (not
+dropped): CHITTER — search-clean but rhymes with SKITTER; owner-call alternate.
 
 ---
 
-## Gundam-inspired line
+## LINE 2 — Heavy combat — BRAND: ★ HEFT
 
-**MOBILEFRAME** — Winks at "mobile suit" directly; a frame that goes mobile.
-Check: "mobile frame" is generic Gundam tech-readout terminology and Bandai has the
-G-Frame toy line; as a full single-word mech name it's original. Cleared with
-caution — closest to the inspiration line of the whole slate, keep an eye on it.
+Pure heavyweight umbrella; the weight is the point, one syllable like a dropped
+anvil. Check: searched exact + variants vs mech/franchise names and trademarks;
+clean. Cleared.
 
-**★ VERNIER** — Vernier thrusters = the most Gundam-specific tech term there is.
-The name is the wink.
-Check: "vernier" is a generic mecha/robotics term, not a character name. Cleared.
+- **POUNDCAKE** ★ anchor — hits like a truck, named like a snack. (r1, cleared.)
+- **THUDMUFFIN** — soft-looking, lands like a safe falling off a truck. Check: only hit is a WoW player's Tauren toon; no franchise mech. Cleared.
+- **SLAB** — walks through walls, apologizes to no one. Check: clean. Cleared.
+- **ANVIL** — stands still, breaks whatever hits it. Check: only a 2023 shooter title "Anvil" + hobbyist mech models; no mech character. Cleared.
+- **REDWOOD** — old-growth bruiser. Check: Policenauts human villain + a photography board game; no mech character. Cleared.
+- **BALLAST** — dead weight with a grudge. Check: clean. Cleared.
+- **GRAVITAS** — carries the whole arena's seriousness. Check: only a 2019 puzzle game + a MechCorps player's callsign; no franchise mech. Cleared.
+- **TENDERIZER** — turns armor into ground beef. Check: One-Punch Man minor hero's "Meat Tenderiser" mallet + a possible Borderlands weapon; no mech character. Cleared.
+- **REBAR** — twisted-steel construction brawler. Check: only a Roblox Item Asylum weapon; no mech character. Cleared.
+- **TONNAGE** (r1) — pure weight as a name. Cleared.
+- **MAULRAT** (r1) — a rat that mauls. Cleared.
+- **SIEGEPIG** (r1) — stubborn, armored, smashes walls. Cleared.
+- **BEASTCHASSIS** (r1) — all frame, no finesse. Cleared.
+- **CRUSHBOAR** (r1) — charges and crushes; boar energy. Cleared.
 
-**BEAMJOCKEY** — Beam weapons + the pilot's nickname; the ace-pilot line.
-Check: "beam jockey" is vintage particle-accelerator slang and a physicist's
-nickname; no mech character. Cleared.
-
----
-
-## Zoids-inspired line
-
-**★ ZOYD** — Zoids, MDickie-fied: one vowel changed, instantly proprietary.
-Check: no collision found. Cleared.
-
-**FANGBACK** — Fangs on the back, bite in the chassis. Animal-mech energy.
-Check: "Fang Tiger" is a Zoids Wild zoid (different full name); no mech named
-Fangback. Cleared — the "Fang" prefix is the deliberate wink.
-
-**HOWLER** — Wolf-pack animal zoid; howls before it pounces.
-Check: no canonical Zoid or Transformer named Howler. Cleared.
-
-**CHOMPION** — Chomps its way to champion. The derby's favorite underdog name.
-Check: "Chompion" is a JW Pet dog chew toy and a parrot toy (not mech franchises);
-"Grand Champion" is a Tobot robot form (different name). Cleared.
+Dropped: GRIT (brand — "Grit and Valor - 1949" mech game + Advance Wars CO),
+SLOGG (brand — one letter off TF Slog), TIMBER (half of BattleTech's "Timber
+Wolf"), CINDERBLOCK (Teen Titans Go! villain is literally named Cinderblock).
+Backup brands (owner-call): THUD (clean), LUMBER (flagged: Helldivers 2 EXO-51
+'Lumberer' exosuit is close).
 
 ---
 
-## Transformers-inspired line
+## LINE 3 — Derby brawlers — BRAND: ★ BANGER
 
-**★ FORMCHAIN** — The transformation sequence as a name: every form in the chain.
-Check: only generic software/docs usage; no mech-franchise collision. Cleared.
+UK "banger racing" IS demolition derby; the flavor is the word itself,
+umbrella-sized, instantly ownable. Check: searched exact + variants vs
+mech/franchise names and trademarks; clean. Cleared.
 
-**TRANSMORPH** — Transforms and morphs; the MDickie formula applied directly.
-Check: "TransMorph" is a medical-imaging AI model (not a toy/character). Cleared.
+- **FENDERBENDER** — lives for the crunch. Check: only the Robots-movie character "Fender" (different name); no "Fenderbender" mech. Cleared.
+- **RIBEYE** — prime cut, always the main event. Check: no mech/robot character. Cleared.
+- **HEAD-ON** — only drives toward you. Check: no "Head-On" TF character (only Hosehead/Hardhead adjacents). Cleared.
+- **SPIKESTRIP** — deploys the welcome mat from hell. Check: clean. Cleared.
+- **SPARE** — the backup tire that outlasts everyone. Check: only the EA game "Spare Parts" (different); no "Spare" character. Cleared.
+- **JACKKNIFE** — folds the wrong way at speed and takes you with it. Check: original compound (trucking term), no known mech character; dedicated web check unavailable at assembly (transport failure) — flagged for second-pass verification.
+- **CRUDE** — runs on crude, acts crude. Check: "Crude Buster"/"Two Crude" is a 1990 Data East game (different title); no mech character named Crude. Cleared.
+- **TAILPIPE** — breathes fire out the back. Check: clean. Cleared.
+- **GREASEFIRE** — kitchen-fire brawler. Check: only Hearthstone's "Grease Bot" (different name). Cleared.
+- **SHOWBOAT** — wins the crowd before the match starts. Check: clean. Cleared.
+- **GRANDSTAND** — plays to the cheap seats. Check: clean. Cleared.
+- **CLOWNCAR** — packed with bad decisions. Check: no "ClownCar" mech (Real Steel's "Clown", Mega Man's "Clown Man", Smashy Road vehicle all different). Cleared.
+- **CRUSHZONE** — designed to fold, refuses to. Check: "Crushroom" (Big Hero 6), "Rock Crush" (Metal Cardbot), "Crushin' Robots" (game) — all different; no "Crushzone" mech. Cleared.
+- **SPEEDBUMP** — small, slows down everything. Check: "Speedbump" is a third-party Trailbreaker alias + Speedbump Studios; no official franchise character. Cleared with note.
+- **SHAKEDOWN** — rattles you apart. Check: clean. Cleared.
+- **YIELD** — never does. Check: clean. Cleared.
 
-**SHIFTWORK** — Shifts form like it's clocking in; working-class transformer.
-Check: shift-scheduling apps and industrial humanoid-robot jargon; no mech.
+Dropped: T-BONE (Robot Wars Series 5 "T-Bone"), HUBCAP (G1 TF Autobot), BACKFIRE
+(TF character, G1 Marvel + movieverse), OILSLICK (TF Animated Decepticon + Botbots
+faction), CRUMPLEZONE (TF: Cybertron Decepticon), RUMBLESTRIP (cut on
+no-near-duplicates vs SPIKESTRIP + TF-adjacency), DONUT (Simpsons: Tapped Out
+"Donut Mech"), DIPSTICK (TF Targetmaster), CLUNKER (brand — "clanker" viral robot
+slur risk), JALOPY (brand — existing driving game), PILEUP (brand — Steam game
+"Pile Up!"). Backup brand: HOOPTIE (clean, owner-call).
+
+---
+
+## LINE 4 — Evangelion-inspired — BRAND: ★ VESPERS
+
+The evening-prayer service; an umbrella word for a line of end-times biomechs that
+fight like a choir at dusk. Check: searched "VESPERS" mech franchise/mecha
+trademark/robot — zero mech franchise, trademark, or character hits. Note: a 2021
+indie game titled "Vesper" (singular) exists — different word form, no mech space.
 Cleared.
 
-**BELTDRIVE** — Belts and pulleys moving the transformation along.
-Check: industrial robot components and a WIPO patent; no mech character. Cleared.
+- **VANGEL** ★ anchor — Evangelion with the E-V-A shaved off. (r1, cleared.)
+- **BURNINGBUSH** ★ batch pick — the unit that never stops smoldering; fights through its own pilot-light wreath. Check: only plants, a creative studio, heraldry. No mech/game use. Cleared.
+- **PALEHORSE** — gaunt long-strider; the fourth-rider frame of the line. Check: only usernames/player profiles; biblical/public domain. Cleared.
+- **MUSTARDSEED** — tiny-frame scout that hits absurdly above its weight class. Check: original compound, no franchise term nearby. Cleared.
+- **BRIERCROWN** — barbed-wire halo rig; crown-of-thorns bruiser. Check: zero hits anywhere. Fully clean. Cleared.
+- **FORTYDAYS** — flood-pattern siege frame; drowns the arena in pressure. Check: original compound. Cleared.
+- **WIDOWSMITE** — small-coin lightweight; cheapest frame on the roster, meanest heart. Check: original biblical riff, no hits. Cleared.
+- **TENTMAKER** — field-repair support rig; stitches allies back together mid-bout. Check: original. Cleared.
+- **LOCUSTS** — swarm-splitter; sheds biting sub-units. Check: generic word, no mech character. Cleared.
+- **PARTEDSEA** — lane-control frame; splits the derby floor in two. Check: original. Cleared.
+- **SHOFAR** — ram's-horn sonic blaster; the line's war-trumpet. Check: no mech hits (a Simpsons clown, a podcast). Cleared.
+- **TITHE** — tax-collector grappler; takes ten percent of your armor per hold. Check: original. Cleared.
+- **DOUBTING** — the skeptic frame; has to touch it to believe it — so it touches everything. Check: original Doubting-Thomas riff. Cleared.
+- **GOSPEL** (r1) — the bootleg-energy wink. Cleared.
+- **HALOBREAKER** (r1) — halo = angel imagery; breaker = what it does to angels. Cleared.
+- **APOCRYPHA** (r1) — non-canonical texts, non-canonical angel. Cleared.
+
+Dropped: THORNMAIL (League of Legends armor item) → THORNCROWN (Wuthering Waves
+location + 1983 jewelry trademark) → final BRIERCROWN. JUBILEE (X-Men's Jubilee) →
+final SHOFAR.
 
 ---
 
-## Bionicle-inspired line
+## LINE 5 — Gundam-inspired — BRAND: ★ SORTIE
 
-**★ MASKJACK** — Kanohi masks are THE Bionicle icon; jacking a mask = the game.
-Check: no mech-franchise collision. Cleared.
+One mission, one launch; the umbrella for a line of mass-production military
+frames. Check: searched "SORTIE" mecha game franchise/trademark — no mech
+franchise, brand, or trademark hits; generic military word. Cleared.
 
-**TOTEMFRAME** — Totem-pole stacking of biomechanical parts; tribal frame energy.
-Check: Mega Man 11 has "Totemer" (different name); WoW UI terminology; no mech.
+- **VERNIER** ★ anchor — vernier thrusters = the most Gundam-specific tech term. (r1, cleared.)
+- **SPENTBRASS** ★ batch pick — veteran frame built from salvaged casings; rattles when it walks. Check: common phrase, no mech/game character. Cleared.
+- **APSHELL** — armor-piercing spearhead; goes through, not around. Check: original compound. Cleared.
+- **BALLISTITE** — volatile propellant-core bruiser; burns smokeless, hits loud. Check: dictionary entries only ("formerly a trademark," 1890s, long genericized); no game/mech use. Cleared.
+- **OVERPRESSURE** — blast-wave frame; the shockwave is the weapon. Check: generic physics term; only near-miss is Robot Wars UK "Pressure" (different name). Cleared.
+- **TRACKHOUND** — tread-obsessed tracker; never loses the trail. Check: zero relevant hits. Cleared.
+- **MILSPEC** — the regulation frame; boring, standard, and somehow still standing at the end. Check: generic adjective only. Cleared.
+- **ZEROED** — dead-accurate marksman frame; sights never drift. Check: original. Cleared.
+- **FRIENDLYFIRE** — chaotic support unit; its help hurts. Check: no mech character; common military phrase. Cleared (common-phrase caveat noted).
+- **SABOT** — discarding-sabot penetrator; sheds its outer shell to strike. Check: no franchise character named Sabot; generic ammunition term. Cleared.
+- **PINPULLER** — grenadier frame; everything it throws is already live. Check: original. Cleared.
+- **FIREMISSION** — artillery frame; calls it in on itself if it has to. Check: original military-phrase compound. Cleared.
+- **SMOKEOUT** — screen-layer; wins fights you can't see. Check: no mech character or trademark; generic military term. Cleared.
+- **OVERSHOOT** — the frame that always goes too far — and lands it. Check: original. Cleared.
+- **MOBILEFRAME** (r1) — winks at "mobile suit" directly. Cleared with caution (closest to the inspiration line of the slate).
+- **BEAMJOCKEY** (r1) — beam weapons + the pilot's nickname. Cleared.
+
+Dropped: WINGNUT (TMNT character Wingnut) → final RIVETWING (Zoids line, weak hits
+only, flagged). SMOKESCREEN (official TF Autobot Smokescreen) → POPSMOKE (the late
+rapper Pop Smoke dominates the name) → final SMOKEOUT. BACKBLAST (official TF
+Cybertron Mini-Con Backblast) → final OVERPRESSURE. TREADHEAD (TF fan-continuity
+character + expired LEGO Ideas mech) → TRACKRAT (real USPTO record, cancelled 2020
+— a USPTO hit is a USPTO hit) → final TRACKHOUND. CORDITE (CoD: Mobile SMG
+"Cordite") → final BALLISTITE.
+
+---
+
+## LINE 6 — Zoids-inspired — BRAND: ★ BESTIARY
+
+The book of beasts; umbrella for the whole animal-mech catalog. Check: searched
+"BESTIARY" mech toy franchise/trademark — no mech/toy franchise or trademark hits.
 Cleared.
 
-**TRIBEBORN** — Born of the tribe; tribal-biomech origin vibe.
-Check: no robot/mech collision. Cleared.
+- **ZOYD** ★ anchor — Zoids, MDickie-fied: one vowel changed. (r1, cleared.)
+- **SHELLGAME** ★ batch pick — turtle-frame con artist; the armor is never where you think. Check: common phrase, no mech character. Cleared.
+- **BEAKPOINT** — raptor striker; the pun is the point. Check: only typos of "breakpoint" in unrelated industries; zero mech/franchise use. Cleared.
+- **SPURGEAR** — rooster-frame; spur meets gear, kicks like machinery. Check: original compound. Cleared.
+- **RIVETWING** — corvid-frame; wings bolted, not grown. Check: weak hits only — a Transformers name-generator suggestion list and a fan OC; no official character, no trademark. FLAG for owner: clears the bar, noted for transparency.
+- **HORNSWOGGLE** — trickster goat-frame; cheats at everything, including physics. Check: common word, no mech use. Cleared.
+- **DUNGROLL** — beetle-frame; weaponizes what the arena leaves behind. Check: original. Cleared.
+- **ANTLERLOCK** — stag-frame grappler; locks horns and doesn't let go. Check: original. Cleared.
+- **PINCER** — crustacean-frame; two moves: grab, crush. Check: generic word, no mech character. Cleared.
+- **HOOFBEAT** — stampede-frame; you hear it before the floor breaks. Check: original. Cleared.
+- **RAZORCLAM** — bivalve-frame; shut it and it slices. Check: original. Cleared.
+- **BRISTLE** — porcupine-frame; hugging it is a forfeit. Check: nearest real term is Dota's "Bristleback" (different name). Cleared.
+- **MOLTSUIT** — the frame that sheds its skin mid-fight and comes back new. Check: original. Cleared.
+- **FANGBACK** (r1) — fangs on the back, bite in the chassis. Cleared.
+- **HOWLER** (r1) — wolf-pack animal zoid. Cleared.
+- **CHOMPION** (r1) — chomps its way to champion. Cleared.
+
+Dropped: SNARLTOOTH (WoW NPC "Snarltooth") → SNARLFANG (Games Workshop Snarlfang
+Riders + MTG "Snarlfang Vermin") → FANGBARE (near-duplicate of FANGBACK) → GNASH
+(USPTO application record 86825890) → final GAPE (beast-form line, zero hits).
 
 ---
 
-## Kamen Rider-inspired line
+## LINE 7 — Beast-form Zoid-likes — BRAND: ★ PACKLAW
 
-**★ HENSHIN** — The transformation call itself, as a mech line name. Says the
-whole thing.
-Check: "henshin" is a generic Japanese word (transformation); Bandai's "Souchaku
-Henshin" is a Kamen Rider toy line but "HENSHIN" alone is a common noun, not a
-character. Cleared.
+The law of the pack: eat or be eaten; umbrella for the feral line — deliberately
+less machine, more beast than the Zoids line. Check: searched "PACKLAW"
+trademark/mech/game — zero relevant hits of any kind; cleanest brand in the
+batch. Cleared.
 
-**KICKJACK** — The Rider Kick, MDickie-fied. Finisher energy.
-Check: "Rider Kick" is the Kamen Rider finisher (see dropped RIDERKICK below);
-KICKJACK itself is an original name. Cleared.
+- **GUTPILE** ★ batch pick — the aftermath frame; shows up where the fight already ended and takes credit. Check: hunting term, original as a mech name. Cleared.
+- **OFFTHECHAIN** — broke-restraint berserker; the leash snapped three fights ago. Check: no franchise character; tiny GitHub toy, a WoW outfit, a Minecraft skin; common idiom, no mech ownership. Cleared.
+- **FEEDTIME** — frenzy-frame; the bell rings and it stops thinking. Check: original. Cleared.
+- **UNMUZZLED** — finally off the leash; all teeth, no brakes. Check: two USPTO records found but both ABANDONED; no mech/game use. Cleared.
+- **OFFLEASH** — stray-frame; nobody owns it, everybody fears it. Check: original phrase compound. Cleared.
+- **OFFAL** — the innards frame; ugly, necessary, and it will not die. Check: generic noun, no mech/game character. Cleared.
+- **LICKWOUNDS** — the survivor; loses every first round, wins every rematch. Check: original phrase. Cleared.
+- **OMEGA** — bottom of the pack, top of the upset bracket. Check: generic Greek letter; nearest is TF "Omega Supreme" (different name). Cleared.
+- **SCENTMARK** — territorial frame; the whole arena smells like it by round two. Check: original. Cleared.
+- **GAPE** — jaws locked open; the mouth is the whole game plan. Check: zero hits for the name at all. Cleared.
+- **DENRAID** — home-invasion frame; hits you where you sleep. Check: original. Cleared.
+- **PACKMOTHER** — the den's enforcer; hurt one of hers and find out. Check: original. Cleared.
 
-**BELTJACK** — The henshin belt, jacked. Transformation-device-as-mech.
-Check: "Belt-Jack" is a Supco HVAC belt-tensioning tool; no mech. Cleared.
+Dropped: GONEFERAL (announced 2026 video game "Gone Feral," in Steam playtest) →
+final OFFTHECHAIN. CARRION (2020 video game "Carrion") → final OFFAL.
 
 ---
 
-## Power Rangers-inspired line
+## LINE 8 — Transformers-inspired — BRAND: ★ SWITCHFRAME
 
-**★ RANGERDANGER** — It's morphin' time, but make it a warning label.
-Check: "Danger Rangers" is an unrelated kids' cartoon (not Power Rangers); tiny
-GitHub projects and a kids' app. Cleared.
+The converter line; no unit holds one shape past the opening bell. Check: searched
+exact term + mech/trademark/Transformers — zero hits on any mech, franchise, or
+trademark; only an unrelated Chinese electronics listing using "switchframe" as a
+generic word. Cleared.
 
-**FIVEFORM** — Five forms combine; the combining-zord wink without saying zord.
-Check: Control Resonant's "five-form" weapon and patents; no mech. Cleared.
+- **FORMCHAIN** ★ anchor — the transformation sequence as a name. (r1, cleared.)
+- **GEARGRIND** ★ batch pick — heavy converter that eats transmissions and brackets alike. Check: original compound; closest real term "gear grind" is a driving phrase, no character. Cleared.
+- **CLUTCHBURN** — burns its clutch every match and wins anyway. Check: original compound; no hits. Cleared.
+- **CRANKBORN** — born in the crankcase, raised on the redline. Check: original compound; no TF "Crank" character found. Cleared.
+- **PISTONPAW** — piston-fisted brawler. Check: original compound; no hits. Cleared.
+- **COGGRIT** — small, stubborn, jams bigger mechs' works. Check: original compound; no hits. Cleared.
+- **MAJOR MANIFOLD** — derby veteran who converts mid-sentence. Check: original compound; no TF "Manifold" character. Cleared.
+- **DIESEL DAVE** — slow to convert, hits like a freight train. Check: original compound; no hits. Cleared.
+- **BIG RIG BETTY** — hauler-class converter, eighteen wheels of bad intentions. Check: "big rig" is generic; no character. Cleared.
+- **CLUTCHPOP** — pops the clutch and the whole frame with it. Check: original compound, no known franchise term; dedicated web check unavailable at assembly (transport failure) — flagged for second-pass verification. (Replaces a cross-batch duplicate of FENDERBENDER, which stays in the derby line.)
+- **TRAILERHITCH** — latches onto rivals and drags them. Check: no character; only real trailer-towing robots and hitchBOT. Cleared.
+- **REDLINE RITA** — lives past the redline. Check: "Redline" is the 2009 Madhouse racing anime (no mech characters); "Redline Rita" as a compound has zero hits. Cleared.
+- **SOCKET SETH** — pit-born converter with a socket-wrench arm. Check: original compound; no hits. Cleared.
+- **TRANSMORPH** (r1) — transforms and morphs; the MDickie formula applied directly. Cleared.
+- **SHIFTWORK** (r1) — shifts form like it's clocking in. Cleared.
+- **BELTDRIVE** (r1) — belts and pulleys moving the transformation along. Cleared.
 
-**MORPHJACK** — "Morph" is the Rangers' word; jack it and make it ours.
-Check: "Morphobot" is a research robot nickname (different name); no mech named
-Morphjack. Cleared.
+Dropped: GRIDLOCK (IDW Transformers character, War's End #1–4).
 
-**CAGEBREAK** — Breaks out of the monster-of-the-week cage; breakout energy.
-Check: EL-Cage molecular-sim tool, speedrun terms, a career site; no mech.
+---
+
+## LINE 9 — Bionicle-inspired — BRAND: ★ TOTEMFORGE
+
+The tribal-biomech line; carved, painted, and mean. Check: searched
+Totemforge/Tribeforge + mech/Bionicle/trademark — zero hits on anything.
 Cleared.
 
-**POWERSTRANGER** — Power Rangers, one vowel off. The MDickie formula, perfected.
-Check: CBR uses "Power Strangers" generically for knock-off rangers; no
-mech-franchise collision. Cleared.
+- **MASKJACK** ★ anchor — Kanohi masks are THE Bionicle icon; jacking a mask = the game. (r1, cleared.)
+- **BONECARVER** ★ batch pick — war-painted carver; etches every win into its own armor. Check: original compound; no hits. Cleared.
+- **SPIRITDRILL** — drill-wielding shaman rig. Check: original compound; no hits. Cleared.
+- **TUSKSHRINE** — shrine-guarded tusk mech. Check: original compound; no hits (renamed off "fang" to stay clear of dropped SABERFANG). Cleared.
+- **ELDERCOG** — ancient cog-driven elder unit. Check: original compound; no hits. Cleared.
+- **TIKITOOTH** — carved-tooth brawler. Check: no character; only a Twitter user "TikiTooth" and DK's Tiki Tong (distinct). Cleared.
+- **RITUALRIG** — performs a pre-match ritual dance, then wrecks. Check: original compound; no hits. Cleared.
+- **WARPAINT WALT** — painted brawler, fresh warpaint every bout. Check: original compound; no hits. Cleared.
+- **CHIEF CHAINRATTLE** — rattles chains before every throwdown. Check: original compound; no hits. Cleared.
+- **SKULLSEED** — grows bone armor mid-fight. Check: original compound; no hits. Cleared.
+- **DRUMFIRE** — artillery-drum mech; the beat is the barrage. Check: "drumfire" is an artillery term, no character. Cleared.
+- **RAINDANCE ROXY** — storm-caller mech. Check: original compound; no hits. Cleared.
+- **TOTEMFRAME** (r1) — totem-pole stacking of biomechanical parts. Cleared.
+- **TRIBEBORN** (r1) — born of the tribe. Cleared.
+
+Dropped: TOTEMWORKS (brand — real "Totem Works" venture in use). WARDRUM (2026
+"Wardrum" rhythm-roguelite game + Greek power-metal band Wardrum) → final
+DRUMFIRE.
 
 ---
 
-## Collision-check drop list (rejected candidates and why)
+## LINE 10 — Kamen Rider-inspired — BRAND: ★ KICKFORGE
+
+The rider line; every form change is forged mid-fight. Check: searched exact term +
+Kamen Rider/mech/trademark — zero hits. Cleared.
+
+- **HENSHIN** ★ anchor — the transformation call itself, as a mech line name. (r1, cleared.)
+- **SCARFSPIN** ★ batch pick — scarf-streaming speedster; the scarf is a weapon. Check: original compound; no hits. Cleared.
+- **ANTENNA ACE** — fin-antennaed tactician. Check: original compound; no hits. Cleared.
+- **TANKSLAPPER** — violent wobble-style brawler. Check: confirmed generic motorcycle term (speed wobble), no character. Cleared.
+- **DROPKICK DAN** — finisher-first brawler. Check: original compound; closest is the Dropkick Murphys band, no character. Cleared.
+- **FINISHER PHIL** — lives for the final blow. Check: original compound; no hits. Cleared.
+- **LOCUSTLORD** — grasshopper-adjacent without saying it. Check: no exact character; closest are Bone's "Lord of the Locusts" and 40K's "Lokhust Lord" (both distinct). Cleared.
+- **VISORVANDAL** — visor-faced vandal. Check: original compound; no hits. Cleared.
+- **FINAL FORM FRANK** — keeps escalating forms. Check: original compound; "final form" is a meme phrase, no character. Cleared.
+- **KICKFLIP** — skate-trick kick specialist. Check: original compound; no franchise use. Cleared.
+- **CRASHHELMET CARL** — leads with his head, literally. Check: original compound; no hits. Cleared.
+- **POSEDOWN** — transformation pose-off showboat. Check: original compound; "pose down" is a bodybuilding term, no character. Cleared.
+- **KICKJACK** (r1) — the Rider Kick, MDickie-fied. Cleared.
+- **BELTJACK** (r1) — the henshin belt, jacked. Cleared.
+
+---
+
+## LINE 11 — Power Rangers-inspired — BRAND: ★ COLORCORPS
+
+The team line; color-coded, combiner-ready. Check: searched exact term + Power
+Rangers/team/trademark — zero hits. Cleared.
+
+- **RANGERDANGER** ★ anchor — it's morphin' time, but make it a warning label. (r1, cleared.)
+- **DOGPILE** ★ batch pick — wins by piling on; the whole team lands at once. Check: no mech character; only a MechCorps mission type, the Dogpile search engine, and the "Dogpile of Doom" trope. Cleared.
+- **ROLLCALL** — the combiner that calls the roll; nobody fights alone. Check: no mech/character named Rollcall; only "Robot Roll Call" LP-archive titles and an unreleased 2005 SCi game (renamed Urban Chaos). Cleared.
+- **COLORCODER** — decodes team combos mid-fight. Check: original compound; no hits. Cleared.
+- **LINKUP LOU** — the combiner joint; everything connects through Lou. Check: original compound; no hits. Cleared.
+- **PUTTYPUNCH** — punches putties / is a putty that punches. Check: no exact character; closest are the 1993 SNES game "Super Putty" and PR's Putties (generic foot soldiers, not a team/Zord name). Cleared.
+- **COMMANDPOST** — rolling field HQ. Check: original compound; generic military term, no character. Cleared.
+- **SIZEUP SUE** — grows mid-match. Check: original compound; no hits. Cleared.
+- **TIMEBLAST** — shows up exactly when the team needs her. Check: original compound; no hits. Cleared.
+- **COINOP** — arcade-tough, pay-to-win energy. Check: original compound; "coin-op" is generic, no character. Cleared.
+- **FIVEFORM** (r1) — five forms combine; the combining-zord wink. Cleared.
+- **MORPHJACK** (r1) — "morph" is the Rangers' word; jack it and make it ours. Cleared.
+- **CAGEBREAK** (r1) — breaks out of the monster-of-the-week cage. Cleared.
+- **POWERSTRANGER** (r1) — Power Rangers, one vowel off. Cleared.
+
+Dropped: MEGABRAWL ("Power Rangers Megaforce: Swappz MegaBrawl" mobile game) →
+final DOGPILE. HIGHFIVE ("High Five" is the Glitch Techs protagonist + a
+ClayFighter character) → final ROLLCALL. LOCKSTEP (Fortnite "Lockstep" glider +
+D&D homebrew "OE-10 Lockstep" mech) → final ROLLCALL. STACKATTACK (Diggerland
+attraction + Voodoo "Stack Attack" + FIRST Robotics 2003 game) → final DOGPILE.
+
+---
+
+## LINE 12 — Aerial / skirmisher — BRAND: ★ JETWASH
+
+The sky line; you do not want to be behind them. Check: searched exact term +
+mech/trademark/game/character — zero hits. Cleared.
+
+- **TOPGUST** ★ batch pick — Top Gun twist; the ace of the flock. Check: original compound; evokes without copying; no character. Cleared.
+- **STRATOSFRAY** — high-altitude harasser. Check: original twist; zero hits (reworked off Tangerine Dream's 1976 "Stratosfear" album). Cleared.
+- **NOSEDIVE NED** — dives first, asks later. Check: original compound; no hits. Cleared.
+- **GUSTGOBLIN** — rides thermals, steals wins. Check: original compound; no hits. Cleared.
+- **CLOUDCUTTER** — slices through cover from above. Check: original compound; no hits. Cleared.
+- **THERMAL THIEF** — steals altitude and momentum. Check: original compound; no hits. Cleared.
+- **SKYSHARK** — circles, then commits. Check: original compound; no hits. Cleared.
+- **FLOCKSHOT** — scattergun flyer, hits everything at once. Check: original compound; no hits. Cleared.
+- **BIRDBRAIN** — dumb like a fox, fast like a falcon. Check: common insult-word; no character. Cleared.
+- **FLYBY** — the hit-and-run itself. Check: no official character; only TF fan-RP OCs and a fan "OC name list" (free sample names). Cleared.
+- **WINGBEAT WALLY** — heartbeat of the flock. Check: "Wingbeat" appears only as attack-move names (MHA game, Marvel Snap, Yu-Gi-Oh); no character. Cleared.
+- **WINDSHEAR** — sudden, violent, gone. Check: common weather word; no character. Cleared.
+
+Dropped: SKYFLOCK (brand — Hypixel Skyblock guild + "Skyflock" Minecraft mod +
+@SkyFlock YouTube), TALONWORKS (brand — real businesses), DIVEWORKS (brand — UK
+Diveworks Ltd + Diveworks NZ), SKYFRAY (brand — dropped anyway for a clean sheet),
+STRATOSFEAR (Tangerine Dream album) → final STRATOSFRAY, DOGFIGHT DAN (G1 TF
+Autobot Triggerbot, 1988) → final FLYBY, SCRAPFIGHT (kiz10 "ScrapFight" +
+Crossout "Scrapfight" event) → final FLYBY.
+
+---
+
+## LINE 13 — Support / repair rigs — BRAND: ★ PATCHGANG
+
+The pit-crew line; they patch you up or part you out. Check: searched exact term +
+mech/trademark/game — zero hits. Cleared.
+
+- **TORQUE NURSE** ★ batch pick — field medic with a wrench and zero bedside manner. Check: original compound; no hits. Cleared.
+- **WELDSPARK** — arc-welder with a temper. Check: original compound; no hits. Cleared.
+- **FLATBED FRED** — hauls the wreckage home. Check: original compound; no hits. Cleared.
+- **PATCHJOB** — quick fixes, questionable methods. Check: original compound; "patch job" is a common phrase, no character. Cleared.
+- **JUMPCABLE JENNY** — jumpstarts anything, including rivals (by accident). Check: original compound; no hits. Cleared.
+- **OILCAN OLLIE** — keeps everybody lubed. Check: no "Oilcan" TF character (Oil Pan, Oil Slick, Oilmaster exist; distinct). Cleared.
+- **TOWTRUCK TESS** — drags you out of the pit, or into it. Check: original compound; no hits. Cleared.
+- **TRIAGE** — decides who gets fixed and who gets scrapped. Check: common word; no character. Cleared.
+- **DUCTTAPE DAN** — if it moves and shouldn't, tape it. Check: original compound; no hits. Cleared.
+- **CHECKENGINE** — the light is always on. Check: common dashboard phrase; no character. Cleared.
+
+Dropped: PATCHWORKS (brand — live trademarks AU #1125995 + EU EUTM 015661556),
+PITWORKS (brand — active NGP PITWORKS auto-parts brand), WRENCHWORKS (brand —
+USPTO filings + "Wrenchworks" level in Marvel: Ultimate Alliance).
+
+---
+
+## Collision-check drop list — all rounds (rejected candidates and why)
 
 | Candidate | Why dropped |
 |---|---|
@@ -199,26 +404,96 @@ mech-franchise collision. Cleared.
 | MAULER | BattleTech MAL-1R is a 90-ton assault mech named Mauler. |
 | GRINDJAW | Too close to Transformers' Grindor. |
 | SABERFANG | Zoids' Zaber Fang / Saber Tiger — near-identical. |
-| MODELOCK | (1) "Mode-lock" is canonical Transformers lore (Cloudraker's weakness, nucleon effect); (2) MODELOCK is a LIVE registered USPTO trademark (Midcity Engineering, Serial 99452813, 2026). |
-| DASHHOUND | Too close to Wonder Workshop's "Dash" robot (trademarked kids' coding robot). |
-| IRONHOG | Near-identical structure to Transformers' Ironhide (IRONH___). |
-| SERAPH-9 | "Seraph" is a War Robots mech, Nineball Seraph is an Armored Core boss, and GN-009 Seraphim Gundam is canonical Gundam. Too hot. |
+| MODELOCK | (1) "Mode-lock" is canonical Transformers lore; (2) MODELOCK is a LIVE registered USPTO trademark (2026). |
+| DASHHOUND | Too close to Wonder Workshop's "Dash" robot (trademarked). |
+| IRONHOG | Near-identical structure to Transformers' Ironhide. |
+| SERAPH-9 | War Robots mech "Seraph" + Nineball Seraph (Armored Core) + GN-009 Seraphim Gundam. Too hot. |
+| SCUTTLE | Fan Transformers OC + SCUTTLE open-source robot kit. |
+| WHIRR | One letter off Transformers Whirl. |
+| SCURRY | Fallout Tactics "scurry robot". |
+| CRITTER | Critter-TEK BattleTech parody game. |
+| CLATTER | Facepunch robot-battle game "Clatter". |
+| FIDGET | Inspector Gadget robot. |
+| SCAMPER | G1 Transformers character. |
+| MITE | BattleTech MTE-12C recon 'Mech — and also recon. |
+| SKIRMISH | War Robots VR: The Skirmish. |
+| SPYGLASS | G1 Transformers Reflector member. |
+| BLIP | BattleBots heavyweight competitor. |
+| TIMBER | Half of BattleTech's iconic "Timber Wolf". |
+| CINDERBLOCK | Teen Titans Go! villain literally named Cinderblock. |
+| T-BONE | Robot Wars Series 5 competitor "T-Bone". |
+| HUBCAP | G1 Transformers Autobot. |
+| BACKFIRE | Transformers character (G1 Marvel Decepticon + movieverse). |
+| OILSLICK | Transformers Animated Decepticon + Botbots "Oil Slicks" faction. |
+| CRUMPLEZONE | Transformers: Cybertron Decepticon (Ransack's partner). |
+| RUMBLESTRIP | Cut on no-near-duplicates vs SPIKESTRIP + TF-adjacency caution. |
+| DONUT | Simpsons: Tapped Out "Donut Mech". |
+| DIPSTICK | Transformers Targetmaster character. |
+| THORNMAIL | League of Legends armor item. |
+| JUBILEE | X-Men's Jubilee. |
+| WINGNUT | TMNT character Wingnut. |
+| SMOKESCREEN | Official Transformers Autobot Smokescreen. |
+| BACKBLAST | Official Transformers Cybertron Mini-Con Backblast. |
+| TREADHEAD | Transformers fan-continuity character + expired LEGO Ideas mech. |
+| CORDITE | Call of Duty: Mobile SMG "Cordite." |
+| SNARLTOOTH | World of Warcraft NPC "Snarltooth". |
+| GONEFERAL | Announced 2026 video game "Gone Feral" (Steam playtest). |
+| CARRION | 2020 video game "Carrion." |
+| GRIDLOCK | IDW Transformers character (War's End #1–4). |
+| MEGABRAWL | "Power Rangers Megaforce: Swappz MegaBrawl" mobile game. |
+| HIGHFIVE | Glitch Techs protagonist + ClayFighter character. |
+| LOCKSTEP | Fortnite "Lockstep" glider + D&D homebrew mech. |
+| STACKATTACK | Diggerland attraction + Voodoo mobile game + FIRST Robotics 2003 game. |
+| DOGFIGHT DAN | G1 Transformers Autobot Triggerbot (1988). |
+| SCRAPFIGHT | kiz10 "ScrapFight" + Crossout "Scrapfight" event. |
+| TOTEMWORKS | Real "Totem Works" venture in use. |
+| SKYFLOCK | Hypixel Skyblock guild + "Skyflock" Minecraft mod + YouTube channel. |
+| PATCHWORKS | Live trademarks AU #1125995 + EU EUTM 015661556. |
+| TALONWORKS | Real businesses (fabrication, agency). |
+| DIVEWORKS | UK Diveworks Ltd + Diveworks NZ. |
+| PITWORKS | Active NGP PITWORKS auto-parts brand. |
+| WRENCHWORKS | USPTO filings + Marvel: Ultimate Alliance level. |
+| GRIT | "Grit and Valor - 1949" mech game + Advance Wars CO. |
+| SLOGG | One letter off Transformers Slog. |
+| CLUNKER | "Clanker" viral robot-slur tone risk. |
+| JALOPY | Existing driving game. |
+| PILEUP | Steam game "Pile Up!". |
+| STRATOSFEAR | Tangerine Dream's 1976 album. |
+
+**Dropped brand candidates** (replaced before use): GRIT, SLOGG, CLUNKER, JALOPY,
+PILEUP, TOTEMWORKS, SKYFLOCK, TALONWORKS, DIVEWORKS, PITWORKS, WRENCHWORKS,
+SKYFRAY, PATCHWORKS.
 
 **Cleared but benched** (passed checks; swap in if the owner wants more options):
-LOWRIDER (no mech collision), KIBBLE (Transformers fandom term, not a character name).
+LOWRIDER, KIBBLE, CHITTER (held on SKITTER rhyme), THUD, LUMBER (flagged:
+Helldivers exosuit), HOOPTIE.
+
+**Flagged for owner's personal call:** RIVETWING (weak TF-adjacent hits),
+PERISCOPE (phonetic proximity to TF Perceptor), SPEEDBUMP (third-party
+Trailbreaker alias exists), CLUTCHPOP + JACKKNIFE (assembly-time replacements;
+dedicated web checks unavailable — second-pass verification recommended).
 
 ---
 
-## Owner shortlist (top picks per slot)
+## Owner shortlist — brands + anchors
 
-1. Light recon: **SKITTER**
-2. Heavy combat: **POUNDCAKE**
-3. Evangelion line: **VANGEL**
-4. Gundam line: **VERNIER**
-5. Zoids line: **ZOYD**
-6. Transformers line: **FORMCHAIN**
-7. Bionicle line: **MASKJACK**
-8. Kamen Rider line: **HENSHIN**
-9. Power Rangers line: **RANGERDANGER**
+| Line | Brand | Anchor character |
+|---|---|---|
+| Light recon | **ANTSY** | **SKITTER** |
+| Heavy combat | **HEFT** | **POUNDCAKE** |
+| Derby brawlers | **BANGER** | — (new line, no anchor) |
+| Evangelion-inspired | **VESPERS** | **VANGEL** |
+| Gundam-inspired | **SORTIE** | **VERNIER** |
+| Zoids-inspired | **BESTIARY** | **ZOYD** |
+| Beast-form | **PACKLAW** | — (new line, no anchor) |
+| Transformers-inspired | **SWITCHFRAME** | **FORMCHAIN** |
+| Bionicle-inspired | **MASKJACK** | **MASKJACK** |
+| Kamen Rider-inspired | **KICKFORGE** | **HENSHIN** |
+| Power Rangers-inspired | **COLORCORPS** | **RANGERDANGER** |
+| Aerial / skirmisher | **JETWASH** | — (new line, no anchor) |
+| Support / repair rigs | **PATCHGANG** | — (new line, no anchor) |
+
+**Totals: 13 brands + 184 character names = 197 names.** All collision-checked
+(except CLUTCHPOP + JACKKNIFE, flagged above for a second pass).
 
 _This document is a candidate slate only. Nothing is canon until the owner picks._
