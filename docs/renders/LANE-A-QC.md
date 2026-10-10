@@ -65,6 +65,10 @@ M-2 = side profile orthographic; M-3 = rear elevated (tools/render/cameras.py).
 ### bruiser / M-3 / racer (1280x720/64sp) — PASS
 - Inspected ~11:02Z. Rear elevated: heavy backpack with racer cyan stripe — good rear power read; siegeplow visible at the hand on the left.
 - Gates: 1 N/A from rear (confirmed in M-1/M-2), 2 PASS (racer kit + heavy build), 3 PASS (all parts; weapon at hand), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted). Framing: full mech with margins.
+
+### bruiser / M-1 / combat (1920x1080/64sp) — PASS (pixel-identical to scout/M-1/combat)
+- Inspected ~11:18Z. **SPEC NOTE: builds.py defines scout/combat and bruiser/combat with the IDENTICAL part set** (both = bruiser parts + siegeplow); likewise scout/breach = bruiser/breach (same 7 breach parts). Pixel diff vs scout/M-1-combat.png: mean abs diff 0.0 — bit-identical renders. So 6 of the 18 spec'd shots are duplicates by construction (bruiser combat M-1/M-2/M-3, bruiser breach M-1/M-2/M-3). Rendering all 18 per spec; flagging for owner/parent whether bruiser wants distinct combat/breach parts.
+- Gates (verified on this frame): 1 PASS (face-plate + sigil), 2 PASS (combat kit), 3 PASS (all parts; weapon gripped), 4 PASS (no clipping), 5 N/A, 6 PASS (feet planted). Framing: full mech with margins.
 - v1 inspected 2026-10-10 ~07:42Z. Pose: coiled aero tuck reads well (torso pitched fwd, arms swept back, legs trailing). Gates: 1 PASS (face-plate optics + chest sigil readable), 2 PASS (racer cyan aero kit), 4 PASS (no clipping), 6 PASS (feet planted, soft shadows), 5 N/A.
 - **v1 FAIL gate 3 (assembly integrity): the scrapblade weapon floated detached from the hand** — weapon anchor is parented to the torso anchor in assemble.py, so the arms -25° sweep left the weapon behind (~0.5 m gap); pommel sphere also read as floating debris. Cyan dot above head is the antenna tip light — not a defect.
 - **Fix:** pose.py apply_pose() now re-parents the weapon anchor under the arms anchor (world-transform-preserving, lane-local; other lanes don't pose) — committed 4b274bd. Defective v1 retired (git rm); v2 rendered 08:17Z.
