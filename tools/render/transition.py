@@ -47,7 +47,7 @@ SHOT_STATES = {
         # Frames 0-6: head retracts, aero releases. Combat parts stowed
         # (Device 3: combat-only armor retracts in racer mode) except the
         # head, which begins its descent early for readability.
-        "head":      ("retract", 0.85, True),
+        "head":      ("retract", 0.55, True),
         "torso":     (0.00, 1.00, False),
         "arms":      (0.12, 1.00, False),
         "legs":      (0.12, 1.00, False),
@@ -57,13 +57,15 @@ SHOT_STATES = {
     },
     "T-50": {
         # Frame 12: SIGNATURE hybrid — inner frame exposed, parts mid-travel.
-        "head":      (0.70, 0.35, True),
-        "torso":     (0.30, 0.60, True),
-        "arms":      (0.55, 0.45, True),
-        "legs":      (0.55, 0.45, True),
-        "shoulders": (0.55, 0.45, True),
-        "backpack":  (0.55, 0.45, True),
-        "weapon":    (0.55, 0.45, True),
+        # From-parts mid-depart; to-parts clearly separated further out
+        # (two distinct streams, never overlapping).
+        "head":      (0.70, 0.60, True),
+        "torso":     (0.55, 0.80, True),
+        "arms":      (0.55, 0.70, True),
+        "legs":      (0.55, 0.70, True),
+        "shoulders": (0.55, 0.70, True),
+        "backpack":  (0.55, 0.70, True),
+        "weapon":    (0.55, 0.70, True),
     },
     "T-75": {
         # Frame 18: to-parts nearly seated, from-parts nearly departed.
@@ -77,9 +79,9 @@ SHOT_STATES = {
     },
 }
 
-# To-parts ride 1.6x further out than from-parts along the same depart line,
+# To-parts ride 2.0x further out than from-parts along the same depart line,
 # so "inbound" and "departing" read as distinct streams, never overlapping.
-INBOUND_MUL = 1.6
+INBOUND_MUL = 2.0
 
 
 def _obj_materials(objects):
