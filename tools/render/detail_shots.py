@@ -103,17 +103,22 @@ def _glow_weapon_meshes(info, weapon, strength, only=None):
     """Push the weapon's emitter meshes toward their emitter glow.
 
     only: iterable of mesh-name prefixes to glow (None = all weapon meshes).
-    Names match exactly or with a Blender .NNN duplicate suffix."""
+    Names match exactly or with a Blender .NNN duplicate suffix.
+    Emitter meshes get single-user material copies first: weapon parts
+    share material datablocks, so glowing a shared material would leak the
+    glow onto non-emitter meshes (caught 2026-10-10: whole siegeplow
+    glowed peach despite the name filter)."""
     color = WEAPON_GLOW[weapon]
-    seen = set()
     for o in info["slot_meshes"]["weapon"]:
+        if o.type != "MESH":
+            continue
         if only is not None and not any(
                 o.name == p or o.name.startswith(p + ".") for p in only):
             continue
+        for i, ms in enumerate(o.data.materials):
+            if ms is not None:
+                o.data.materials[i] = ms.copy()
         for ms in o.data.materials:
-            if ms.name in seen:
-                continue
-            seen.add(ms.name)
             if not ms.use_nodes:
                 continue
             for n in ms.node_tree.nodes:
