@@ -49,8 +49,8 @@ per build (proves Device 6 color delta).
 | T-SIDE (scout) | docs/renders/scout/T-SIDE-combat.png | PASS | Clean side profile, neutral pose, full body framed. Note: scout/bruiser share all parts in combat mode (builds.py design) — turnarounds are per-build files but visually identical. |
 | T-BACK (scout) | docs/renders/scout/T-BACK-combat.png | PASS | Clean back view, neutral pose, full body framed. Same combat-mode part-sharing note as T-SIDE. |
 | T-FRONT (bruiser) | docs/renders/bruiser/T-FRONT-combat.png | PASS | Clean front turnaround. Visually identical to scout T-FRONT (shared combat-mode parts — pipeline design, flagged to parent). |
-| T-SIDE (bruiser) | docs/renders/bruiser/T-SIDE-combat.png | PENDING | |
-| T-BACK (bruiser) | docs/renders/bruiser/T-BACK-combat.png | PENDING | |
+| T-SIDE (bruiser) | docs/renders/bruiser/T-SIDE-combat.png | PASS | Clean side profile. Identical to scout (shared combat parts). |
+| T-BACK (bruiser) | docs/renders/bruiser/T-BACK-combat.png | PASS | Clean back view. Identical to scout (shared combat parts). |
 | D-CRACK (scout) | docs/renders/scout/D-CRACK-combat.png | PASS | Re-rendered with stronger cracks (0.07 displacement, 450 lamp): plate separations visible at torso/pelvis with warm under-glow leaking through (4x zoom confirms gaps + orange light). Reads as cracked plating. |
 | D-WRECK (scout) | docs/renders/scout/D-WRECK-combat.png | FAIL→re-render | Real defect: the destroyed arm (x>0) was hidden but the WEAPON mounted on it was not — siegeplow floated detached in mid-air (4x zoom of mount area). Fix: stage_damage_wreck now hides the "weapon" slot too. Queued for fixup pass. |
 | D-CRACK (bruiser) | docs/renders/bruiser/D-CRACK-combat.png | PENDING | |
@@ -59,3 +59,5 @@ per build (proves Device 6 color delta).
 ## Proof sheet
 
 `docs/renders/lane-c-proof.png` — labeled grid of all 23 lane-C deliverables.
+
+| C-SOUL-scout-racer | docs/renders/contact/soul-scout-racer.png | PASS | Tight soul face-plate closeup; twin optics + mouth grille read clearly; racer teal identity. The small floating teal octahedron above the head is the head's authored 'antenna_tip' part (verified in scene), not a stray. |
