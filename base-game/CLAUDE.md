@@ -73,3 +73,6 @@ The codebase is split along one hard line: **the simulation core is pure and Thr
 - Vitest runs in a **node environment** (`vite.config.ts` → `test.environment: 'node'`) and only includes `src/**/*.test.ts`. There is no DOM or WebGL in tests.
 - **Never import a `three`-dependent module from a `*.test.ts`** — it will fail to load. New game logic that needs testing belongs in the pure core; keep rendering out of it.
 - `tsconfig` has `noUnusedLocals` and `noUnusedParameters` on — the build fails on dead bindings.
+
+## No-data-loss rules (MANDATORY)
+Read and follow [`docs/NO-DATA-LOSS-RULES.md`](../docs/NO-DATA-LOSS-RULES.md) (canonical: mhvnsnt/agent-ops). No force-push, no rebase/amend of pushed work, no history rewrite, no branch/asset deletion without backup + owner approval, PRs only, empty D-filter + gitleaks + green CI before merge, push incrementally, keep WORKLOG, back up and sha256-verify before disk cleanup, never touch other agents' or Muse's work.
